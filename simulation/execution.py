@@ -41,27 +41,38 @@ def _integrate(pose, command, dt):
 
 
 def _check_dt(dt):
-    if dt <= 0:
-        raise ValueError("dt must be positive")
+    if not math.isfinite(dt) or dt <= 0:
+        raise ValueError("dt must be finite and positive")
 
 
 class IdealExecution:
     """E0: exact integration of a constant body-frame holonomic command."""
     def __init__(self, initial_pose=Pose2D()):
         self.state = State(initial_pose.x, initial_pose.y, initial_pose.yaw)
+        self.active_command = Command()
+
+    def set_command(self, command):
+        self.active_command = command
+
+    def advance(self, dt):
+        _check_dt(dt)
+        pose = _integrate(self.state, self.active_command, dt)
+        command = self.active_command
+        self.state = State(pose.x, pose.y, pose.yaw, command.vx, command.vy,
+                           command.wz, self.state.time + dt)
+        return self.state
 
     def step(self, command, dt):
-        _check_dt(dt)
-        pose = _integrate(self.state, command, dt)
-        self.state = State(pose.x, pose.y, pose.yaw, command.vx, command.vy, command.wz, self.state.time + dt)
-        return self.state
+        self.set_command(command)
+        return self.advance(dt)
 
 
 class FirstOrderExecution:
     """E1: synthetic delayed commands with independent first-order body-speed lags."""
     def __init__(self, delay=0.0, tau_x=0.0, tau_y=0.0, tau_w=0.0, initial_pose=Pose2D()):
-        if min(delay, tau_x, tau_y, tau_w) < 0:
-            raise ValueError("delay and time constants must be non-negative")
+        parameters = (delay, tau_x, tau_y, tau_w)
+        if not all(math.isfinite(value) and value >= 0 for value in parameters):
+            raise ValueError("delay and time constants must be finite and non-negative")
         self.delay, self.taus = delay, Command(tau_x, tau_y, tau_w)
         self.state = State(initial_pose.x, initial_pose.y, initial_pose.yaw)
         self.active_command = Command()
@@ -73,20 +84,48 @@ class FirstOrderExecution:
                    tau_w=profile["tau_w"], initial_pose=initial_pose)
 
     @staticmethod
-    def _lag(value, target, tau, dt):
-        return target if tau == 0 else target + (value - target) * math.exp(-dt / tau)
+    def _lag_response(value, target, tau, dt):
+        if tau == 0:
+            return target, target
+        decay = math.exp(-dt / tau)
+        end = target + (value - target) * decay
+        average = target + (value - target) * (tau / dt) * (1 - decay)
+        return end, average
 
-    def step(self, command, dt):
-        _check_dt(dt)
+    def set_command(self, command):
         self._pending.append((self.state.time + self.delay, command))
+
+    def _activate_due_commands(self):
         while self._pending and self._pending[0][0] <= self.state.time + 1e-12:
             _, self.active_command = self._pending.popleft()
-        actual = Command(self._lag(self.state.vx, self.active_command.vx, self.taus.vx, dt),
-                         self._lag(self.state.vy, self.active_command.vy, self.taus.vy, dt),
-                         self._lag(self.state.wz, self.active_command.wz, self.taus.wz, dt))
-        pose = _integrate(self.state, actual, dt)
-        self.state = State(pose.x, pose.y, pose.yaw, actual.vx, actual.vy, actual.wz, self.state.time + dt)
+
+    def _advance_segment(self, dt):
+        x_end, x_average = self._lag_response(
+            self.state.vx, self.active_command.vx, self.taus.vx, dt)
+        y_end, y_average = self._lag_response(
+            self.state.vy, self.active_command.vy, self.taus.vy, dt)
+        w_end, w_average = self._lag_response(
+            self.state.wz, self.active_command.wz, self.taus.wz, dt)
+        pose = _integrate(self.state, Command(x_average, y_average, w_average), dt)
+        self.state = State(pose.x, pose.y, pose.yaw, x_end, y_end, w_end,
+                           self.state.time + dt)
+
+    def advance(self, dt):
+        _check_dt(dt)
+        end_time = self.state.time + dt
+        self._activate_due_commands()
+        while self._pending and self._pending[0][0] < end_time - 1e-12:
+            event_time = self._pending[0][0]
+            if event_time > self.state.time + 1e-12:
+                self._advance_segment(event_time - self.state.time)
+            self._activate_due_commands()
+        if end_time > self.state.time + 1e-12:
+            self._advance_segment(end_time - self.state.time)
         return self.state
+
+    def step(self, command, dt):
+        self.set_command(command)
+        return self.advance(dt)
 
 
 class EmpiricalExecution:

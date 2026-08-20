@@ -1,0 +1,2 @@
+# Common Phase 1C infrastructure timeout for every planner x execution cell.
+smoke_duration: 10.0

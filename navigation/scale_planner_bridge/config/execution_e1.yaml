@@ -1,0 +1,9 @@
+execution:
+  backend: e1
+  dt: 0.01
+  provenance: SYNTHETIC - NOT PHYSICALLY IDENTIFIED
+  profile:
+    delay: 0.05
+    tau_x: 0.10
+    tau_y: 0.15
+    tau_w: 0.12
