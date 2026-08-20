@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Restart the DWA bridge repeatedly and compare complete deterministic traces."""
+"""Restart a planner bridge repeatedly and compare deterministic E0 traces."""
 import argparse
 import json
 import os
@@ -12,8 +12,12 @@ import time
 
 
 ROOT = Path(__file__).resolve().parents[3]
-SMOKE = ROOT / "navigation" / "scale_planner_bridge" / "scripts" / "dwa_e0_smoke.py"
+PACKAGE = ROOT / "navigation" / "scale_planner_bridge"
 PYTHON = ROOT / ".venv" / "bin" / "python"
+PLANNERS = {
+    "dwa": ("dwa_e0_bridge.launch", PACKAGE / "scripts" / "dwa_e0_smoke.py"),
+    "teb": ("teb_e0_bridge.launch", PACKAGE / "scripts" / "teb_e0_smoke.py"),
+}
 
 
 def free_port():
@@ -87,16 +91,16 @@ def compare(reference, candidate, tolerance, path="trace"):
     return 0.0
 
 
-def run_once(index, directory, environment):
+def run_once(index, directory, environment, launch_file, smoke):
     trace_path = directory / "run_{:02d}.json".format(index)
     launch_log = directory / "launch_{:02d}.log".format(index)
     with launch_log.open("w") as log:
-        launch = subprocess.Popen(["roslaunch", "scale_planner_bridge", "dwa_e0_bridge.launch"],
+        launch = subprocess.Popen(["roslaunch", "scale_planner_bridge", launch_file],
                                   env=environment, stdout=log, stderr=subprocess.STDOUT,
                                   start_new_session=True)
         try:
             wait_for_services(environment)
-            result = subprocess.run([str(PYTHON), str(SMOKE), "--trace-output", str(trace_path)],
+            result = subprocess.run([str(PYTHON), str(smoke), "--trace-output", str(trace_path)],
                                     cwd=str(ROOT), env=environment, text=True,
                                     stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=30.0)
             if result.returncode != 0:
@@ -112,6 +116,7 @@ def run_once(index, directory, environment):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--planner", choices=sorted(PLANNERS), default="dwa")
     parser.add_argument("--runs", type=int, default=10)
     parser.add_argument("--tolerance", type=float, default=1e-9)
     args = parser.parse_args()
@@ -119,6 +124,7 @@ def main():
         raise ValueError("runs must be at least two and tolerance must be non-negative")
     if not PYTHON.exists():
         raise RuntimeError("project .venv is required")
+    launch_file, smoke = PLANNERS[args.planner]
 
     port = free_port()
     environment = os.environ.copy()
@@ -132,16 +138,19 @@ def main():
                                     stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
             try:
                 wait_for_port(port)
-                reference, first_summary = run_once(1, directory, environment)
+                reference, first_summary = run_once(
+                    1, directory, environment, launch_file, smoke)
                 maximum_difference = 0.0
                 for index in range(2, args.runs + 1):
-                    candidate, _ = run_once(index, directory, environment)
+                    candidate, _ = run_once(
+                        index, directory, environment, launch_file, smoke)
                     maximum_difference = max(maximum_difference,
                                              compare(reference, candidate, args.tolerance))
             finally:
                 stop(core)
 
-    result = {"success": True, "runs": args.runs, "tolerance": args.tolerance,
+    result = {"success": True, "planner": args.planner, "runs": args.runs,
+              "tolerance": args.tolerance,
               "max_abs_difference": maximum_difference,
               "planner_calls": first_summary["planner_calls"],
               "execution_steps": first_summary["execution_steps"],
