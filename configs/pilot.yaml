@@ -1,0 +1,20 @@
+execution_profile: mild_lag
+execution_profiles: configs/execution_profiles.yaml
+layout:
+  layout_id: pilot_arena
+  arena: {width: 6.0, height: 4.0}
+  start: {x: 0.8, y: 0.8, yaw: 0.0}
+  goal: {x: 2.0, y: 1.3, yaw: 0.4}
+  obstacles:
+    - {type: rectangle, x: 4.0, y: 2.0, width: 0.5, length: 0.8, yaw: 0.2}
+    - {type: circle, x: 3.0, y: 0.8, radius: 0.2}
+dt: 0.05
+duration: 4.0
+robot_footprint: {type: rectangle, width: 0.4, length: 0.3}
+seed: 0
+output_directory: data
+scripted_commands:
+  - {type: forward, speed: 0.4, duration: 1.0}
+  - {type: lateral, speed: 0.2, duration: 1.0}
+  - {type: rotate, speed: 0.4, duration: 1.0}
+  - {type: combined, vx: 0.2, vy: -0.1, wz: 0.1, duration: 1.0}

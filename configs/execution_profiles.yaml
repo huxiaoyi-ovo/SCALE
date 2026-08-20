@@ -1,0 +1,5 @@
+# Synthetic smoke-test profiles only. NOT experimentally grounded.
+profiles:
+  ideal_like: {delay: 0.0, tau_x: 0.02, tau_y: 0.02, tau_w: 0.02}
+  mild_lag: {delay: 0.05, tau_x: 0.10, tau_y: 0.15, tau_w: 0.10}
+  lateral_weak: {delay: 0.05, tau_x: 0.10, tau_y: 0.30, tau_w: 0.12}
