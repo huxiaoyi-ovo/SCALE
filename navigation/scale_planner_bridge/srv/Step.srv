@@ -1,0 +1,12 @@
+float64 x
+float64 y
+float64 yaw
+float64 vx
+float64 vy
+float64 wz
+---
+bool ok
+bool goal_reached
+geometry_msgs/Twist command
+float64 compute_seconds
+string error

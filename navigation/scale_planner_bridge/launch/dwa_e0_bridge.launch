@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="scale_planner_bridge" type="planner_bridge_node" name="scale_planner_bridge" output="screen">
+    <rosparam ns="local_costmap" file="$(find scale_planner_bridge)/config/common.yaml" command="load" />
+    <rosparam file="$(find scale_planner_bridge)/config/dwa.yaml" command="load" />
+  </node>
+</launch>
