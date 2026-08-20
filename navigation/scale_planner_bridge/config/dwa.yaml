@@ -2,6 +2,7 @@ planner_plugin: dwa_local_planner/DWAPlannerROS
 global_frame: map
 base_frame: base_link
 odom_topic: /scale_planner_bridge/odom
+planner_period: 0.05
 smoke_duration: 6.0
 external_xy_tolerance: 0.08
 external_yaw_tolerance: 0.10

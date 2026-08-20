@@ -8,12 +8,25 @@ mkdir -p build/scale_ros
 catkin_make -C build/scale_ros --source navigation
 ```
 
-Run in two terminals after sourcing `/opt/ros/noetic/setup.bash` and `build/scale_ros/devel/setup.bash`:
+Run the bridge after sourcing `/opt/ros/noetic/setup.bash` and `build/scale_ros/devel/setup.bash`:
 
 ```bash
 roscore
 roslaunch scale_planner_bridge dwa_e0_bridge.launch
-rosrun scale_planner_bridge dwa_e0_smoke.py
 ```
 
-The smoke test is E0-only: it proves a fixed map/plan can drive the official local-planner plugin through the synchronous bridge. It does not establish real-time, sensor, recovery, or hardware behavior.
+In a third terminal, use the project virtual environment so the smoke test shares SCALE's canonical Shapely collision evaluator:
+
+```bash
+.venv/bin/python navigation/scale_planner_bridge/scripts/dwa_e0_smoke.py
+```
+
+Run the independent-process determinism gate with:
+
+```bash
+.venv/bin/python navigation/scale_planner_bridge/scripts/determinism_regression.py --runs 10 --tolerance 1e-9
+```
+
+`planner_period` controls planner calls and planner-visible ROS time; `configs/pilot.yaml` keeps the separate E0 integration step. Before each planner call, the bridge serially accepts the latest executed pose and velocity as odometry. SCALE alone applies integration, external termination, and continuous physical-footprint collision checks.
+
+The smoke test is E0-only infrastructure evidence. It does not establish real-time, sensor, recovery, TEB, E1, or hardware behavior.

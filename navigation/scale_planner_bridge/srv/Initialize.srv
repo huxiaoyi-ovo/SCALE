@@ -1,5 +1,7 @@
 nav_msgs/OccupancyGrid map
 nav_msgs/Path plan
+float64 planner_period
 ---
 bool ok
+float64 clock_epoch
 string error

@@ -1,3 +1,4 @@
+float64 simulation_time
 float64 x
 float64 y
 float64 yaw
@@ -6,7 +7,8 @@ float64 vy
 float64 wz
 ---
 bool ok
-bool goal_reached
 geometry_msgs/Twist command
+nav_msgs/Odometry feedback
+float64 logical_time
 float64 compute_seconds
 string error
