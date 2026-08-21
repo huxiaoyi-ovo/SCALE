@@ -48,6 +48,7 @@ class PlannerBridge {
     private_nh_.param<std::string>("global_frame", global_frame_, "map");
     private_nh_.param<std::string>("base_frame", base_frame_, "base_link");
     private_nh_.param<std::string>("odom_topic", odom_topic_, "odom");
+    private_nh_.param("allow_reinitialize", allow_reinitialize_, false);
 
     service_nh_.setCallbackQueue(&service_queue_);
     clock_pub_ = nh_.advertise<rosgraph_msgs::Clock>("/clock", 1, true);
@@ -81,7 +82,7 @@ class PlannerBridge {
 
   bool initialize(scale_planner_bridge::Initialize::Request& request,
                   scale_planner_bridge::Initialize::Response& response) {
-    if (initialized_) {
+    if (initialized_ && !allow_reinitialize_) {
       response.ok = false; response.error = "bridge is already initialized"; return true;
     }
     if (request.planner_period <= 0.0 || !std::isfinite(request.planner_period)) {
@@ -90,6 +91,15 @@ class PlannerBridge {
     if (request.map.info.resolution <= 0.0 || request.map.info.width == 0 || request.map.info.height == 0 ||
         request.map.data.size() != request.map.info.width * request.map.info.height || request.plan.poses.empty()) {
       response.ok = false; response.error = "map or plan is invalid"; return true;
+    }
+
+    if (initialized_) {
+      odom_echo_sub_.shutdown();
+      planner_.reset();
+      echoed_odom_ = nav_msgs::Odometry();
+      odom_callbacks_ = 0;
+      step_index_ = 0;
+      initialized_ = false;
     }
 
     planner_period_ = request.planner_period;
@@ -212,6 +222,7 @@ class PlannerBridge {
   double planner_period_ = 0.0;
   uint64_t odom_callbacks_ = 0;
   uint64_t step_index_ = 0;
+  bool allow_reinitialize_ = false;
   bool initialized_ = false;
 };
 
