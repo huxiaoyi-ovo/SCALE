@@ -1,0 +1,138 @@
+study: eipt_empirical_discrimination_gate
+status: post_hoc_one_day_kill_test
+provenance: SYNTHETIC — NOT PHYSICALLY IDENTIFIED
+
+sources:
+  rq1:
+    episodes: data/rq1_synthetic/episodes.csv
+    traces: data/rq1_synthetic/traces
+    layouts: configs/rq1/layouts.yaml
+    planners: [tr, teb]
+    expected_lock_hash: 355a6b600b50409b680ffb0e06ee53d75e1a915fb3142bddfb3a3a3180f9c8d5
+  phase2:
+    episodes: data/phase2_execution_screening/episodes.csv
+    traces: data/phase2_execution_screening/traces
+    layouts: configs/phase2/layouts.yaml
+    planners: [dwa]
+    expected_lock_hash: f1c8fd861651f70500a8a3341a4fd79820a6f66c02609af9d8137fd2b70d947b
+
+sampling:
+  seed: 20260830
+  planners: [tr, teb, dwa]
+  partitions: [discovery, holdout]
+  snapshots_per_planner_partition: 24
+  bad_per_planner_partition: 12
+  nominal_per_planner_partition: 12
+  max_snapshots_per_episode: 1
+  max_snapshots_per_layout: 2
+  future_window: 2.0
+  event_lead_min: 0.5
+  event_lead_max: 1.5
+  target_event_lead: 1.0
+  command_history_window: 0.25
+  nominal_match:
+    successful_episodes_only: true
+    elapsed_time_scale: 2.0
+    path_progress_scale: 0.20
+  dwa_coverage:
+    min_e0_near_start_bad_per_partition: 4
+    min_tau_y_rescue_nominal_per_partition: 4
+    include_all_available_e0_success_controls_up_to: 4
+
+bad_event:
+  planner_failure: terminal planner failure
+  collision: terminal physical-footprint collision
+  command_collapse:
+    normalized_command_l2_max: 0.05
+    sustained_cycles: 10
+    max_path_progress: 0.95
+  progress_stall:
+    lookback: 1.0
+    normalized_progress_gain_max: 0.01
+    max_path_progress: 0.95
+  oscillatory_reversal:
+    lookback: 1.0
+    components: [vy, wz]
+    normalized_component_magnitude_min: 0.10
+    sign_changes_min: 4
+
+planner_response_transition:
+  command_limits: {vx: 0.45, vy: 0.35, wz: 0.80}
+  normalized_command_l2_change_min: 0.35
+  dominant_component_magnitude_min: 0.15
+  dominant_component_ratio_min: 1.25
+  reversal_component_magnitude_min: 0.15
+  collapse_reference_l2_min: 0.20
+  collapse_candidate_l2_max: 0.05
+  planner_failure_is_transition: true
+
+ordinary_margin:
+  dimensions: [vx, vy, wz]
+  scales: {vx: 0.45, vy: 0.35, wz: 0.80}
+  bounds:
+    vx: [-0.15, 0.45]
+    vy: [-0.35, 0.35]
+    wz: [-0.80, 0.80]
+  directions: axes_plus_cube_corners
+  coarse_radius_step: 0.25
+  max_radius: 2.0
+  bisection_radius_resolution: 0.03125
+  no_transition_value: 2.0
+  pose_perturbation: false
+
+execution_margin:
+  dimensions: [delay, tau_x, tau_y, tau_w]
+  scales: {delay: 0.20, tau_x: 0.30, tau_y: 0.50, tau_w: 0.30}
+  normalized_bounds: [0.0, 1.0]
+  directions: signed_axes_plus_all_positive_and_all_negative
+  horizon_planner_cycles: 10
+  planner_period: 0.05
+  execution_dt: 0.01
+  coarse_radius_step: 0.25
+  max_radius: 2.0
+  bisection_radius_resolution: 0.03125
+  no_transition_value: 2.0
+
+ordinary_metrics:
+  - command_executed_velocity_error
+  - one_step_ideal_state_error
+  - minimum_clearance
+  - normalized_command_magnitude
+  - normalized_recent_command_change
+  - ordinary_planner_margin
+  - nominal_delay
+  - nominal_tau_x
+  - nominal_tau_y
+  - nominal_tau_w
+
+evaluation:
+  discovery_use: implementation_and_model_fit_only
+  holdout_use: primary_empirical_gate
+  model: fixed_l2_regularized_logistic
+  ridge_penalty: 1.0
+  baseline: all_ordinary_metrics_plus_nominal_theta_plus_planner_identity
+  extended: baseline_plus_execution_margin
+  metrics: [auroc, auprc]
+  bootstrap_unit: layout
+  bootstrap_resamples: 2000
+  bootstrap_seed: 20260831
+  significance_tests: false
+
+decision:
+  go_delta_auroc: 0.10
+  go_delta_auprc: 0.15
+  require_positive_evidence_in_two_planners: true
+  require_teb_positive_evidence: true
+  require_noncollapse_beyond_ordinary_margin: true
+  require_consistent_matched_examples: true
+  mixed_result: no_go
+
+outputs:
+  directory: data/eipt_empirical_gate
+  csv:
+    - snapshot_metrics.csv
+    - predictive_metrics.csv
+    - bootstrap_summary.csv
+    - matched_examples.csv
+  figures_maximum: 2
+  report: EIPT_EMPIRICAL_GATE.md
