@@ -1,0 +1,4 @@
+# Root-cause diagnostic Variant A only: keep all frozen DWA parameters except
+# disable the Dynamic Window constraint.
+planner:
+  use_dwa: false
