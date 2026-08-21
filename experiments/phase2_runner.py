@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Locked, resumable Phase-2 execution runner."""
 from __future__ import annotations
-import argparse,csv,gzip,hashlib,json,math,os,signal,socket,subprocess,sys,tempfile,time
+import argparse,csv,gzip,hashlib,json,math,multiprocessing as mp,os,queue,signal,socket,subprocess,sys,tempfile,time
 from datetime import datetime,timezone
 from pathlib import Path
 import yaml
@@ -102,7 +102,131 @@ def _episode_record(episode,summary,trace,lock_hash,raw_layout,robot_spec):
     clearance=min(minimum_clearance(shape,layout['obstacles']) for shape in shapes)
     clean_episode={key:value for key,value in episode.items() if not key.startswith('_')}
     return dict(clean_episode,lock_hash=lock_hash,valid='true',success=str(bool(summary['success'])).lower(),reason='logical_timeout' if summary['reason']=='duration' else summary['reason'],raw_reason=summary['reason'],collision=str(collision_truth).lower(),planner_failures=summary['planner_failures'],planner_calls=summary['planner_calls'],execution_steps=summary['execution_steps'],final_xy_error=summary['final_xy_error'],final_yaw_error=summary['final_yaw_error'],final_time=final['time'],capped_time_to_termination=final['time'],path_length=length,min_clearance=clearance,compute_mean=summary['compute_seconds']['mean'],compute_max=summary['compute_seconds']['max'],time_contract=str(bool(summary['time_contract'])).lower(),feedback_contract=str(bool(summary['feedback_contract'])).lower(),command_hold_contract=str(bool(summary['command_hold_contract'])).lower(),collision_truth_contract='true')
-def run(protocol_path=PROTOCOL,layouts_path=LAYOUTS,schedule_path=SCHEDULE,output=OUTPUT,executor=None):
+
+def _accept_episode(out,episode,summary,trace,lock_hash,layout_by_id,robot_spec,existing_by_id):
+    if classify_failure(summary)=='contract':raise ContractFailure(summary.get('reason','contract failure'))
+    record=_episode_record(episode,summary,trace,lock_hash,layout_by_id[episode['layout_id']],robot_spec)
+    previous=existing_by_id.get(episode['episode_id'])
+    if previous:
+        comparable=tuple(key for key in record if key not in ('schedule_index',))
+        if any(str(previous.get(key,''))!=str(record.get(key,'')) for key in comparable):
+            raise ContractFailure('resume replay differs from terminal record')
+        attempt_status='infrastructure_recovery'
+    else:attempt_status='algorithm'
+    attempt=int(episode['_attempt'])
+    _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':episode['episode_id'],'attempt':attempt,'status':attempt_status,'detail':summary.get('reason','')})
+    _trace(out,episode['episode_id'],trace)
+    if not previous:_append(out/'episodes.csv',record);existing_by_id[episode['episode_id']]=record
+
+def _record_failure(out,episode,error):
+    attempt=int(episode['_attempt']);contract=isinstance(error,ContractFailure);status='contract' if contract else 'infrastructure'
+    _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':episode['episode_id'],'attempt':attempt,'status':status,'detail':str(error)})
+    if contract:raise RuntimeError('contract failure: '+episode['episode_id']) from error
+    if attempt>=3:raise RuntimeError('infrastructure retry exhaustion: '+episode['episode_id']) from error
+
+def _run_serial(todo,protocol,layouts,out,lock_hash,layout_by_id,existing_by_id,executor=None):
+    owned=executor is None;executor=executor or RosExecutor(protocol,layouts,out)
+    if owned:executor.start()
+    try:
+      completed=0
+      for ep in todo:
+        while True:
+            call_episode=dict(ep,_attempt=_attempts(out,ep['episode_id'])+1)
+            try:
+                summary,trace=executor(call_episode)
+                _accept_episode(out,call_episode,summary,trace,lock_hash,layout_by_id,protocol['robot']['footprint'],existing_by_id)
+            except Exception as error:
+                _record_failure(out,call_episode,error)
+                continue
+            break
+        completed+=1
+        if (len(existing_by_id)%10==0 or completed==len(todo)):print('phase2 progress: {}/880'.format(len(existing_by_id)),flush=True)
+    finally:
+      if owned:executor.close()
+
+def _master_ports(count):
+    """Choose private master ports below Linux's ephemeral range."""
+    try:ephemeral_start=int(Path('/proc/sys/net/ipv4/ip_local_port_range').read_text().split()[0])
+    except (OSError,ValueError,IndexError):ephemeral_start=32768
+    ports=[]
+    for port in range(15000,min(ephemeral_start,32768)):
+        try:
+            with socket.socket() as probe:probe.bind(('127.0.0.1',port))
+        except OSError:continue
+        ports.append(port)
+        if len(ports)==count:return ports
+    raise RuntimeError('not enough private ROS master ports')
+
+def _parallel_worker(worker_id,master_port,protocol,layouts,output,tasks,results):
+    executor=RosExecutor(protocol,layouts,Path(output)/'workers'/'worker_{:02d}'.format(worker_id),master_port=master_port)
+    try:
+        try:executor.start()
+        except Exception as error:
+            results.put({'kind':'startup_error','worker':worker_id,'detail':str(error)});return
+        results.put({'kind':'ready','worker':worker_id,'ros_master_uri':executor.env['ROS_MASTER_URI']})
+        while True:
+            episode=tasks.get()
+            if episode is None:return
+            try:
+                summary,trace=executor(episode)
+                results.put({'kind':'episode','status':'ok','worker':worker_id,'episode':episode,'summary':summary,'trace':trace})
+            except ContractFailure as error:
+                results.put({'kind':'episode','status':'contract','worker':worker_id,'episode':episode,'detail':str(error)})
+            except Exception as error:
+                results.put({'kind':'episode','status':'infrastructure','worker':worker_id,'episode':episode,'detail':str(error)})
+    finally:executor.close()
+
+def _parallel_message(results,processes):
+    while True:
+        try:return results.get(timeout=1)
+        except queue.Empty:
+            stopped=[(process.pid,process.exitcode) for process in processes if process.exitcode is not None]
+            if stopped:raise InfrastructureFailure('parallel worker exited unexpectedly: {}'.format(stopped))
+
+def _run_parallel(todo,protocol,layouts,out,lock_hash,layout_by_id,existing_by_id,workers):
+    worker_count=min(workers,len(todo))
+    if not worker_count:return
+    context=mp.get_context('spawn');tasks=context.Queue();results=context.Queue();ports=_master_ports(worker_count)
+    processes=[context.Process(target=_parallel_worker,args=(index,ports[index],protocol,layouts,out,tasks,results)) for index in range(worker_count)]
+    clean=False
+    try:
+        for process in processes:process.start()
+        ready=0
+        while ready<worker_count:
+            message=_parallel_message(results,processes)
+            if message['kind']=='startup_error':raise InfrastructureFailure('worker {} startup failed: {}'.format(message['worker'],message['detail']))
+            if message['kind']!='ready':raise InfrastructureFailure('unexpected worker startup message')
+            ready+=1
+        for ep in todo:tasks.put(dict(ep,_attempt=_attempts(out,ep['episode_id'])+1))
+        remaining=len(todo)
+        while remaining:
+            message=_parallel_message(results,processes)
+            if message.get('kind')!='episode':raise InfrastructureFailure('unexpected parallel worker message')
+            episode=message['episode']
+            try:
+                if message['status']=='contract':raise ContractFailure(message['detail'])
+                if message['status']=='infrastructure':raise InfrastructureFailure(message['detail'])
+                _accept_episode(out,episode,message['summary'],message['trace'],lock_hash,layout_by_id,protocol['robot']['footprint'],existing_by_id)
+            except Exception as error:
+                _record_failure(out,episode,error)
+                tasks.put(dict(episode,_attempt=int(episode['_attempt'])+1))
+                continue
+            remaining-=1
+            if len(existing_by_id)%10==0 or remaining==0:print('phase2 progress: {}/880'.format(len(existing_by_id)),flush=True)
+        for _ in processes:tasks.put(None)
+        for process in processes:process.join(timeout=10)
+        failed=[(process.pid,process.exitcode) for process in processes if process.exitcode!=0]
+        if failed:raise InfrastructureFailure('parallel workers did not close cleanly: {}'.format(failed))
+        clean=True
+    finally:
+        if not clean:
+            for process in processes:
+                if process.is_alive():process.terminate()
+            for process in processes:process.join(timeout=5)
+
+def run(protocol_path=PROTOCOL,layouts_path=LAYOUTS,schedule_path=SCHEDULE,output=OUTPUT,executor=None,workers=1):
+    if workers<1:raise ValueError('workers must be at least one')
+    if executor is not None and workers!=1:raise ValueError('an injected executor requires workers=1')
     out=Path(output); lock=json.loads((out/'lock.json').read_text());static=static_preflight(protocol_path,layouts_path,schedule_path)
     if canonical_hash(lock['lock_core'])!=lock['lock_hash'] or any(lock['lock_core'][k]!=static[k] for k in ('protocol_hash','layouts_hash','schedule_hash')):raise RuntimeError('immutable lock drift')
     if 'code_hashes' in lock['lock_core'] and any(_hashfile(ROOT / path) != digest for path,digest in lock['lock_core']['code_hashes'].items()):raise RuntimeError('source hash drift')
@@ -112,59 +236,16 @@ def run(protocol_path=PROTOCOL,layouts_path=LAYOUTS,schedule_path=SCHEDULE,outpu
     existing_by_id={x['episode_id']:x for x in episode_rows}
     done=_valid_done(out,lock['lock_hash']); todo=[x for x in _rows(schedule_path) if x['episode_id'] not in done]
     protocol=load_yaml(protocol_path);layouts=load_yaml(layouts_path);layout_by_id={x['layout_id']:x for x in layouts['layouts']}
-    owned=executor is None
-    executor=executor or RosExecutor(protocol,layouts,out)
-    if owned: executor.start()
-    try:
-      for ep in todo:
-        while True:
-            attempt=_attempts(out,ep['episode_id'])+1
-            call_episode=dict(ep,_attempt=attempt)
-            try: summary,trace=executor(call_episode)
-            except ContractFailure as e:
-                _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':ep['episode_id'],'attempt':attempt,'status':'contract','detail':str(e)})
-                raise RuntimeError('contract failure: '+ep['episode_id'])
-            except Exception as e:
-                _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':ep['episode_id'],'attempt':attempt,'status':'infrastructure','detail':str(e)})
-                if attempt>=3:raise RuntimeError('infrastructure retry exhaustion: '+ep['episode_id'])
-                continue
-            kind=classify_failure(summary)
-            if kind=='contract':
-                _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':ep['episode_id'],'attempt':attempt,'status':'contract','detail':summary.get('reason','')})
-                raise RuntimeError('contract failure: '+ep['episode_id'])
-            try:record=_episode_record(ep,summary,trace,lock['lock_hash'],layout_by_id[ep['layout_id']],protocol['robot']['footprint'])
-            except ContractFailure as e:
-                _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':ep['episode_id'],'attempt':attempt,'status':'contract','detail':str(e)})
-                raise RuntimeError('contract failure: '+ep['episode_id'])
-            except Exception as e:
-                _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':ep['episode_id'],'attempt':attempt,'status':'infrastructure','detail':str(e)})
-                if attempt>=3:raise RuntimeError('infrastructure retry exhaustion: '+ep['episode_id'])
-                continue
-            previous=existing_by_id.get(ep['episode_id'])
-            if previous:
-                comparable=tuple(key for key in record if key not in ('schedule_index',))
-                if any(str(previous.get(key,''))!=str(record.get(key,'')) for key in comparable):
-                    _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':ep['episode_id'],'attempt':attempt,'status':'contract','detail':'resume replay differs from terminal record'})
-                    raise RuntimeError('contract failure: '+ep['episode_id'])
-                attempt_status='infrastructure_recovery'
-            else:
-                attempt_status=kind
-            _append(out/'attempts.csv',{'timestamp':_now(),'episode_id':ep['episode_id'],'attempt':attempt,'status':attempt_status,'detail':summary.get('reason','')})
-            _trace(out,ep['episode_id'],trace)
-            if not previous:_append(out/'episodes.csv',record);existing_by_id[ep['episode_id']]=record
-            break
-        completed=len(_valid_done(out,lock['lock_hash']))
-        if completed%10==0 or completed==len(_rows(schedule_path)):print('phase2 progress: {}/880'.format(completed),flush=True)
-    finally:
-      if owned: executor.close()
-    return {'completed':len(_valid_done(out,lock['lock_hash'])),'lock_hash':lock['lock_hash']}
+    if workers==1:_run_serial(todo,protocol,layouts,out,lock['lock_hash'],layout_by_id,existing_by_id,executor)
+    else:_run_parallel(todo,protocol,layouts,out,lock['lock_hash'],layout_by_id,existing_by_id,workers)
+    return {'completed':len(_valid_done(out,lock['lock_hash'])),'lock_hash':lock['lock_hash'],'workers':workers}
 
 class RosExecutor:
     """Per-episode bridge process; roscore is private and persistent for batch."""
-    def __init__(self,protocol,layouts,output):
-        self.protocol,self.layouts,self.output=protocol,{x['layout_id']:x for x in layouts['layouts']},Path(output);self.core=None;self.temp=None;self.env=None
+    def __init__(self,protocol,layouts,output,master_port=None):
+        self.protocol,self.layouts,self.output=protocol,{x['layout_id']:x for x in layouts['layouts']},Path(output);self.master_port=master_port;self.core=None;self.temp=None;self.env=None
     def start(self):
-        port=self._port();self.env=os.environ.copy();self.env.update(ROS_MASTER_URI='http://127.0.0.1:{}'.format(port),ROS_IP='127.0.0.1');self.temp=tempfile.TemporaryDirectory(prefix='scale_phase2_'); log=(self.output/'logs'/'roscore.log');log.parent.mkdir(parents=True,exist_ok=True);self.core_log=log.open('a')
+        port=self.master_port if self.master_port is not None else self._port();self.temp=tempfile.TemporaryDirectory(prefix='scale_phase2_');ros_home=Path(self.temp.name)/'ros_home';ros_log=Path(self.temp.name)/'ros_log';ros_home.mkdir();ros_log.mkdir();self.env=os.environ.copy();self.env.update(ROS_MASTER_URI='http://127.0.0.1:{}'.format(port),ROS_IP='127.0.0.1',ROS_HOME=str(ros_home),ROS_LOG_DIR=str(ros_log));log=(self.output/'logs'/'roscore.log');log.parent.mkdir(parents=True,exist_ok=True);self.core_log=log.open('a')
         self.core=subprocess.Popen(['roscore','-p',str(port)],env=self.env,stdout=self.core_log,stderr=subprocess.STDOUT,start_new_session=True)
         self._wait_master()
     def close(self):
@@ -176,7 +257,7 @@ class RosExecutor:
         if self.temp:self.temp.cleanup();self.temp=None
     @staticmethod
     def _port():
-        with socket.socket() as s:s.bind(('127.0.0.1',0));return s.getsockname()[1]
+        return _master_ports(1)[0]
     def _wait_master(self):
         end=time.monotonic()+10
         while time.monotonic()<end:
@@ -239,5 +320,7 @@ class RosExecutor:
                 except FileNotFoundError:pass
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('command',choices=('generate','preflight','run'));p.add_argument('--output',default=str(OUTPUT));a=p.parse_args();r=generate() if a.command=='generate' else {'preflight':preflight,'run':run}[a.command](output=Path(a.output));print(json.dumps(r,sort_keys=True))
+    p=argparse.ArgumentParser();p.add_argument('command',choices=('generate','preflight','run'));p.add_argument('--output',default=str(OUTPUT));p.add_argument('--workers',type=int,default=1,help='process workers for run');a=p.parse_args()
+    if a.command!='run' and a.workers!=1:p.error('--workers applies only to run')
+    r=generate() if a.command=='generate' else {'preflight':preflight,'run':run}[a.command](output=Path(a.output),**({'workers':a.workers} if a.command=='run' else {}));print(json.dumps(r,sort_keys=True))
 if __name__=='__main__':main()

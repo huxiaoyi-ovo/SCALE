@@ -1,5 +1,7 @@
 import csv
 from pathlib import Path
+import queue
+import threading
 
 import yaml
 
@@ -82,6 +84,35 @@ def test_ros_executor_close_without_start_is_safe(tmp_path):
     executor.close()
 
 
+def test_ros_executor_uses_private_master_and_ros_state(monkeypatch, tmp_path):
+    protocol = yaml.safe_load((ROOT / "configs/phase2/protocol.yaml").read_text())
+    layouts = phase2_protocol.generate_layouts(protocol)
+    captured = {}
+
+    class FakeCore:
+        alive = True
+        def poll(self): return None if self.alive else 0
+        def send_signal(self, _): self.alive = False
+        def wait(self, timeout=None): self.alive = False; return 0
+        def kill(self): self.alive = False
+
+    def fake_popen(command, **kwargs):
+        captured.update(command=command, environment=kwargs["env"])
+        return FakeCore()
+
+    monkeypatch.setattr(runner.subprocess, "Popen", fake_popen)
+    monkeypatch.setattr(RosExecutor, "_wait_master", lambda self: None)
+    executor = RosExecutor(protocol, layouts, tmp_path, master_port=15123)
+    executor.start()
+    ros_home = Path(executor.env["ROS_HOME"])
+    ros_log = Path(executor.env["ROS_LOG_DIR"])
+    assert executor.env["ROS_MASTER_URI"] == "http://127.0.0.1:15123"
+    assert ros_home.is_dir() and ros_log.is_dir() and ros_home.parent == ros_log.parent
+    assert captured["environment"] is executor.env
+    executor.close()
+    assert not ros_home.exists()
+
+
 def _summary(reason="external_tolerance", **extra):
     value = {"success": reason == "external_tolerance", "reason": reason, "collision": False,
              "planner_failures": 0, "planner_calls": 1, "execution_steps": 1,
@@ -101,6 +132,71 @@ def _run_fixture(monkeypatch, tmp_path, executor):
     original_rows = runner._rows
     monkeypatch.setattr(runner, "_rows", lambda path: [episode] if str(path).endswith("schedule.csv") else original_rows(path))
     return runner.run(output=tmp_path, executor=executor)
+
+
+def test_parallel_runner_retries_and_parent_commits(monkeypatch, tmp_path):
+    episodes = [
+        {"schedule_index": "0", "episode_id": "one", "partition": "discovery", "layout_id": "discovery_01", "planner": "dwa", "profile_id": "e0"},
+        {"schedule_index": "1", "episode_id": "two", "partition": "discovery", "layout_id": "discovery_01", "planner": "teb", "profile_id": "e0"},
+    ]
+    static = {"protocol_hash": "p", "layouts_hash": "l", "schedule_hash": "s"}
+    core = dict(static)
+    lock = {"success": True, "lock_core": core, "lock_hash": runner.canonical_hash(core)}
+    (tmp_path / "lock.json").write_text(json.dumps(lock))
+    monkeypatch.setattr(runner, "static_preflight", lambda *a, **k: static)
+    original_rows = runner._rows
+    monkeypatch.setattr(runner, "_rows", lambda path: episodes if str(path).endswith("schedule.csv") else original_rows(path))
+
+    calls, outputs, calls_lock = {}, [], threading.Lock()
+
+    class FakeExecutor:
+        def __init__(self, protocol, layouts, output, master_port=None):
+            self.output, self.master_port, self.env = Path(output), master_port, None
+            outputs.append(self.output)
+        def start(self): self.env = {"ROS_MASTER_URI": "http://127.0.0.1:{}".format(self.master_port)}
+        def close(self): pass
+        def __call__(self, episode):
+            with calls_lock:
+                calls[episode["episode_id"]] = calls.get(episode["episode_id"], 0) + 1
+                attempt = calls[episode["episode_id"]]
+            if episode["episode_id"] == "one" and attempt == 1:
+                raise RuntimeError("transient transport")
+            return _summary(), {"execution_states": [{"x": .6, "y": 2., "yaw": 0., "time": 1.}]}
+
+    class ThreadProcess:
+        next_pid = 20000
+        def __init__(self, target, args):
+            self.target, self.args, self.exitcode, self.error = target, args, None, None
+            self.pid = ThreadProcess.next_pid; ThreadProcess.next_pid += 1
+            self.thread = threading.Thread(target=self._run)
+        def _run(self):
+            try: self.target(*self.args); self.exitcode = 0
+            except BaseException as error: self.error, self.exitcode = error, 1
+        def start(self): self.thread.start()
+        def join(self, timeout=None): self.thread.join(timeout)
+        def is_alive(self): return self.thread.is_alive()
+        def terminate(self): pass
+
+    class ThreadContext:
+        @staticmethod
+        def Queue(): return queue.Queue()
+        @staticmethod
+        def Process(target, args): return ThreadProcess(target, args)
+
+    monkeypatch.setattr(runner, "RosExecutor", FakeExecutor)
+    monkeypatch.setattr(runner, "_master_ports", lambda count: list(range(15100, 15100 + count)))
+    monkeypatch.setattr(runner.mp, "get_context", lambda _: ThreadContext())
+    result = runner.run(output=tmp_path, workers=2)
+    assert result["completed"] == 2 and result["workers"] == 2
+    assert calls == {"one": 2, "two": 1}
+    assert len({str(path) for path in outputs}) == 2
+    assert all(tmp_path / "workers" in path.parents for path in outputs)
+    assert len(original_rows(tmp_path / "episodes.csv")) == 2
+    assert [row["status"] for row in original_rows(tmp_path / "attempts.csv")].count("infrastructure") == 1
+    assert all((tmp_path / "traces" / (episode["episode_id"] + ".json.gz")).is_file() for episode in episodes)
+    assert not list((tmp_path / "workers").rglob("*.csv"))
+    runner.run(output=tmp_path, workers=2)
+    assert calls == {"one": 2, "two": 1}
 
 
 def test_runner_retries_infrastructure_at_most_three(monkeypatch, tmp_path):
