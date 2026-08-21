@@ -30,6 +30,7 @@ sampling:
   event_lead_max: 1.5
   target_event_lead: 1.0
   command_history_window: 0.25
+  planner_warmup_cycles: 5
   nominal_match:
     successful_episodes_only: true
     elapsed_time_scale: 2.0
@@ -92,6 +93,13 @@ execution_margin:
   max_radius: 2.0
   bisection_radius_resolution: 0.03125
   no_transition_value: 2.0
+
+instrument_contract:
+  baseline_query_reference: recorded command at the retained snapshot
+  baseline_query_mismatch_definition: frozen material planner-response transition
+  maximum_overall_mismatch_fraction: 0.05
+  maximum_per_planner_mismatch_fraction: 0.10
+  action_on_failure: empirical_inconclusive
 
 ordinary_metrics:
   - command_executed_velocity_error
