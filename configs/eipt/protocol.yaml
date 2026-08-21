@@ -142,6 +142,8 @@ matched_examples:
 decision:
   go_delta_auroc: 0.10
   go_delta_auprc: 0.15
+  positive_planner_evidence: delta_auroc_above_zero_or_delta_auprc_above_zero
+  pathological_layout_check: gate_qualifying_delta_remains_above_zero_after_removing_each_holdout_layout_cluster
   require_positive_evidence_in_two_planners: true
   require_teb_positive_evidence: true
   require_noncollapse_beyond_ordinary_margin: true
