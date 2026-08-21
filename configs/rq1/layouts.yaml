@@ -1,0 +1,3673 @@
+schema_version: 1
+layout_seed: 20260826
+generation:
+  seed: 20260826
+  arena: &id001
+    width: 6.0
+    height: 4.0
+  start: &id002
+    x: 0.6
+    y: 2.0
+    yaw: 0.0
+  goal: &id003
+    x: 5.4
+    y: 2.0
+    yaw: 0.0
+  obstacle_count: 6
+  circle_probability: 0.4
+  rectangle_width_range:
+  - 0.35
+  - 0.7
+  rectangle_length_range:
+  - 0.35
+  - 0.75
+  circle_radius_range:
+  - 0.18
+  - 0.32
+  boundary_margin: 0.4
+  obstacle_separation: 0.15
+  start_goal_exclusion: 0.65
+  path_grid_resolution: 0.1
+  path_connectivity: 8
+  footprint_circumscribed_radius: 0.25
+  path_safety_margin: 0.1
+  accepted_path_length_range:
+  - 5.2
+  - 7.5
+  path_simplification: collinear_only
+  acceptance_rule: first_40_geometry_valid_candidates_only
+  discovery_count: 20
+  holdout_count: 20
+layouts:
+- layout_id: discovery_01
+  partition: discovery
+  candidate_index: 12
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.354
+    length: 0.457
+    yaw: 0.0
+    x: 2.985
+    y: 3.081
+  - type: circle
+    radius: 0.248
+    x: 3.48
+    y: 2.035
+  - type: rectangle
+    width: 0.608
+    length: 0.363
+    yaw: 0.0
+    x: 1.575
+    y: 1.318
+  - type: rectangle
+    width: 0.646
+    length: 0.407
+    yaw: 0.0
+    x: 4.361
+    y: 1.978
+  - type: circle
+    radius: 0.275
+    x: 2.94
+    y: 1.174
+  - type: rectangle
+    width: 0.481
+    length: 0.457
+    yaw: 0.0
+    x: 2.093
+    y: 3.115
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.85
+    yaw: -0.950547
+  - x: 0.85
+    y: 1.65
+    yaw: -1.352127
+  - x: 0.85
+    y: 0.95
+    yaw: -1.352127
+  - x: 1.05
+    y: 0.75
+    yaw: -0.132552
+  - x: 2.35
+    y: 0.75
+    yaw: -0.132552
+  - x: 2.55
+    y: 0.55
+    yaw: -0.463648
+  - x: 2.75
+    y: 0.55
+    yaw: -0.321751
+  - x: 2.85
+    y: 0.45
+    yaw: -0.321751
+  - x: 3.05
+    y: 0.45
+    yaw: 0.321751
+  - x: 3.15
+    y: 0.55
+    yaw: 0.321751
+  - x: 3.35
+    y: 0.55
+    yaw: 0.674741
+  - x: 4.15
+    y: 1.35
+    yaw: 0.489957
+  - x: 4.85
+    y: 1.35
+    yaw: 0.124355
+  - x: 4.95
+    y: 1.45
+    yaw: 0.463648
+  - x: 5.05
+    y: 1.45
+    yaw: 0.588003
+  - x: 5.25
+    y: 1.65
+    yaw: 1.107149
+  - x: 5.25
+    y: 1.85
+    yaw: 1.165905
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.657252
+- layout_id: discovery_02
+  partition: discovery
+  candidate_index: 45
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.363
+    length: 0.35
+    yaw: 0.0
+    x: 4.59
+    y: 1.511
+  - type: circle
+    radius: 0.303
+    x: 2.405
+    y: 2.605
+  - type: circle
+    radius: 0.209
+    x: 2.252
+    y: 1.51
+  - type: circle
+    radius: 0.276
+    x: 3.2
+    y: 2.096
+  - type: rectangle
+    width: 0.55
+    length: 0.409
+    yaw: 0.0
+    x: 4.807
+    y: 0.798
+  - type: circle
+    radius: 0.183
+    x: 3.647
+    y: 3.033
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.197396
+  - x: 0.85
+    y: 1.95
+    yaw: -0.694738
+  - x: 1.85
+    y: 0.95
+    yaw: -0.426627
+  - x: 3.05
+    y: 0.95
+    yaw: 0.446106
+  - x: 4.15
+    y: 2.05
+    yaw: 0.482513
+  - x: 5.15
+    y: 2.05
+    yaw: -0.09066
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.740094
+- layout_id: discovery_03
+  partition: discovery
+  candidate_index: 79
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.267
+    x: 2.006
+    y: 1.83
+  - type: rectangle
+    width: 0.399
+    length: 0.474
+    yaw: 0.0
+    x: 1.155
+    y: 1.196
+  - type: rectangle
+    width: 0.509
+    length: 0.388
+    yaw: 0.0
+    x: 2.113
+    y: 2.541
+  - type: rectangle
+    width: 0.67
+    length: 0.386
+    yaw: 0.0
+    x: 5.229
+    y: 0.761
+  - type: rectangle
+    width: 0.356
+    length: 0.462
+    yaw: 0.0
+    x: 4.401
+    y: 1.687
+  - type: rectangle
+    width: 0.572
+    length: 0.418
+    yaw: 0.0
+    x: 2.563
+    y: 0.717
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 1.45
+    y: 2.85
+    yaw: 0.840897
+  - x: 1.45
+    y: 2.95
+    yaw: 0.982794
+  - x: 1.65
+    y: 3.15
+    yaw: 0.152649
+  - x: 2.75
+    y: 3.15
+    yaw: -0.083141
+  - x: 2.85
+    y: 3.05
+    yaw: -0.463648
+  - x: 2.95
+    y: 3.05
+    yaw: -0.463648
+  - x: 3.05
+    y: 2.95
+    yaw: -0.321751
+  - x: 3.25
+    y: 2.95
+    yaw: -0.321751
+  - x: 3.35
+    y: 2.85
+    yaw: -0.463648
+  - x: 3.45
+    y: 2.85
+    yaw: -0.463648
+  - x: 3.55
+    y: 2.75
+    yaw: -0.463648
+  - x: 3.65
+    y: 2.75
+    yaw: -0.463648
+  - x: 3.75
+    y: 2.65
+    yaw: -0.463648
+  - x: 3.85
+    y: 2.65
+    yaw: -0.463648
+  - x: 3.95
+    y: 2.55
+    yaw: -0.463648
+  - x: 4.05
+    y: 2.55
+    yaw: -0.463648
+  - x: 4.15
+    y: 2.45
+    yaw: -0.321751
+  - x: 4.35
+    y: 2.45
+    yaw: -0.321751
+  - x: 4.45
+    y: 2.35
+    yaw: -0.244979
+  - x: 4.75
+    y: 2.35
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.643501
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.840094
+- layout_id: discovery_04
+  partition: discovery
+  candidate_index: 98
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.229
+    x: 2.777
+    y: 2.695
+  - type: rectangle
+    width: 0.453
+    length: 0.407
+    yaw: 0.0
+    x: 1.576
+    y: 1.215
+  - type: circle
+    radius: 0.271
+    x: 2.287
+    y: 2.113
+  - type: rectangle
+    width: 0.685
+    length: 0.467
+    yaw: 0.0
+    x: 3.381
+    y: 1.709
+  - type: rectangle
+    width: 0.461
+    length: 0.594
+    yaw: 0.0
+    x: 4.622
+    y: 2.97
+  - type: circle
+    radius: 0.251
+    x: 3.901
+    y: 0.733
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.110657
+  - x: 1.05
+    y: 1.95
+    yaw: 0.652847
+  - x: 2.35
+    y: 3.25
+    yaw: 0.748378
+  - x: 2.45
+    y: 3.25
+    yaw: 0.463648
+  - x: 2.55
+    y: 3.35
+    yaw: 0.197396
+  - x: 2.95
+    y: 3.35
+    yaw: -0.197396
+  - x: 3.05
+    y: 3.25
+    yaw: -0.463648
+  - x: 3.15
+    y: 3.25
+    yaw: -0.732815
+  - x: 4.05
+    y: 2.35
+    yaw: -0.732815
+  - x: 4.15
+    y: 2.35
+    yaw: -0.463648
+  - x: 4.25
+    y: 2.25
+    yaw: -0.165149
+  - x: 4.75
+    y: 2.25
+    yaw: -0.165149
+  - x: 4.85
+    y: 2.15
+    yaw: -0.463648
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.988623
+- layout_id: discovery_05
+  partition: discovery
+  candidate_index: 103
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.532
+    length: 0.582
+    yaw: 0.0
+    x: 4.199
+    y: 2.447
+  - type: circle
+    radius: 0.214
+    x: 2.905
+    y: 2.172
+  - type: circle
+    radius: 0.253
+    x: 1.361
+    y: 1.351
+  - type: circle
+    radius: 0.213
+    x: 3.277
+    y: 1.154
+  - type: rectangle
+    width: 0.658
+    length: 0.636
+    yaw: 0.0
+    x: 2.165
+    y: 1.659
+  - type: circle
+    radius: 0.257
+    x: 5.012
+    y: 3.156
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.09066
+  - x: 1.15
+    y: 1.95
+    yaw: 0.418224
+  - x: 1.55
+    y: 2.35
+    yaw: 0.380506
+  - x: 2.15
+    y: 2.35
+    yaw: 0.380506
+  - x: 2.55
+    y: 2.75
+    yaw: 0.348771
+  - x: 3.25
+    y: 2.75
+    yaw: -0.291457
+  - x: 3.55
+    y: 2.45
+    yaw: -1.212026
+  - x: 3.55
+    y: 1.95
+    yaw: -1.292497
+  - x: 3.75
+    y: 1.75
+    yaw: -0.141897
+  - x: 4.95
+    y: 1.75
+    yaw: 0.076772
+  - x: 5.05
+    y: 1.85
+    yaw: 0.321751
+  - x: 5.25
+    y: 1.85
+    yaw: 0.404892
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.962742
+- layout_id: discovery_06
+  partition: discovery
+  candidate_index: 208
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.635
+    length: 0.428
+    yaw: 0.0
+    x: 3.047
+    y: 0.632
+  - type: circle
+    radius: 0.191
+    x: 4.146
+    y: 1.965
+  - type: circle
+    radius: 0.19
+    x: 4.715
+    y: 3.033
+  - type: rectangle
+    width: 0.386
+    length: 0.733
+    yaw: 0.0
+    x: 2.177
+    y: 1.143
+  - type: rectangle
+    width: 0.506
+    length: 0.533
+    yaw: 0.0
+    x: 1.44
+    y: 0.91
+  - type: circle
+    radius: 0.267
+    x: 4.59
+    y: 1.483
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.018866
+  - x: 3.25
+    y: 1.95
+    yaw: 0.185348
+  - x: 3.85
+    y: 2.55
+    yaw: 0.463648
+  - x: 4.45
+    y: 2.55
+    yaw: -0.165149
+  - x: 4.45
+    y: 2.45
+    yaw: -0.785398
+  - x: 4.55
+    y: 2.45
+    yaw: -0.643501
+  - x: 4.85
+    y: 2.15
+    yaw: -0.643501
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.384459
+- layout_id: discovery_07
+  partition: discovery
+  candidate_index: 280
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.644
+    length: 0.626
+    yaw: 0.0
+    x: 4.369
+    y: 1.49
+  - type: circle
+    radius: 0.296
+    x: 1.935
+    y: 1.73
+  - type: rectangle
+    width: 0.614
+    length: 0.352
+    yaw: 0.0
+    x: 2.876
+    y: 1.295
+  - type: rectangle
+    width: 0.648
+    length: 0.399
+    yaw: 0.0
+    x: 1.504
+    y: 2.759
+  - type: circle
+    radius: 0.193
+    x: 4.069
+    y: 0.776
+  - type: rectangle
+    width: 0.696
+    length: 0.488
+    yaw: 0.0
+    x: 3.291
+    y: 2.738
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.75
+    y: 2.15
+    yaw: 1.441094
+  - x: 0.75
+    y: 3.15
+    yaw: 1.405648
+  - x: 0.95
+    y: 3.35
+    yaw: 0.062419
+  - x: 3.95
+    y: 3.35
+    yaw: -0.293589
+  - x: 5.25
+    y: 2.05
+    yaw: -0.749699
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.491566
+- layout_id: discovery_08
+  partition: discovery
+  candidate_index: 291
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.477
+    length: 0.699
+    yaw: 0.0
+    x: 2.803
+    y: 1.29
+  - type: circle
+    radius: 0.251
+    x: 2.555
+    y: 2.073
+  - type: rectangle
+    width: 0.531
+    length: 0.71
+    yaw: 0.0
+    x: 0.892
+    y: 3.032
+  - type: rectangle
+    width: 0.682
+    length: 0.657
+    yaw: 0.0
+    x: 5.201
+    y: 3.254
+  - type: rectangle
+    width: 0.571
+    length: 0.738
+    yaw: 0.0
+    x: 3.897
+    y: 1.388
+  - type: rectangle
+    width: 0.378
+    length: 0.626
+    yaw: 0.0
+    x: 1.544
+    y: 2.498
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.141897
+  - x: 0.95
+    y: 1.95
+    yaw: -0.688924
+  - x: 2.35
+    y: 0.55
+    yaw: -0.546789
+  - x: 3.25
+    y: 0.55
+    yaw: 0.099669
+  - x: 3.35
+    y: 0.65
+    yaw: 0.083141
+  - x: 4.45
+    y: 0.65
+    yaw: 0.339293
+  - x: 5.05
+    y: 1.25
+    yaw: 0.86217
+  - x: 5.05
+    y: 1.35
+    yaw: 1.107149
+  - x: 5.15
+    y: 1.45
+    yaw: 1.107149
+  - x: 5.15
+    y: 1.55
+    yaw: 1.107149
+  - x: 5.25
+    y: 1.65
+    yaw: 1.249046
+  - x: 5.25
+    y: 1.85
+    yaw: 1.165905
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.235534
+- layout_id: discovery_09
+  partition: discovery
+  candidate_index: 299
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.385
+    length: 0.53
+    yaw: 0.0
+    x: 4.646
+    y: 3.04
+  - type: rectangle
+    width: 0.683
+    length: 0.407
+    yaw: 0.0
+    x: 1.58
+    y: 1.614
+  - type: rectangle
+    width: 0.531
+    length: 0.495
+    yaw: 0.0
+    x: 3.856
+    y: 0.672
+  - type: rectangle
+    width: 0.49
+    length: 0.595
+    yaw: 0.0
+    x: 4.773
+    y: 0.788
+  - type: rectangle
+    width: 0.634
+    length: 0.72
+    yaw: 0.0
+    x: 2.819
+    y: 1.959
+  - type: rectangle
+    width: 0.442
+    length: 0.708
+    yaw: 0.0
+    x: 3.739
+    y: 1.493
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.321751
+  - x: 0.75
+    y: 1.95
+    yaw: 0.643501
+  - x: 1.05
+    y: 2.25
+    yaw: 0.291457
+  - x: 1.75
+    y: 2.25
+    yaw: 0.348771
+  - x: 2.15
+    y: 2.65
+    yaw: 0.674741
+  - x: 2.25
+    y: 2.65
+    yaw: 0.463648
+  - x: 2.35
+    y: 2.75
+    yaw: 0.071307
+  - x: 3.65
+    y: 2.75
+    yaw: -0.071307
+  - x: 3.75
+    y: 2.65
+    yaw: -0.463648
+  - x: 3.85
+    y: 2.65
+    yaw: -0.463648
+  - x: 3.95
+    y: 2.55
+    yaw: -0.463648
+  - x: 4.05
+    y: 2.55
+    yaw: -0.588003
+  - x: 4.25
+    y: 2.35
+    yaw: -0.380506
+  - x: 4.55
+    y: 2.35
+    yaw: -0.244979
+  - x: 4.65
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.75
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.85
+    y: 2.15
+    yaw: -0.463648
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.491566
+- layout_id: discovery_10
+  partition: discovery
+  candidate_index: 338
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.526
+    length: 0.741
+    yaw: 0.0
+    x: 3.317
+    y: 2.185
+  - type: rectangle
+    width: 0.693
+    length: 0.533
+    yaw: 0.0
+    x: 4.347
+    y: 1.695
+  - type: rectangle
+    width: 0.674
+    length: 0.441
+    yaw: 0.0
+    x: 0.852
+    y: 3.237
+  - type: rectangle
+    width: 0.695
+    length: 0.381
+    yaw: 0.0
+    x: 1.245
+    y: 1.113
+  - type: rectangle
+    width: 0.62
+    length: 0.593
+    yaw: 0.0
+    x: 2.307
+    y: 2.281
+  - type: rectangle
+    width: 0.397
+    length: 0.69
+    yaw: 0.0
+    x: 2.285
+    y: 0.855
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.321751
+  - x: 0.75
+    y: 1.95
+    yaw: 0.737815
+  - x: 1.75
+    y: 2.95
+    yaw: 0.312042
+  - x: 3.85
+    y: 2.95
+    yaw: -0.218669
+  - x: 4.45
+    y: 2.35
+    yaw: -0.499347
+  - x: 4.95
+    y: 2.35
+    yaw: -0.358771
+  - x: 5.25
+    y: 2.05
+    yaw: -0.661043
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.61583
+- layout_id: discovery_11
+  partition: discovery
+  candidate_index: 454
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.237
+    x: 3.011
+    y: 1.951
+  - type: circle
+    radius: 0.223
+    x: 2.283
+    y: 0.791
+  - type: circle
+    radius: 0.207
+    x: 4.5
+    y: 1.984
+  - type: rectangle
+    width: 0.439
+    length: 0.394
+    yaw: 0.0
+    x: 4.237
+    y: 1.352
+  - type: circle
+    radius: 0.197
+    x: 3.488
+    y: 0.947
+  - type: circle
+    radius: 0.245
+    x: 1.945
+    y: 1.319
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.034469
+  - x: 2.05
+    y: 1.95
+    yaw: 0.291457
+  - x: 2.65
+    y: 2.55
+    yaw: 0.211093
+  - x: 4.85
+    y: 2.55
+    yaw: -0.152649
+  - x: 5.25
+    y: 2.15
+    yaw: -0.896055
+  - x: 5.25
+    y: 2.05
+    yaw: -0.785398
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.343038
+- layout_id: discovery_12
+  partition: discovery
+  candidate_index: 476
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.451
+    length: 0.657
+    yaw: 0.0
+    x: 4.175
+    y: 1.295
+  - type: rectangle
+    width: 0.488
+    length: 0.423
+    yaw: 0.0
+    x: 3.487
+    y: 2.616
+  - type: rectangle
+    width: 0.598
+    length: 0.402
+    yaw: 0.0
+    x: 2.786
+    y: 0.943
+  - type: circle
+    radius: 0.257
+    x: 2.281
+    y: 2.755
+  - type: circle
+    radius: 0.309
+    x: 4.839
+    y: 0.779
+  - type: rectangle
+    width: 0.525
+    length: 0.428
+    yaw: 0.0
+    x: 2.285
+    y: 2.11
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 1.75
+    y: 3.15
+    yaw: 0.827041
+  - x: 1.75
+    y: 3.25
+    yaw: 1.107149
+  - x: 1.85
+    y: 3.35
+    yaw: 0.321751
+  - x: 2.05
+    y: 3.35
+    yaw: 0.321751
+  - x: 2.15
+    y: 3.45
+    yaw: 0.244979
+  - x: 2.45
+    y: 3.45
+    yaw: -0.244979
+  - x: 2.55
+    y: 3.35
+    yaw: -0.463648
+  - x: 2.65
+    y: 3.35
+    yaw: -0.463648
+  - x: 2.75
+    y: 3.25
+    yaw: -0.076772
+  - x: 3.95
+    y: 3.25
+    yaw: -0.479519
+  - x: 5.25
+    y: 1.95
+    yaw: -0.711459
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.088623
+- layout_id: discovery_13
+  partition: discovery
+  candidate_index: 482
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.284
+    x: 2.968
+    y: 1.378
+  - type: rectangle
+    width: 0.61
+    length: 0.623
+    yaw: 0.0
+    x: 4.309
+    y: 2.208
+  - type: circle
+    radius: 0.252
+    x: 3.051
+    y: 2.985
+  - type: rectangle
+    width: 0.437
+    length: 0.387
+    yaw: 0.0
+    x: 2.283
+    y: 2.163
+  - type: rectangle
+    width: 0.389
+    length: 0.451
+    yaw: 0.0
+    x: 1.738
+    y: 2.703
+  - type: rectangle
+    width: 0.44
+    length: 0.711
+    yaw: 0.0
+    x: 1.845
+    y: 1.396
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.85
+    yaw: -0.856706
+  - x: 1.25
+    y: 1.25
+    yaw: -1.07145
+  - x: 1.25
+    y: 0.75
+    yaw: -1.405648
+  - x: 1.35
+    y: 0.65
+    yaw: -0.052583
+  - x: 3.15
+    y: 0.65
+    yaw: 0.052583
+  - x: 3.25
+    y: 0.75
+    yaw: 0.463648
+  - x: 3.35
+    y: 0.75
+    yaw: 0.708626
+  - x: 3.95
+    y: 1.35
+    yaw: 0.708626
+  - x: 4.05
+    y: 1.35
+    yaw: 0.463648
+  - x: 4.15
+    y: 1.45
+    yaw: 0.141897
+  - x: 4.75
+    y: 1.45
+    yaw: 0.141897
+  - x: 4.85
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.95
+    y: 1.55
+    yaw: 0.68573
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.257252
+- layout_id: discovery_14
+  partition: discovery
+  candidate_index: 579
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.38
+    length: 0.45
+    yaw: 0.0
+    x: 0.67
+    y: 1.078
+  - type: rectangle
+    width: 0.461
+    length: 0.514
+    yaw: 0.0
+    x: 1.686
+    y: 1.971
+  - type: circle
+    radius: 0.183
+    x: 4.189
+    y: 0.896
+  - type: circle
+    radius: 0.286
+    x: 4.446
+    y: 1.846
+  - type: circle
+    radius: 0.196
+    x: 4.707
+    y: 1.008
+  - type: rectangle
+    width: 0.685
+    length: 0.432
+    yaw: 0.0
+    x: 4.349
+    y: 2.973
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 1.25
+    y: 2.65
+    yaw: 0.281232
+  - x: 2.85
+    y: 2.65
+    yaw: 0.345556
+  - x: 3.75
+    y: 3.55
+    yaw: 0.404892
+  - x: 4.95
+    y: 3.55
+    yaw: -0.076772
+  - x: 5.05
+    y: 3.45
+    yaw: -1.471128
+  - x: 5.05
+    y: 2.55
+    yaw: -1.471128
+  - x: 5.15
+    y: 2.45
+    yaw: -1.107149
+  - x: 5.15
+    y: 2.35
+    yaw: -1.107149
+  - x: 5.25
+    y: 2.25
+    yaw: -1.249046
+  - x: 5.25
+    y: 2.05
+    yaw: -1.030377
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.774409
+- layout_id: discovery_15
+  partition: discovery
+  candidate_index: 635
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.65
+    length: 0.463
+    yaw: 0.0
+    x: 1.602
+    y: 3.308
+  - type: rectangle
+    width: 0.615
+    length: 0.526
+    yaw: 0.0
+    x: 1.584
+    y: 1.878
+  - type: circle
+    radius: 0.194
+    x: 0.793
+    y: 3.38
+  - type: rectangle
+    width: 0.599
+    length: 0.373
+    yaw: 0.0
+    x: 2.847
+    y: 3.215
+  - type: rectangle
+    width: 0.668
+    length: 0.725
+    yaw: 0.0
+    x: 2.641
+    y: 1.551
+  - type: circle
+    radius: 0.201
+    x: 3.844
+    y: 0.613
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.85
+    y: 2.25
+    yaw: 0.950547
+  - x: 0.85
+    y: 2.35
+    yaw: 0.982794
+  - x: 1.05
+    y: 2.55
+    yaw: 0.062419
+  - x: 4.05
+    y: 2.55
+    yaw: -0.032247
+  - x: 4.15
+    y: 2.45
+    yaw: -0.321751
+  - x: 4.35
+    y: 2.45
+    yaw: -0.321751
+  - x: 4.45
+    y: 2.35
+    yaw: -0.463648
+  - x: 4.55
+    y: 2.35
+    yaw: -0.463648
+  - x: 4.65
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.75
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.85
+    y: 2.15
+    yaw: -0.463648
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.343038
+- layout_id: discovery_16
+  partition: discovery
+  candidate_index: 690
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.19
+    x: 3.83
+    y: 2.24
+  - type: rectangle
+    width: 0.506
+    length: 0.531
+    yaw: 0.0
+    x: 4.362
+    y: 1.519
+  - type: rectangle
+    width: 0.419
+    length: 0.643
+    yaw: 0.0
+    x: 2.204
+    y: 2.338
+  - type: rectangle
+    width: 0.631
+    length: 0.352
+    yaw: 0.0
+    x: 2.614
+    y: 1.244
+  - type: circle
+    radius: 0.182
+    x: 1.843
+    y: 3.344
+  - type: rectangle
+    width: 0.684
+    length: 0.431
+    yaw: 0.0
+    x: 2.945
+    y: 1.969
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.321751
+  - x: 0.75
+    y: 1.95
+    yaw: -0.745419
+  - x: 1.95
+    y: 0.75
+    yaw: -0.745419
+  - x: 2.05
+    y: 0.75
+    yaw: -0.463648
+  - x: 2.15
+    y: 0.65
+    yaw: -0.09066
+  - x: 3.15
+    y: 0.65
+    yaw: 0.165149
+  - x: 3.35
+    y: 0.85
+    yaw: 0.117109
+  - x: 4.85
+    y: 0.85
+    yaw: 0.062419
+  - x: 4.95
+    y: 0.95
+    yaw: 1.107149
+  - x: 4.95
+    y: 1.05
+    yaw: 1.107149
+  - x: 5.05
+    y: 1.15
+    yaw: 1.249046
+  - x: 5.05
+    y: 1.35
+    yaw: 1.249046
+  - x: 5.15
+    y: 1.45
+    yaw: 1.107149
+  - x: 5.15
+    y: 1.55
+    yaw: 1.107149
+  - x: 5.25
+    y: 1.65
+    yaw: 1.249046
+  - x: 5.25
+    y: 1.85
+    yaw: 1.165905
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.269848
+- layout_id: discovery_17
+  partition: discovery
+  candidate_index: 730
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.213
+    x: 3.599
+    y: 1.807
+  - type: rectangle
+    width: 0.591
+    length: 0.67
+    yaw: 0.0
+    x: 5.02
+    y: 0.751
+  - type: rectangle
+    width: 0.501
+    length: 0.448
+    yaw: 0.0
+    x: 4.254
+    y: 2.907
+  - type: rectangle
+    width: 0.524
+    length: 0.464
+    yaw: 0.0
+    x: 2.588
+    y: 1.27
+  - type: circle
+    radius: 0.303
+    x: 2.836
+    y: 2.855
+  - type: rectangle
+    width: 0.506
+    length: 0.744
+    yaw: 0.0
+    x: 1.711
+    y: 2.696
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.321751
+  - x: 0.75
+    y: 1.95
+    yaw: -0.748378
+  - x: 2.05
+    y: 0.65
+    yaw: -0.514451
+  - x: 3.05
+    y: 0.65
+    yaw: 0.321751
+  - x: 3.55
+    y: 1.15
+    yaw: 0.620249
+  - x: 3.75
+    y: 1.15
+    yaw: 0.321751
+  - x: 3.85
+    y: 1.25
+    yaw: 0.463648
+  - x: 3.95
+    y: 1.25
+    yaw: 0.588003
+  - x: 4.15
+    y: 1.45
+    yaw: 0.463648
+  - x: 4.35
+    y: 1.45
+    yaw: 0.321751
+  - x: 4.45
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.55
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.65
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.75
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.85
+    y: 1.75
+    yaw: 0.463648
+  - x: 4.95
+    y: 1.75
+    yaw: 0.463648
+  - x: 5.05
+    y: 1.85
+    yaw: 0.321751
+  - x: 5.25
+    y: 1.85
+    yaw: 0.404892
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.918377
+- layout_id: discovery_18
+  partition: discovery
+  candidate_index: 774
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.515
+    length: 0.479
+    yaw: 0.0
+    x: 3.522
+    y: 1.477
+  - type: rectangle
+    width: 0.6
+    length: 0.456
+    yaw: 0.0
+    x: 1.892
+    y: 1.807
+  - type: rectangle
+    width: 0.565
+    length: 0.525
+    yaw: 0.0
+    x: 0.841
+    y: 0.757
+  - type: circle
+    radius: 0.202
+    x: 4.196
+    y: 1.979
+  - type: rectangle
+    width: 0.352
+    length: 0.37
+    yaw: 0.0
+    x: 4.551
+    y: 0.887
+  - type: rectangle
+    width: 0.416
+    length: 0.455
+    yaw: 0.0
+    x: 3.685
+    y: 3.176
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.197396
+  - x: 0.85
+    y: 1.95
+    yaw: 0.620249
+  - x: 1.35
+    y: 2.45
+    yaw: 0.170735
+  - x: 3.75
+    y: 2.45
+    yaw: 0.039979
+  - x: 3.85
+    y: 2.55
+    yaw: 0.124355
+  - x: 4.55
+    y: 2.55
+    yaw: -0.394791
+  - x: 5.05
+    y: 2.05
+    yaw: -0.694738
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.325881
+- layout_id: discovery_19
+  partition: discovery
+  candidate_index: 872
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.638
+    length: 0.479
+    yaw: 0.0
+    x: 2.179
+    y: 1.165
+  - type: rectangle
+    width: 0.392
+    length: 0.432
+    yaw: 0.0
+    x: 4.154
+    y: 1.841
+  - type: circle
+    radius: 0.206
+    x: 5.13
+    y: 2.897
+  - type: circle
+    radius: 0.199
+    x: 1.48
+    y: 1.027
+  - type: circle
+    radius: 0.234
+    x: 5.355
+    y: 1.005
+  - type: circle
+    radius: 0.247
+    x: 2.091
+    y: 2.794
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.018866
+  - x: 3.25
+    y: 1.95
+    yaw: 0.159913
+  - x: 3.75
+    y: 2.45
+    yaw: 0.367174
+  - x: 4.55
+    y: 2.45
+    yaw: -0.266252
+  - x: 4.85
+    y: 2.15
+    yaw: -0.643501
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.243038
+- layout_id: discovery_20
+  partition: discovery
+  candidate_index: 876
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.407
+    length: 0.37
+    yaw: 0.0
+    x: 4.709
+    y: 2.894
+  - type: circle
+    radius: 0.292
+    x: 1.75
+    y: 1.75
+  - type: rectangle
+    width: 0.52
+    length: 0.366
+    yaw: 0.0
+    x: 2.85
+    y: 1.773
+  - type: rectangle
+    width: 0.571
+    length: 0.676
+    yaw: 0.0
+    x: 2.056
+    y: 0.957
+  - type: rectangle
+    width: 0.654
+    length: 0.581
+    yaw: 0.0
+    x: 3.642
+    y: 3.051
+  - type: rectangle
+    width: 0.652
+    length: 0.586
+    yaw: 0.0
+    x: 2.215
+    y: 2.682
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 1.45
+    y: 2.85
+    yaw: 0.934288
+  - x: 1.45
+    y: 3.15
+    yaw: 1.19029
+  - x: 1.65
+    y: 3.35
+    yaw: 0.141897
+  - x: 2.85
+    y: 3.35
+    yaw: -0.076772
+  - x: 2.95
+    y: 3.25
+    yaw: -1.460139
+  - x: 2.95
+    y: 2.45
+    yaw: -1.446441
+  - x: 3.05
+    y: 2.45
+    yaw: -0.463648
+  - x: 3.15
+    y: 2.35
+    yaw: -0.066568
+  - x: 4.55
+    y: 2.35
+    yaw: -0.066568
+  - x: 4.65
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.75
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.85
+    y: 2.15
+    yaw: -0.463648
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.591566
+- layout_id: holdout_01
+  partition: holdout
+  candidate_index: 880
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.199
+    x: 4.134
+    y: 2.566
+  - type: rectangle
+    width: 0.416
+    length: 0.453
+    yaw: 0.0
+    x: 2.742
+    y: 1.3
+  - type: rectangle
+    width: 0.413
+    length: 0.702
+    yaw: 0.0
+    x: 4.27
+    y: 1.325
+  - type: rectangle
+    width: 0.407
+    length: 0.458
+    yaw: 0.0
+    x: 3.33
+    y: 1.542
+  - type: rectangle
+    width: 0.354
+    length: 0.425
+    yaw: 0.0
+    x: 3.584
+    y: 0.933
+  - type: circle
+    radius: 0.197
+    x: 4.886
+    y: 0.703
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.025635
+  - x: 2.55
+    y: 1.95
+    yaw: 0.351445
+  - x: 3.65
+    y: 3.05
+    yaw: 0.741947
+  - x: 3.75
+    y: 3.05
+    yaw: 0.463648
+  - x: 3.85
+    y: 3.15
+    yaw: 0.141897
+  - x: 4.45
+    y: 3.15
+    yaw: -0.493941
+  - x: 5.15
+    y: 2.45
+    yaw: -0.851966
+  - x: 5.15
+    y: 2.35
+    yaw: -1.107149
+  - x: 5.25
+    y: 2.25
+    yaw: -1.249046
+  - x: 5.25
+    y: 2.05
+    yaw: -1.030377
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.957252
+- layout_id: holdout_02
+  partition: holdout
+  candidate_index: 909
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.691
+    length: 0.65
+    yaw: 0.0
+    x: 2.015
+    y: 0.773
+  - type: rectangle
+    width: 0.558
+    length: 0.472
+    yaw: 0.0
+    x: 2.052
+    y: 3.094
+  - type: circle
+    radius: 0.194
+    x: 5.134
+    y: 0.855
+  - type: rectangle
+    width: 0.633
+    length: 0.397
+    yaw: 0.0
+    x: 2.776
+    y: 2.08
+  - type: rectangle
+    width: 0.564
+    length: 0.571
+    yaw: 0.0
+    x: 4.299
+    y: 0.788
+  - type: rectangle
+    width: 0.677
+    length: 0.708
+    yaw: 0.0
+    x: 4.45
+    y: 2.778
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.043451
+  - x: 1.75
+    y: 1.95
+    yaw: -0.302885
+  - x: 2.25
+    y: 1.45
+    yaw: -0.189988
+  - x: 4.35
+    y: 1.45
+    yaw: 0.045423
+  - x: 4.45
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.55
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.65
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.75
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.85
+    y: 1.75
+    yaw: 0.463648
+  - x: 4.95
+    y: 1.75
+    yaw: 0.463648
+  - x: 5.05
+    y: 1.85
+    yaw: 0.321751
+  - x: 5.25
+    y: 1.85
+    yaw: 0.404892
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.255635
+- layout_id: holdout_03
+  partition: holdout
+  candidate_index: 919
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.311
+    x: 3.379
+    y: 1.155
+  - type: circle
+    radius: 0.222
+    x: 5.181
+    y: 2.893
+  - type: rectangle
+    width: 0.621
+    length: 0.453
+    yaw: 0.0
+    x: 1.855
+    y: 3.249
+  - type: circle
+    radius: 0.305
+    x: 2.275
+    y: 2.359
+  - type: rectangle
+    width: 0.625
+    length: 0.584
+    yaw: 0.0
+    x: 4.234
+    y: 2.503
+  - type: circle
+    radius: 0.222
+    x: 2.149
+    y: 1.433
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 1.75
+    y: 0.85
+    yaw: -0.511231
+  - x: 2.65
+    y: 0.85
+    yaw: -0.298499
+  - x: 3.05
+    y: 0.45
+    yaw: -0.380506
+  - x: 3.65
+    y: 0.45
+    yaw: 0.141897
+  - x: 3.75
+    y: 0.55
+    yaw: 0.463648
+  - x: 3.85
+    y: 0.55
+    yaw: 0.748378
+  - x: 5.15
+    y: 1.85
+    yaw: 0.748378
+  - x: 5.25
+    y: 1.85
+    yaw: 0.54042
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.084062
+- layout_id: holdout_04
+  partition: holdout
+  candidate_index: 1046
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.493
+    length: 0.5
+    yaw: 0.0
+    x: 5.078
+    y: 3.312
+  - type: circle
+    radius: 0.239
+    x: 4.943
+    y: 0.991
+  - type: rectangle
+    width: 0.694
+    length: 0.443
+    yaw: 0.0
+    x: 1.448
+    y: 3.245
+  - type: rectangle
+    width: 0.659
+    length: 0.718
+    yaw: 0.0
+    x: 1.793
+    y: 2.289
+  - type: rectangle
+    width: 0.462
+    length: 0.351
+    yaw: 0.0
+    x: 3.347
+    y: 2.719
+  - type: circle
+    radius: 0.284
+    x: 3.645
+    y: 1.453
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.197396
+  - x: 0.85
+    y: 1.95
+    yaw: -0.588003
+  - x: 1.25
+    y: 1.55
+    yaw: -0.207496
+  - x: 2.75
+    y: 1.55
+    yaw: 0.2783
+  - x: 3.35
+    y: 2.15
+    yaw: 0.266252
+  - x: 4.95
+    y: 2.15
+    yaw: -0.058756
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.325881
+- layout_id: holdout_05
+  partition: holdout
+  candidate_index: 1095
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.534
+    length: 0.459
+    yaw: 0.0
+    x: 1.861
+    y: 3.07
+  - type: circle
+    radius: 0.184
+    x: 2.832
+    y: 2.242
+  - type: circle
+    radius: 0.211
+    x: 4.113
+    y: 0.926
+  - type: rectangle
+    width: 0.408
+    length: 0.488
+    yaw: 0.0
+    x: 1.489
+    y: 1.85
+  - type: circle
+    radius: 0.287
+    x: 1.372
+    y: 1.099
+  - type: circle
+    radius: 0.216
+    x: 3.944
+    y: 2.915
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.95
+    y: 2.35
+    yaw: 0.909753
+  - x: 0.95
+    y: 2.45
+    yaw: 0.099669
+  - x: 1.95
+    y: 2.45
+    yaw: -0.226799
+  - x: 2.25
+    y: 2.15
+    yaw: -1.030377
+  - x: 2.25
+    y: 1.95
+    yaw: -1.030377
+  - x: 2.55
+    y: 1.65
+    yaw: -0.119429
+  - x: 4.75
+    y: 1.65
+    yaw: 0.043451
+  - x: 4.85
+    y: 1.75
+    yaw: 0.463648
+  - x: 4.95
+    y: 1.75
+    yaw: 0.463648
+  - x: 5.05
+    y: 1.85
+    yaw: 0.321751
+  - x: 5.25
+    y: 1.85
+    yaw: 0.404892
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.638478
+- layout_id: holdout_06
+  partition: holdout
+  candidate_index: 1106
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.255
+    x: 2.761
+    y: 1.565
+  - type: rectangle
+    width: 0.591
+    length: 0.391
+    yaw: 0.0
+    x: 4.485
+    y: 3.348
+  - type: rectangle
+    width: 0.377
+    length: 0.57
+    yaw: 0.0
+    x: 4.849
+    y: 1.042
+  - type: circle
+    radius: 0.215
+    x: 0.902
+    y: 3.32
+  - type: rectangle
+    width: 0.526
+    length: 0.51
+    yaw: 0.0
+    x: 1.882
+    y: 1.895
+  - type: rectangle
+    width: 0.64
+    length: 0.412
+    yaw: 0.0
+    x: 3.665
+    y: 0.694
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.321751
+  - x: 0.75
+    y: 1.95
+    yaw: 0.708626
+  - x: 1.35
+    y: 2.55
+    yaw: 0.179853
+  - x: 4.05
+    y: 2.55
+    yaw: -0.035699
+  - x: 4.15
+    y: 2.45
+    yaw: -0.321751
+  - x: 4.35
+    y: 2.45
+    yaw: -0.321751
+  - x: 4.45
+    y: 2.35
+    yaw: -0.463648
+  - x: 4.55
+    y: 2.35
+    yaw: -0.463648
+  - x: 4.65
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.75
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.85
+    y: 2.15
+    yaw: -0.463648
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.325881
+- layout_id: holdout_07
+  partition: holdout
+  candidate_index: 1185
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.434
+    length: 0.429
+    yaw: 0.0
+    x: 4.103
+    y: 2.846
+  - type: circle
+    radius: 0.305
+    x: 4.654
+    y: 0.955
+  - type: circle
+    radius: 0.301
+    x: 2.821
+    y: 2.54
+  - type: rectangle
+    width: 0.45
+    length: 0.581
+    yaw: 0.0
+    x: 2.042
+    y: 2.421
+  - type: rectangle
+    width: 0.363
+    length: 0.431
+    yaw: 0.0
+    x: 0.951
+    y: 3.083
+  - type: rectangle
+    width: 0.634
+    length: 0.692
+    yaw: 0.0
+    x: 1.69
+    y: 1.628
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.85
+    yaw: -0.909753
+  - x: 0.95
+    y: 1.55
+    yaw: -1.212026
+  - x: 0.95
+    y: 1.05
+    yaw: -1.405648
+  - x: 1.05
+    y: 0.95
+    yaw: -0.463648
+  - x: 1.15
+    y: 0.95
+    yaw: -0.463648
+  - x: 1.25
+    y: 0.85
+    yaw: -0.055499
+  - x: 2.95
+    y: 0.85
+    yaw: 0.055499
+  - x: 3.05
+    y: 0.95
+    yaw: 0.321751
+  - x: 3.25
+    y: 0.95
+    yaw: 0.321751
+  - x: 3.35
+    y: 1.05
+    yaw: 0.463648
+  - x: 3.45
+    y: 1.05
+    yaw: 0.463648
+  - x: 3.55
+    y: 1.15
+    yaw: 0.463648
+  - x: 3.65
+    y: 1.15
+    yaw: 0.463648
+  - x: 3.75
+    y: 1.25
+    yaw: 0.463648
+  - x: 3.85
+    y: 1.25
+    yaw: 0.643501
+  - x: 4.15
+    y: 1.55
+    yaw: 0.643501
+  - x: 4.25
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.35
+    y: 1.65
+    yaw: 0.197396
+  - x: 4.75
+    y: 1.65
+    yaw: 0.197396
+  - x: 4.85
+    y: 1.75
+    yaw: 0.463648
+  - x: 4.95
+    y: 1.75
+    yaw: 0.463648
+  - x: 5.05
+    y: 1.85
+    yaw: 0.321751
+  - x: 5.25
+    y: 1.85
+    yaw: 0.404892
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.091566
+- layout_id: holdout_08
+  partition: holdout
+  candidate_index: 1202
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.252
+    x: 2.906
+    y: 3.258
+  - type: rectangle
+    width: 0.376
+    length: 0.512
+    yaw: 0.0
+    x: 1.84
+    y: 3.288
+  - type: rectangle
+    width: 0.632
+    length: 0.611
+    yaw: 0.0
+    x: 4.195
+    y: 1.208
+  - type: rectangle
+    width: 0.512
+    length: 0.707
+    yaw: 0.0
+    x: 1.777
+    y: 2.323
+  - type: rectangle
+    width: 0.506
+    length: 0.546
+    yaw: 0.0
+    x: 2.445
+    y: 2.6
+  - type: circle
+    radius: 0.208
+    x: 3.164
+    y: 1.796
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.197396
+  - x: 0.85
+    y: 1.95
+    yaw: -0.54042
+  - x: 1.15
+    y: 1.65
+    yaw: -0.643501
+  - x: 1.25
+    y: 1.65
+    yaw: -0.463648
+  - x: 1.35
+    y: 1.55
+    yaw: -0.083141
+  - x: 2.45
+    y: 1.55
+    yaw: -0.211093
+  - x: 2.75
+    y: 1.25
+    yaw: -0.643501
+  - x: 2.85
+    y: 1.25
+    yaw: -0.71883
+  - x: 3.55
+    y: 0.55
+    yaw: -0.336675
+  - x: 4.85
+    y: 0.55
+    yaw: 0.076772
+  - x: 4.85
+    y: 0.65
+    yaw: 1.107149
+  - x: 4.95
+    y: 0.75
+    yaw: 1.373401
+  - x: 4.95
+    y: 1.15
+    yaw: 1.373401
+  - x: 5.05
+    y: 1.25
+    yaw: 1.107149
+  - x: 5.05
+    y: 1.35
+    yaw: 1.107149
+  - x: 5.15
+    y: 1.45
+    yaw: 1.107149
+  - x: 5.15
+    y: 1.55
+    yaw: 1.107149
+  - x: 5.25
+    y: 1.65
+    yaw: 1.249046
+  - x: 5.25
+    y: 1.85
+    yaw: 1.165905
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.528427
+- layout_id: holdout_09
+  partition: holdout
+  candidate_index: 1226
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.537
+    length: 0.544
+    yaw: 0.0
+    x: 2.91
+    y: 1.805
+  - type: circle
+    radius: 0.273
+    x: 4.045
+    y: 2.568
+  - type: circle
+    radius: 0.18
+    x: 3.89
+    y: 1.491
+  - type: circle
+    radius: 0.254
+    x: 4.962
+    y: 1.032
+  - type: rectangle
+    width: 0.609
+    length: 0.353
+    yaw: 0.0
+    x: 4.111
+    y: 3.347
+  - type: circle
+    radius: 0.251
+    x: 1.902
+    y: 3.073
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.052583
+  - x: 1.55
+    y: 1.95
+    yaw: -0.439843
+  - x: 2.35
+    y: 1.15
+    yaw: -0.418224
+  - x: 3.35
+    y: 1.15
+    yaw: -0.165149
+  - x: 3.55
+    y: 0.95
+    yaw: -0.2783
+  - x: 4.05
+    y: 0.95
+    yaw: -0.463648
+  - x: 4.55
+    y: 0.45
+    yaw: -0.694738
+  - x: 4.65
+    y: 0.45
+    yaw: -0.463648
+  - x: 4.75
+    y: 0.35
+    yaw: -0.197396
+  - x: 5.15
+    y: 0.35
+    yaw: 0.197396
+  - x: 5.25
+    y: 0.45
+    yaw: 0.463648
+  - x: 5.35
+    y: 0.45
+    yaw: 0.588003
+  - x: 5.55
+    y: 0.65
+    yaw: 0.982794
+  - x: 5.55
+    y: 0.75
+    yaw: 1.107149
+  - x: 5.65
+    y: 0.85
+    yaw: 1.405648
+  - x: 5.65
+    y: 1.35
+    yaw: 1.735945
+  - x: 5.55
+    y: 1.45
+    yaw: 2.034444
+  - x: 5.55
+    y: 1.55
+    yaw: 2.034444
+  - x: 5.45
+    y: 1.65
+    yaw: 2.034444
+  - x: 5.45
+    y: 1.75
+    yaw: 2.034444
+  - x: 5.35
+    y: 1.85
+    yaw: 1.768192
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 7.281516
+- layout_id: holdout_10
+  partition: holdout
+  candidate_index: 1333
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.227
+    x: 4.48
+    y: 2.004
+  - type: circle
+    radius: 0.219
+    x: 4.183
+    y: 1.369
+  - type: rectangle
+    width: 0.518
+    length: 0.502
+    yaw: 0.0
+    x: 1.81
+    y: 2.842
+  - type: circle
+    radius: 0.26
+    x: 3.45
+    y: 1.572
+  - type: rectangle
+    width: 0.469
+    length: 0.529
+    yaw: 0.0
+    x: 4.459
+    y: 2.715
+  - type: rectangle
+    width: 0.648
+    length: 0.745
+    yaw: 0.0
+    x: 0.896
+    y: 3.076
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.034469
+  - x: 2.05
+    y: 1.95
+    yaw: -0.394791
+  - x: 3.05
+    y: 0.95
+    yaw: -0.558599
+  - x: 3.65
+    y: 0.95
+    yaw: -0.244979
+  - x: 3.85
+    y: 0.75
+    yaw: -0.244979
+  - x: 4.45
+    y: 0.75
+    yaw: 0.141897
+  - x: 4.55
+    y: 0.85
+    yaw: 0.463648
+  - x: 4.65
+    y: 0.85
+    yaw: 0.674741
+  - x: 5.05
+    y: 1.25
+    yaw: 0.896055
+  - x: 5.05
+    y: 1.35
+    yaw: 1.107149
+  - x: 5.15
+    y: 1.45
+    yaw: 1.107149
+  - x: 5.15
+    y: 1.55
+    yaw: 1.107149
+  - x: 5.25
+    y: 1.65
+    yaw: 1.249046
+  - x: 5.25
+    y: 1.85
+    yaw: 1.165905
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.069848
+- layout_id: holdout_11
+  partition: holdout
+  candidate_index: 1356
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.554
+    length: 0.66
+    yaw: 0.0
+    x: 3.638
+    y: 1.949
+  - type: rectangle
+    width: 0.533
+    length: 0.72
+    yaw: 0.0
+    x: 2.905
+    y: 1.516
+  - type: rectangle
+    width: 0.636
+    length: 0.357
+    yaw: 0.0
+    x: 1.782
+    y: 2.417
+  - type: circle
+    radius: 0.31
+    x: 3.95
+    y: 2.959
+  - type: rectangle
+    width: 0.443
+    length: 0.525
+    yaw: 0.0
+    x: 4.487
+    y: 1.384
+  - type: rectangle
+    width: 0.603
+    length: 0.367
+    yaw: 0.0
+    x: 1.976
+    y: 0.905
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.85
+    yaw: -0.856706
+  - x: 1.25
+    y: 1.25
+    yaw: -1.138389
+  - x: 1.25
+    y: 0.55
+    yaw: -1.352127
+  - x: 1.45
+    y: 0.35
+    yaw: -0.152649
+  - x: 2.55
+    y: 0.35
+    yaw: 0.260602
+  - x: 2.95
+    y: 0.75
+    yaw: 0.165149
+  - x: 4.95
+    y: 0.75
+    yaw: 0.09066
+  - x: 5.15
+    y: 0.95
+    yaw: 1.325818
+  - x: 5.15
+    y: 1.55
+    yaw: 1.428899
+  - x: 5.25
+    y: 1.65
+    yaw: 1.249046
+  - x: 5.25
+    y: 1.85
+    yaw: 1.165905
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 7.091566
+- layout_id: holdout_12
+  partition: holdout
+  candidate_index: 1393
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.679
+    length: 0.38
+    yaw: 0.0
+    x: 2.892
+    y: 3.267
+  - type: rectangle
+    width: 0.677
+    length: 0.609
+    yaw: 0.0
+    x: 4.288
+    y: 1.656
+  - type: circle
+    radius: 0.25
+    x: 1.421
+    y: 3.35
+  - type: circle
+    radius: 0.294
+    x: 3.107
+    y: 0.939
+  - type: circle
+    radius: 0.272
+    x: 2.565
+    y: 2.433
+  - type: circle
+    radius: 0.188
+    x: 0.823
+    y: 3.041
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.034469
+  - x: 2.05
+    y: 1.95
+    yaw: -0.124355
+  - x: 2.25
+    y: 1.75
+    yaw: -0.179853
+  - x: 3.15
+    y: 1.75
+    yaw: 0.380506
+  - x: 3.75
+    y: 2.35
+    yaw: 0.339293
+  - x: 4.85
+    y: 2.35
+    yaw: -0.260602
+  - x: 5.25
+    y: 1.95
+    yaw: -0.566729
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.325881
+- layout_id: holdout_13
+  partition: holdout
+  candidate_index: 1522
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.235
+    x: 4.762
+    y: 3.163
+  - type: circle
+    radius: 0.312
+    x: 3.738
+    y: 1.355
+  - type: rectangle
+    width: 0.591
+    length: 0.41
+    yaw: 0.0
+    x: 2.344
+    y: 2.368
+  - type: rectangle
+    width: 0.541
+    length: 0.675
+    yaw: 0.0
+    x: 3.702
+    y: 2.894
+  - type: rectangle
+    width: 0.658
+    length: 0.513
+    yaw: 0.0
+    x: 2.367
+    y: 3.108
+  - type: rectangle
+    width: 0.431
+    length: 0.625
+    yaw: 0.0
+    x: 2.157
+    y: 1.316
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.85
+    yaw: -0.835357
+  - x: 1.55
+    y: 0.95
+    yaw: -0.885067
+  - x: 1.55
+    y: 0.75
+    yaw: -1.249046
+  - x: 1.65
+    y: 0.65
+    yaw: -0.039979
+  - x: 4.05
+    y: 0.65
+    yaw: 0.039979
+  - x: 4.15
+    y: 0.75
+    yaw: 0.463648
+  - x: 4.25
+    y: 0.75
+    yaw: 0.737815
+  - x: 5.25
+    y: 1.75
+    yaw: 0.832981
+  - x: 5.25
+    y: 1.85
+    yaw: 1.030377
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.140094
+- layout_id: holdout_14
+  partition: holdout
+  candidate_index: 1535
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.465
+    length: 0.492
+    yaw: 0.0
+    x: 2.605
+    y: 2.41
+  - type: rectangle
+    width: 0.454
+    length: 0.478
+    yaw: 0.0
+    x: 3.386
+    y: 1.86
+  - type: rectangle
+    width: 0.488
+    length: 0.427
+    yaw: 0.0
+    x: 1.747
+    y: 0.961
+  - type: rectangle
+    width: 0.502
+    length: 0.571
+    yaw: 0.0
+    x: 2.496
+    y: 1.068
+  - type: circle
+    radius: 0.314
+    x: 1.902
+    y: 1.747
+  - type: circle
+    radius: 0.26
+    x: 3.78
+    y: 2.866
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.110657
+  - x: 1.05
+    y: 1.95
+    yaw: 0.632749
+  - x: 2.15
+    y: 3.05
+    yaw: 0.524796
+  - x: 2.95
+    y: 3.05
+    yaw: 0.321751
+  - x: 3.35
+    y: 3.45
+    yaw: 0.674741
+  - x: 3.45
+    y: 3.45
+    yaw: 0.463648
+  - x: 3.55
+    y: 3.55
+    yaw: 0.165149
+  - x: 4.05
+    y: 3.55
+    yaw: -0.165149
+  - x: 4.15
+    y: 3.45
+    yaw: -0.463648
+  - x: 4.25
+    y: 3.45
+    yaw: -0.726642
+  - x: 5.05
+    y: 2.65
+    yaw: -0.844154
+  - x: 5.05
+    y: 2.55
+    yaw: -1.107149
+  - x: 5.15
+    y: 2.45
+    yaw: -1.107149
+  - x: 5.15
+    y: 2.35
+    yaw: -1.107149
+  - x: 5.25
+    y: 2.25
+    yaw: -1.249046
+  - x: 5.25
+    y: 2.05
+    yaw: -1.030377
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.347201
+- layout_id: holdout_15
+  partition: holdout
+  candidate_index: 1567
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.243
+    x: 3.873
+    y: 3.277
+  - type: rectangle
+    width: 0.516
+    length: 0.444
+    yaw: 0.0
+    x: 1.836
+    y: 1.515
+  - type: circle
+    radius: 0.279
+    x: 0.703
+    y: 3.294
+  - type: rectangle
+    width: 0.57
+    length: 0.531
+    yaw: 0.0
+    x: 5.169
+    y: 1.009
+  - type: rectangle
+    width: 0.469
+    length: 0.597
+    yaw: 0.0
+    x: 2.872
+    y: 2.556
+  - type: rectangle
+    width: 0.437
+    length: 0.617
+    yaw: 0.0
+    x: 1.554
+    y: 3.062
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.85
+    yaw: -0.868539
+  - x: 1.15
+    y: 1.35
+    yaw: -0.950547
+  - x: 1.15
+    y: 1.15
+    yaw: -1.249046
+  - x: 1.25
+    y: 1.05
+    yaw: -1.107149
+  - x: 1.25
+    y: 0.95
+    yaw: -0.785398
+  - x: 1.35
+    y: 0.95
+    yaw: -0.463648
+  - x: 1.45
+    y: 0.85
+    yaw: -0.062419
+  - x: 2.95
+    y: 0.85
+    yaw: 0.062419
+  - x: 3.05
+    y: 0.95
+    yaw: 0.321751
+  - x: 3.25
+    y: 0.95
+    yaw: 0.321751
+  - x: 3.35
+    y: 1.05
+    yaw: 0.463648
+  - x: 3.45
+    y: 1.05
+    yaw: 0.463648
+  - x: 3.55
+    y: 1.15
+    yaw: 0.463648
+  - x: 3.65
+    y: 1.15
+    yaw: 0.463648
+  - x: 3.75
+    y: 1.25
+    yaw: 0.463648
+  - x: 3.85
+    y: 1.25
+    yaw: 0.463648
+  - x: 3.95
+    y: 1.35
+    yaw: 0.463648
+  - x: 4.05
+    y: 1.35
+    yaw: 0.463648
+  - x: 4.15
+    y: 1.45
+    yaw: 0.321751
+  - x: 4.35
+    y: 1.45
+    yaw: 0.321751
+  - x: 4.45
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.55
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.65
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.75
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.85
+    y: 1.75
+    yaw: 0.463648
+  - x: 4.95
+    y: 1.75
+    yaw: 0.463648
+  - x: 5.05
+    y: 1.85
+    yaw: 0.321751
+  - x: 5.25
+    y: 1.85
+    yaw: 0.404892
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.974409
+- layout_id: holdout_16
+  partition: holdout
+  candidate_index: 1592
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.183
+    x: 1.64
+    y: 3.225
+  - type: circle
+    radius: 0.21
+    x: 4.289
+    y: 2.292
+  - type: circle
+    radius: 0.202
+    x: 3.598
+    y: 2.061
+  - type: circle
+    radius: 0.275
+    x: 0.821
+    y: 0.763
+  - type: rectangle
+    width: 0.424
+    length: 0.455
+    yaw: 0.0
+    x: 1.664
+    y: 1.287
+  - type: rectangle
+    width: 0.419
+    length: 0.419
+    yaw: 0.0
+    x: 2.902
+    y: 1.254
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.025635
+  - x: 2.55
+    y: 1.95
+    yaw: 0.262995
+  - x: 3.25
+    y: 2.65
+    yaw: 0.528074
+  - x: 3.75
+    y: 2.65
+    yaw: 0.2783
+  - x: 3.95
+    y: 2.85
+    yaw: 0.588003
+  - x: 4.05
+    y: 2.85
+    yaw: 0.463648
+  - x: 4.15
+    y: 2.95
+    yaw: 0.321751
+  - x: 4.35
+    y: 2.95
+    yaw: -0.321751
+  - x: 4.45
+    y: 2.85
+    yaw: -0.321751
+  - x: 4.65
+    y: 2.85
+    yaw: -0.643501
+  - x: 5.25
+    y: 2.25
+    yaw: -0.927295
+  - x: 5.25
+    y: 2.05
+    yaw: -1.030377
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.732988
+- layout_id: holdout_17
+  partition: holdout
+  candidate_index: 1645
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.526
+    length: 0.58
+    yaw: 0.0
+    x: 4.899
+    y: 0.897
+  - type: rectangle
+    width: 0.532
+    length: 0.695
+    yaw: 0.0
+    x: 3.44
+    y: 2.431
+  - type: circle
+    radius: 0.307
+    x: 3.009
+    y: 0.945
+  - type: rectangle
+    width: 0.575
+    length: 0.453
+    yaw: 0.0
+    x: 4.037
+    y: 1.5
+  - type: circle
+    radius: 0.317
+    x: 2.001
+    y: 0.919
+  - type: circle
+    radius: 0.286
+    x: 2.085
+    y: 3.296
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.043451
+  - x: 1.75
+    y: 1.95
+    yaw: 0.480887
+  - x: 2.95
+    y: 3.15
+    yaw: 0.499347
+  - x: 3.95
+    y: 3.15
+    yaw: -0.482513
+  - x: 5.05
+    y: 2.05
+    yaw: -0.741947
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.822937
+- layout_id: holdout_18
+  partition: holdout
+  candidate_index: 1677
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.463
+    length: 0.597
+    yaw: 0.0
+    x: 3.42
+    y: 1.279
+  - type: rectangle
+    width: 0.551
+    length: 0.405
+    yaw: 0.0
+    x: 2.454
+    y: 0.669
+  - type: circle
+    radius: 0.273
+    x: 3.849
+    y: 2.657
+  - type: circle
+    radius: 0.281
+    x: 3.261
+    y: 2.082
+  - type: rectangle
+    width: 0.602
+    length: 0.456
+    yaw: 0.0
+    x: 2.568
+    y: 1.662
+  - type: rectangle
+    width: 0.473
+    length: 0.48
+    yaw: 0.0
+    x: 2.437
+    y: 2.583
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: 0.743756
+  - x: 1.85
+    y: 3.15
+    yaw: 0.745419
+  - x: 1.95
+    y: 3.15
+    yaw: 0.463648
+  - x: 2.05
+    y: 3.25
+    yaw: 0.062419
+  - x: 3.55
+    y: 3.25
+    yaw: 0.062419
+  - x: 3.65
+    y: 3.35
+    yaw: 0.197396
+  - x: 4.05
+    y: 3.35
+    yaw: -0.197396
+  - x: 4.15
+    y: 3.25
+    yaw: -0.463648
+  - x: 4.25
+    y: 3.25
+    yaw: -0.737815
+  - x: 5.25
+    y: 2.25
+    yaw: -0.876058
+  - x: 5.25
+    y: 2.05
+    yaw: -1.030377
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.064358
+- layout_id: holdout_19
+  partition: holdout
+  candidate_index: 1733
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: circle
+    radius: 0.311
+    x: 2.401
+    y: 1.034
+  - type: circle
+    radius: 0.297
+    x: 3.262
+    y: 3.052
+  - type: circle
+    radius: 0.284
+    x: 2.604
+    y: 2.613
+  - type: circle
+    radius: 0.211
+    x: 5.282
+    y: 0.652
+  - type: circle
+    radius: 0.303
+    x: 4.735
+    y: 3.252
+  - type: rectangle
+    width: 0.416
+    length: 0.671
+    yaw: 0.0
+    x: 3.382
+    y: 1.868
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.85
+    yaw: -0.827041
+  - x: 1.75
+    y: 0.75
+    yaw: -0.828849
+  - x: 1.75
+    y: 0.65
+    yaw: -0.927295
+  - x: 2.05
+    y: 0.35
+    yaw: -0.291457
+  - x: 2.75
+    y: 0.35
+    yaw: 0.124355
+  - x: 2.85
+    y: 0.45
+    yaw: 0.463648
+  - x: 2.95
+    y: 0.45
+    yaw: 0.71883
+  - x: 3.65
+    y: 1.15
+    yaw: 0.661043
+  - x: 3.85
+    y: 1.15
+    yaw: 0.54042
+  - x: 4.15
+    y: 1.45
+    yaw: 0.54042
+  - x: 4.35
+    y: 1.45
+    yaw: 0.321751
+  - x: 4.45
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.55
+    y: 1.55
+    yaw: 0.463648
+  - x: 4.65
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.75
+    y: 1.65
+    yaw: 0.463648
+  - x: 4.85
+    y: 1.75
+    yaw: 0.463648
+  - x: 4.95
+    y: 1.75
+    yaw: 0.463648
+  - x: 5.05
+    y: 1.85
+    yaw: 0.321751
+  - x: 5.25
+    y: 1.85
+    yaw: 0.404892
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 6.271465
+- layout_id: holdout_20
+  partition: holdout
+  candidate_index: 1744
+  candidate_seed: 20260826
+  arena: *id001
+  start: *id002
+  goal: *id003
+  obstacles:
+  - type: rectangle
+    width: 0.69
+    length: 0.481
+    yaw: 0.0
+    x: 2.536
+    y: 1.189
+  - type: circle
+    radius: 0.213
+    x: 0.8
+    y: 0.869
+  - type: circle
+    radius: 0.261
+    x: 1.871
+    y: 1.886
+  - type: rectangle
+    width: 0.352
+    length: 0.519
+    yaw: 0.0
+    x: 3.127
+    y: 3.04
+  - type: circle
+    radius: 0.206
+    x: 4.394
+    y: 1.356
+  - type: circle
+    radius: 0.223
+    x: 3.427
+    y: 0.644
+  global_path:
+  - x: 0.6
+    y: 2.0
+    yaw: 0.0
+  - x: 0.65
+    y: 1.95
+    yaw: -0.141897
+  - x: 0.95
+    y: 1.95
+    yaw: 0.588003
+  - x: 1.55
+    y: 2.55
+    yaw: 0.358771
+  - x: 2.55
+    y: 2.55
+    yaw: -0.165149
+  - x: 2.75
+    y: 2.35
+    yaw: -0.099669
+  - x: 4.55
+    y: 2.35
+    yaw: -0.052583
+  - x: 4.65
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.75
+    y: 2.25
+    yaw: -0.463648
+  - x: 4.85
+    y: 2.15
+    yaw: -0.463648
+  - x: 4.95
+    y: 2.15
+    yaw: -0.463648
+  - x: 5.05
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.15
+    y: 2.05
+    yaw: -0.463648
+  - x: 5.25
+    y: 1.95
+    yaw: -0.197396
+  - x: 5.4
+    y: 2.0
+    yaw: 0.0
+  geometry_diagnostics:
+    obstacle_count: 6
+    grid_resolution: 0.1
+    inflation_radius: 0.35
+    path_length: 5.325881

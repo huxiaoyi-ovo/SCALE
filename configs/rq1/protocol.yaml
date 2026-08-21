@@ -1,0 +1,82 @@
+protocol_version: 1
+study_id: rq1_clean_synthetic
+stage: primary_scientific_review_pending
+scope: synthetic_planner_by_execution
+provenance: SYNTHETIC - NOT PHYSICALLY IDENTIFIED
+
+matrix:
+  planners: [tr, teb]
+  profiles:
+    - {id: e0, backend: e0, factor: ideal, level: 0.0, delay: 0.0, tau_x: 0.0, tau_y: 0.0, tau_w: 0.0}
+    - {id: delay_050, backend: e1, factor: delay, level: 0.05, delay: 0.05, tau_x: 0.0, tau_y: 0.0, tau_w: 0.0}
+    - {id: delay_100, backend: e1, factor: delay, level: 0.10, delay: 0.10, tau_x: 0.0, tau_y: 0.0, tau_w: 0.0}
+    - {id: delay_200, backend: e1, factor: delay, level: 0.20, delay: 0.20, tau_x: 0.0, tau_y: 0.0, tau_w: 0.0}
+    - {id: tau_x_100, backend: e1, factor: tau_x, level: 0.10, delay: 0.0, tau_x: 0.10, tau_y: 0.0, tau_w: 0.0}
+    - {id: tau_x_300, backend: e1, factor: tau_x, level: 0.30, delay: 0.0, tau_x: 0.30, tau_y: 0.0, tau_w: 0.0}
+    - {id: tau_y_150, backend: e1, factor: tau_y, level: 0.15, delay: 0.0, tau_x: 0.0, tau_y: 0.15, tau_w: 0.0}
+    - {id: tau_y_300, backend: e1, factor: tau_y, level: 0.30, delay: 0.0, tau_x: 0.0, tau_y: 0.30, tau_w: 0.0}
+    - {id: tau_y_500, backend: e1, factor: tau_y, level: 0.50, delay: 0.0, tau_x: 0.0, tau_y: 0.50, tau_w: 0.0}
+    - {id: tau_w_100, backend: e1, factor: tau_w, level: 0.10, delay: 0.0, tau_x: 0.0, tau_y: 0.0, tau_w: 0.10}
+    - {id: tau_w_300, backend: e1, factor: tau_w, level: 0.30, delay: 0.0, tau_x: 0.0, tau_y: 0.0, tau_w: 0.30}
+
+timing:
+  planner_period: 0.05
+  execution_dt: 0.01
+  logical_duration: 30.0
+  wall_timeout: 45.0
+  external_xy_tolerance: 0.08
+  external_yaw_tolerance: 0.10
+
+robot:
+  footprint: {type: rectangle, width: 0.40, length: 0.30}
+
+layout_generation:
+  seed: 20260826
+  arena: {width: 6.0, height: 4.0}
+  start: {x: 0.60, y: 2.00, yaw: 0.0}
+  goal: {x: 5.40, y: 2.00, yaw: 0.0}
+  obstacle_count: 6
+  circle_probability: 0.40
+  rectangle_width_range: [0.35, 0.70]
+  rectangle_length_range: [0.35, 0.75]
+  circle_radius_range: [0.18, 0.32]
+  boundary_margin: 0.40
+  obstacle_separation: 0.15
+  start_goal_exclusion: 0.65
+  path_grid_resolution: 0.10
+  path_connectivity: 8
+  footprint_circumscribed_radius: 0.25
+  path_safety_margin: 0.10
+  accepted_path_length_range: [5.20, 7.50]
+  path_simplification: collinear_only
+  acceptance_rule: first_40_geometry_valid_candidates_only
+  discovery_count: 20
+  holdout_count: 20
+
+randomization:
+  schedule_seed: 20260827
+  schedule_rule: deterministic_full_matrix_shuffle
+
+failure_policy:
+  infrastructure_retries: 2
+  algorithm_outcomes_never_retry: [planner_failure, footprint_collision, logical_timeout]
+  infrastructure_failures: [ros_master_unavailable, bridge_service_unavailable, ros_transport_failure, unexpected_process_exit, wall_timeout, missing_or_malformed_artifact]
+  contract_failures_stop_study: [logical_timing, executed_odom_feedback, command_hold, benchmark_collision_truth, restart_determinism]
+  infrastructure_retry_exhaustion: stop_batch
+
+analysis:
+  mode: descriptive_screening_only
+  partitions: [discovery, holdout]
+  combined_descriptives: false
+  inferential_pooling: false
+  significance_tests: false
+  bootstrap: {method: paired_layout_percentile, confidence_level: 0.95, resamples: 5000, seed: 20260828}
+  outcomes: [success, collision, logical_timeout, planner_failure, normalized_path_progress]
+  contrasts: [within_planner_profile_minus_e0, teb_minus_tr_degradation_interaction]
+  decision: prohibited_before_scientific_review_gate
+
+outputs:
+  root: data/rq1_synthetic
+  trace_format: json_gzip
+  required_tables: [episodes.csv, descriptive.csv, paired_effects.csv, interaction_contrasts.csv]
+  required_figures: [success_response, progress_response, failure_modes, interaction_contrasts]

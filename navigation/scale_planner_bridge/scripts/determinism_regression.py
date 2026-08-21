@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[3]
 PACKAGE = ROOT / "navigation" / "scale_planner_bridge"
 PYTHON = ROOT / ".venv" / "bin" / "python"
 SMOKE = PACKAGE / "scripts" / "planner_execution_smoke.py"
-PLANNERS = ("dwa", "teb")
+PLANNERS = ("dwa", "tr", "teb")
 EXECUTIONS = ("e0", "e1")
 
 
