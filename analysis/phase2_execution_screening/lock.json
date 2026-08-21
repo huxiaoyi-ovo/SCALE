@@ -1,0 +1,225 @@
+{
+  "created_at": "2026-08-20T12:51:22.688688+00:00",
+  "lock_core": {
+    "code_hashes": {
+      "analysis/phase2_report.py": "8b13eb1df9525cb70228921baea5c192919d5e73c948c66da9524cad6ddeb39e",
+      "experiments/phase2_protocol.py": "aa98b102f9c8f23d8a0b36d8599b1a744816ce1a5a31653b5a4f4ba4ea2c7b0a",
+      "experiments/phase2_runner.py": "7d5399ea8eb2201d79a3ed71f694a596c5865659df6d0fd2ee698e38464ef1c1",
+      "navigation/scale_planner_bridge/scripts/planner_execution_smoke.py": "ad8d006152abb3288f7b16719dce7fef65b4af2bc7d52660416bec9400c5aacf"
+    },
+    "dependencies": {
+      "python": "3.8.20",
+      "pyyaml": "6.0.2",
+      "shapely": "2.0.5"
+    },
+    "git_head": "b778f11fe3ca101bdc0560a0117d80dfe832c8d7",
+    "layouts_hash": "41d5fb73872602222ee6502bc678fbad6fe1f3d35ae5d608b598f3372ca629ba",
+    "phase1c_base": "b778f11",
+    "preflight": {
+      "batch_executor_probe": {
+        "summary": {
+          "collision": false,
+          "command_hold_contract": true,
+          "compute_seconds": {
+            "count": 82,
+            "max": 0.01520138,
+            "mean": 0.005146310951219511
+          },
+          "execution_backend": "e0",
+          "execution_dt": 0.01,
+          "execution_steps": 406,
+          "feedback_contract": true,
+          "final_xy_error": 0.07989895200301558,
+          "final_yaw_error": 0.04964471789076852,
+          "planner_calls": 82,
+          "planner_failures": 0,
+          "planner_period": 0.05,
+          "reason": "external_tolerance",
+          "substeps_per_command": 5,
+          "success": true,
+          "time_contract": true
+        },
+        "trace_states": 407
+      },
+      "commands": [
+        {
+          "command": [
+            ".venv/bin/python",
+            "-m",
+            "pytest",
+            "-q"
+          ],
+          "returncode": 0,
+          "stdout": "..................................                                       [100%]\n34 passed in 89.87s (0:01:29)\n"
+        },
+        {
+          "command": [
+            "catkin_make",
+            "-C",
+            "build/scale_ros",
+            "--source",
+            "navigation"
+          ],
+          "returncode": 0,
+          "stdout": "[  0%] Built target geometry_msgs_generate_messages_py\n[  0%] Built target tf2_msgs_generate_messages_nodejs\n[  0%] Built target nav_msgs_generate_messages_py\n[  0%] Built target nav_msgs_generate_messages_lisp\n[  0%] Built target visualization_msgs_generate_messages_lisp\n[  0%] Built target geometry_msgs_generate_messages_lisp\n[  0%] Built target visualization_msgs_generate_messages_nodejs\n[  0%] Built target nav_msgs_generate_messages_nodejs\n[  0%] Built target nav_msgs_generate_messages_cpp\n[  0%] Built target nav_msgs_generate_messages_eus\n[  0%] Built target visualization_msgs_generate_messages_py\n[  0%] Built target geometry_msgs_generate_messages_nodejs\n[  0%] Built target visualization_msgs_generate_messages_eus\n[  0%] Built target map_msgs_generate_messages_py\n[  0%] Built target map_msgs_generate_messages_nodejs\n[  0%] Built target tf_generate_messages_nodejs\n[  0%] Built target map_msgs_generate_messages_lisp\n[  0%] Built target roscpp_generate_messages_eus\n[  0%] Built target roscpp_generate_messages_py\n[  0%] Built target std_msgs_generate_messages_cpp\n[  0%] Built target _scale_planner_bridge_generate_messages_check_deps_Initialize\n[  0%] Built target std_msgs_generate_messages_nodejs\n[  0%] Built target _scale_planner_bridge_generate_messages_check_deps_Step\n[  0%] Built target std_msgs_generate_messages_py\n[  0%] Built target tf_generate_messages_cpp\n[  0%] Built target map_msgs_generate_messages_cpp\n[  0%] Built target actionlib_generate_messages_cpp\n[  0%] Built target actionlib_msgs_generate_messages_py\n[  0%] Built target costmap_2d_generate_messages_cpp\n[  0%] Built target geometry_msgs_generate_messages_eus\n[  0%] Built target rosgraph_msgs_generate_messages_nodejs\n[  0%] Built target costmap_2d_generate_messages_lisp\n[  0%] Built target actionlib_generate_messages_lisp\n[  0%] Built target map_msgs_generate_messages_eus\n[  0%] Built target roscpp_generate_messages_lisp\n[  0%] Built target _catkin_empty_exported_target\n[  0%] Built target tf2_msgs_generate_messages_cpp\n[  0%] Built target dynamic_reconfigure_generate_messages_lisp\n[  0%] Built target dynamic_reconfigure_gencfg\n[  0%] Built target tf_generate_messages_lisp\n[  0%] Built target dynamic_reconfigure_generate_messages_cpp\n[  0%] Built target geometry_msgs_generate_messages_cpp\n[  0%] Built target dynamic_reconfigure_generate_messages_eus\n[  0%] Built target roscpp_generate_messages_cpp\n[  0%] Built target costmap_2d_gencfg\n[  0%] Built target tf2_msgs_generate_messages_eus\n[  0%] Built target std_msgs_generate_messages_lisp\n[  0%] Built target costmap_2d_generate_messages_py\n[  0%] Built target costmap_2d_generate_messages_nodejs\n[  0%] Built target sensor_msgs_generate_messages_py\n[  0%] Built target tf2_msgs_generate_messages_lisp\n[  0%] Built target tf2_msgs_generate_messages_py\n[  0%] Built target costmap_2d_generate_messages_eus\n[  0%] Built target rosgraph_msgs_generate_messages_eus\n[  0%] Built target sensor_msgs_generate_messages_cpp\n[  0%] Built target dynamic_reconfigure_generate_messages_nodejs\n[  0%] Built target roscpp_generate_messages_nodejs\n[  0%] Built target rosgraph_msgs_generate_messages_lisp\n[  0%] Built target tf_generate_messages_eus\n[  0%] Built target sensor_msgs_generate_messages_lisp\n[  0%] Built target sensor_msgs_generate_messages_eus\n[  0%] Built target rosgraph_msgs_generate_messages_py\n[  0%] Built target sensor_msgs_generate_messages_nodejs\n[  0%] Built target actionlib_generate_messages_eus\n[  0%] Built target visualization_msgs_generate_messages_cpp\n[  0%] Built target rosgraph_msgs_generate_messages_cpp\n[  0%] Built target actionlib_generate_messages_py\n[  0%] Built target dynamic_reconfigure_generate_messages_py\n[  0%] Built target actionlib_msgs_generate_messages_cpp\n[  0%] Built target actionlib_generate_messages_nodejs\n[  0%] Built target tf_generate_messages_py\n[  0%] Built target actionlib_msgs_generate_messages_eus\n[  0%] Built target std_msgs_generate_messages_eus\n[  0%] Built target actionlib_msgs_generate_messages_lisp\n[  0%] Built target actionlib_msgs_generate_messages_nodejs\n[ 35%] Built target scale_planner_bridge_generate_messages_py\n[ 35%] Built target scale_planner_bridge_generate_messages_lisp\n[ 50%] Built target scale_planner_bridge_generate_messages_nodejs\n[ 71%] Built target scale_planner_bridge_generate_messages_eus\n[ 85%] Built target scale_planner_bridge_generate_messages_cpp\n[ 85%] Built target scale_planner_bridge_generate_messages\n[100%] Built target planner_bridge_node\nBase path: /home/artrc/SCALE/build/scale_ros\nSource space: /home/artrc/SCALE/navigation\nBuild space: /home/artrc/SCALE/build/scale_ros/build\nDevel space: /home/artrc/SCALE/build/scale_ros/devel\nInstall space: /home/artrc/SCALE/build/scale_ros/install\n####\n#### Running command: \"make cmake_check_build_system\" in \"/home/artrc/SCALE/build/scale_ros/build\"\n####\n####\n#### Running command: \"make -j16 -l16\" in \"/home/artrc/SCALE/build/scale_ros/build\"\n####\n"
+        }
+      ],
+      "contracts": {
+        "collision": true,
+        "command_hold": true,
+        "determinism": true,
+        "feedback": true,
+        "timing": true
+      },
+      "determinism": [
+        {
+          "command": {
+            "command": [
+              ".venv/bin/python",
+              "navigation/scale_planner_bridge/scripts/determinism_regression.py",
+              "--planner",
+              "dwa",
+              "--execution",
+              "e0",
+              "--runs",
+              "2",
+              "--tolerance",
+              "1e-9"
+            ],
+            "returncode": 0,
+            "stdout": "{\"execution\": \"e0\", \"execution_dt\": 0.01, \"execution_steps\": 406, \"max_abs_difference\": 0.0, \"planner\": \"dwa\", \"planner_calls\": 82, \"planner_period\": 0.05, \"runs\": 2, \"substeps_per_command\": 5, \"success\": true, \"termination\": \"external_tolerance\", \"tolerance\": 1e-09}\n"
+          },
+          "execution": "e0",
+          "planner": "dwa",
+          "result": {
+            "execution": "e0",
+            "execution_dt": 0.01,
+            "execution_steps": 406,
+            "max_abs_difference": 0.0,
+            "planner": "dwa",
+            "planner_calls": 82,
+            "planner_period": 0.05,
+            "runs": 2,
+            "substeps_per_command": 5,
+            "success": true,
+            "termination": "external_tolerance",
+            "tolerance": 1e-09
+          }
+        },
+        {
+          "command": {
+            "command": [
+              ".venv/bin/python",
+              "navigation/scale_planner_bridge/scripts/determinism_regression.py",
+              "--planner",
+              "dwa",
+              "--execution",
+              "e1",
+              "--runs",
+              "2",
+              "--tolerance",
+              "1e-9"
+            ],
+            "returncode": 0,
+            "stdout": "{\"execution\": \"e1\", \"execution_dt\": 0.01, \"execution_steps\": 851, \"max_abs_difference\": 0.0, \"planner\": \"dwa\", \"planner_calls\": 171, \"planner_period\": 0.05, \"runs\": 2, \"substeps_per_command\": 5, \"success\": true, \"termination\": \"external_tolerance\", \"tolerance\": 1e-09}\n"
+          },
+          "execution": "e1",
+          "planner": "dwa",
+          "result": {
+            "execution": "e1",
+            "execution_dt": 0.01,
+            "execution_steps": 851,
+            "max_abs_difference": 0.0,
+            "planner": "dwa",
+            "planner_calls": 171,
+            "planner_period": 0.05,
+            "runs": 2,
+            "substeps_per_command": 5,
+            "success": true,
+            "termination": "external_tolerance",
+            "tolerance": 1e-09
+          }
+        },
+        {
+          "command": {
+            "command": [
+              ".venv/bin/python",
+              "navigation/scale_planner_bridge/scripts/determinism_regression.py",
+              "--planner",
+              "teb",
+              "--execution",
+              "e0",
+              "--runs",
+              "2",
+              "--tolerance",
+              "1e-9"
+            ],
+            "returncode": 0,
+            "stdout": "{\"execution\": \"e0\", \"execution_dt\": 0.01, \"execution_steps\": 279, \"max_abs_difference\": 0.0, \"planner\": \"teb\", \"planner_calls\": 56, \"planner_period\": 0.05, \"runs\": 2, \"substeps_per_command\": 5, \"success\": true, \"termination\": \"external_tolerance\", \"tolerance\": 1e-09}\n"
+          },
+          "execution": "e0",
+          "planner": "teb",
+          "result": {
+            "execution": "e0",
+            "execution_dt": 0.01,
+            "execution_steps": 279,
+            "max_abs_difference": 0.0,
+            "planner": "teb",
+            "planner_calls": 56,
+            "planner_period": 0.05,
+            "runs": 2,
+            "substeps_per_command": 5,
+            "success": true,
+            "termination": "external_tolerance",
+            "tolerance": 1e-09
+          }
+        },
+        {
+          "command": {
+            "command": [
+              ".venv/bin/python",
+              "navigation/scale_planner_bridge/scripts/determinism_regression.py",
+              "--planner",
+              "teb",
+              "--execution",
+              "e1",
+              "--runs",
+              "2",
+              "--tolerance",
+              "1e-9"
+            ],
+            "returncode": 0,
+            "stdout": "{\"execution\": \"e1\", \"execution_dt\": 0.01, \"execution_steps\": 345, \"max_abs_difference\": 0.0, \"planner\": \"teb\", \"planner_calls\": 69, \"planner_period\": 0.05, \"runs\": 2, \"substeps_per_command\": 5, \"success\": true, \"termination\": \"external_tolerance\", \"tolerance\": 1e-09}\n"
+          },
+          "execution": "e1",
+          "planner": "teb",
+          "result": {
+            "execution": "e1",
+            "execution_dt": 0.01,
+            "execution_steps": 345,
+            "max_abs_difference": 0.0,
+            "planner": "teb",
+            "planner_calls": 69,
+            "planner_period": 0.05,
+            "runs": 2,
+            "substeps_per_command": 5,
+            "success": true,
+            "termination": "external_tolerance",
+            "tolerance": 1e-09
+          }
+        }
+      ],
+      "static": {
+        "layouts_hash": "41d5fb73872602222ee6502bc678fbad6fe1f3d35ae5d608b598f3372ca629ba",
+        "matrix_episodes": 880,
+        "protocol_hash": "ce36c4a7f1d3e891d1b6398ad456e56d62456f5c5f734f57fde83ef92dcfe0fa",
+        "schedule_hash": "ec893ddf18626fa216c2f2267a7d209173c43a6193ccdb976dfa29de8ddba217",
+        "static": true
+      }
+    },
+    "protocol_hash": "ce36c4a7f1d3e891d1b6398ad456e56d62456f5c5f734f57fde83ef92dcfe0fa",
+    "schedule_hash": "ec893ddf18626fa216c2f2267a7d209173c43a6193ccdb976dfa29de8ddba217"
+  },
+  "lock_hash": "f1c8fd861651f70500a8a3341a4fd79820a6f66c02609af9d8137fd2b70d947b",
+  "success": true
+}

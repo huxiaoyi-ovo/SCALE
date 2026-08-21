@@ -1,0 +1,881 @@
+episode_id,partition,layout_id,planner,profile_id,success,reason,collision,planner_failures,final_time,path_length,min_clearance,final_xy_error
+holdout__holdout_10__dwa__delay_100,holdout,holdout_10,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.7779891198459765,4.799886964378005
+discovery__discovery_13__teb__tau_x_300,discovery,discovery_13,teb,tau_x_300,true,external_tolerance,false,0,12.84999999999977,5.495224413601628,0.1843420849845117,0.0760942101690338
+holdout__holdout_19__teb__tau_y_300,holdout,holdout_19,teb,tau_y_300,true,external_tolerance,false,0,15.25999999999972,5.9093543854869,0.16084995977580188,0.07956585574166601
+discovery__discovery_15__teb__tau_x_300,discovery,discovery_15,teb,tau_x_300,true,external_tolerance,false,0,14.75999999999973,6.1384365250347335,0.15419910264437392,0.0769831085409217
+holdout__holdout_15__teb__tau_w_300,holdout,holdout_15,teb,tau_w_300,true,external_tolerance,false,0,17.14999999999988,4.98278890388189,0.21752390208821834,0.047048816324422475
+holdout__holdout_08__teb__tau_x_100,holdout,holdout_08,teb,tau_x_100,true,external_tolerance,false,0,13.419999999999758,5.930015639541183,0.1650549084086197,0.0646186111953565
+discovery__discovery_09__dwa__tau_w_300,discovery,discovery_09,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.7719955636256632,0.23656416596860178,3.666297460407461
+holdout__holdout_20__teb__delay_100,holdout,holdout_20,teb,delay_100,true,external_tolerance,false,0,13.869999999999749,5.381624848507688,0.15102528864462872,0.06037838476051996
+holdout__holdout_18__dwa__tau_w_100,holdout,holdout_18,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.4060008785031556,4.750198638426072
+discovery__discovery_11__teb__tau_w_300,discovery,discovery_11,teb,tau_w_300,true,external_tolerance,false,0,23.200000000000827,5.863622437878125,0.08090757066181636,0.021936218295769232
+holdout__holdout_13__dwa__delay_050,holdout,holdout_13,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.7141127313695449,4.789388221964771
+discovery__discovery_15__dwa__delay_200,discovery,discovery_15,dwa,delay_200,false,plugin returned no valid velocity command,false,1,5.799999999999921,1.3922183820054956,0.1565577008093122,4.031500554298267
+discovery__discovery_10__teb__tau_y_150,discovery,discovery_10,teb,tau_y_150,true,external_tolerance,false,0,14.509999999999735,6.168101119644033,0.12330432713430425,0.0785406460311575
+holdout__holdout_02__dwa__tau_x_300,holdout,holdout_02,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,1.395372006279701,4.7987983755832255
+holdout__holdout_02__teb__tau_y_300,holdout,holdout_02,teb,tau_y_300,true,external_tolerance,false,0,17.729999999999972,6.088419908686212,0.0570948180817622,0.07974626167882176
+holdout__holdout_17__dwa__delay_100,holdout,holdout_17,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.3647369699700279,4.799886964378005
+holdout__holdout_06__dwa__delay_050,holdout,holdout_06,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.7454999999999998,4.789388221964771
+discovery__discovery_06__teb__tau_y_300,discovery,discovery_06,teb,tau_y_300,true,external_tolerance,false,0,17.059999999999867,6.634754150945979,0.18090760651923,0.026325424011185615
+discovery__discovery_03__dwa__tau_x_100,discovery,discovery_03,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.5767083318281437,4.797483142941365
+holdout__holdout_11__dwa__delay_100,holdout,holdout_11,dwa,delay_100,false,plugin returned no valid velocity command,false,1,20.35000000000038,2.7449775636456004,0.05410103591295614,2.2344273959556475
+holdout__holdout_10__teb__delay_100,holdout,holdout_10,teb,delay_100,true,external_tolerance,false,0,14.349999999999739,5.548080260972119,0.14677238293837433,0.0789561834827328
+discovery__discovery_04__dwa__tau_y_500,discovery,discovery_04,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,1.9811704136325994,0.11274412537007457,3.385950773140329
+discovery__discovery_09__dwa__tau_w_100,discovery,discovery_09,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.45974428749575247,4.79937960160367
+holdout__holdout_03__teb__tau_y_300,holdout,holdout_03,teb,tau_y_300,true,external_tolerance,false,0,14.27999999999974,5.3475900640984575,0.1416487393030169,0.07953127435978849
+holdout__holdout_06__dwa__e0,holdout,holdout_06,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.7454999999999998,4.750728787406146
+holdout__holdout_15__teb__e0,holdout,holdout_15,teb,e0,true,external_tolerance,false,0,11.079999999999808,4.965196530622168,0.23047069839367157,0.07625316366816433
+discovery__discovery_14__teb__e0,discovery,discovery_14,teb,e0,true,external_tolerance,false,0,11.279999999999804,5.18419192804656,0.06559892844010878,0.07842503001779307
+holdout__holdout_10__dwa__tau_w_100,holdout,holdout_10,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.7814040130114593,4.79937960160367
+holdout__holdout_02__teb__tau_x_100,holdout,holdout_02,teb,tau_x_100,true,external_tolerance,false,0,12.87999999999977,5.738083438711129,0.06416072092652059,0.06687095420934973
+holdout__holdout_06__teb__tau_x_100,holdout,holdout_06,teb,tau_x_100,true,external_tolerance,false,0,13.499999999999757,5.906877435682108,0.1217122142379937,0.04909383807687167
+discovery__discovery_17__dwa__tau_x_100,discovery,discovery_17,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,1.4699377881288886,4.797483142941365
+discovery__discovery_06__dwa__tau_w_300,discovery,discovery_06,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,6.751955661632554,0.03412135663537698,0.5075155437790944
+holdout__holdout_14__dwa__e0,holdout,holdout_14,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.6966043696988299,4.800342967782957
+discovery__discovery_12__dwa__delay_200,discovery,discovery_12,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.7642902261488295,4.798693959698342
+discovery__discovery_01__teb__tau_y_150,discovery,discovery_01,teb,tau_y_150,true,external_tolerance,false,0,13.33999999999976,5.512201808352739,0.03417137066956233,0.03433436017487294
+holdout__holdout_05__dwa__e0,holdout,holdout_05,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.9210500412375878,4.800342967782957
+holdout__holdout_13__dwa__delay_100,holdout,holdout_13,dwa,delay_100,true,external_tolerance,false,0,25.85000000000124,5.131759102488289,0.05024248027644647,0.07933680640947587
+holdout__holdout_05__dwa__delay_050,holdout,holdout_05,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.9210500412375878,4.800409713394666
+discovery__discovery_20__dwa__e0,discovery,discovery_20,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.6011354567806844,4.750728787406146
+holdout__holdout_17__dwa__tau_y_150,holdout,holdout_17,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.856385644144798,0.09018968475690524,2.6255988761402587
+discovery__discovery_02__teb__tau_w_100,discovery,discovery_02,teb,tau_w_100,true,external_tolerance,false,0,12.059999999999787,5.217502132380019,0.13846707687165077,0.0331034105372891
+discovery__discovery_02__teb__delay_200,discovery,discovery_02,teb,delay_200,true,external_tolerance,false,0,17.739999999999974,5.594514204300685,0.09249934595366717,0.056014837058700535
+discovery__discovery_08__dwa__tau_x_100,discovery,discovery_08,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.7417969649864018,4.797483142941365
+discovery__discovery_13__dwa__delay_050,discovery,discovery_13,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.7099289120709465,0.31788852870268336,4.6481919376168515
+holdout__holdout_09__teb__e0,holdout,holdout_09,teb,e0,true,external_tolerance,false,0,10.929999999999811,5.001579593046495,0.10665679417426092,0.07986169047598787
+holdout__holdout_16__dwa__delay_100,holdout,holdout_16,dwa,delay_100,true,external_tolerance,false,0,27.05000000000143,5.00279665013178,0.02326284185066374,0.06749678428037695
+discovery__discovery_13__dwa__tau_w_100,discovery,discovery_13,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.42427196801886025,0.4243614309326466,4.846350580980265
+discovery__discovery_14__teb__tau_x_100,discovery,discovery_14,teb,tau_x_100,true,external_tolerance,false,0,11.4399999999998,5.1609103350019545,0.0566704499664068,0.07884042869769138
+discovery__discovery_03__teb__tau_y_500,discovery,discovery_03,teb,tau_y_500,true,external_tolerance,false,0,19.730000000000285,6.146962816870339,0.10586019696974774,0.03869031649312744
+holdout__holdout_13__dwa__delay_200,holdout,holdout_13,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,5.185650348653374,0.05830548521819694,0.20728939116181996
+holdout__holdout_16__teb__tau_w_100,holdout,holdout_16,teb,tau_w_100,true,external_tolerance,false,0,12.109999999999786,5.035352984482705,0.17523988757932932,0.044868419648744176
+holdout__holdout_20__dwa__delay_050,holdout,holdout_20,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.6549420647886863,4.789388221964771
+holdout__holdout_19__teb__tau_x_100,holdout,holdout_19,teb,tau_x_100,true,external_tolerance,false,0,12.929999999999769,5.80423649354844,0.18819793327269657,0.056917553498141885
+holdout__holdout_15__teb__tau_x_300,holdout,holdout_15,teb,tau_x_300,true,external_tolerance,false,0,12.119999999999786,4.966388129657567,0.21721383586065918,0.07788601598182689
+holdout__holdout_09__teb__delay_100,holdout,holdout_09,teb,delay_100,true,external_tolerance,false,0,12.279999999999783,5.145287202355509,0.089490387878553,0.07909189409844938
+discovery__discovery_10__dwa__delay_100,discovery,discovery_10,dwa,delay_100,false,plugin returned no valid velocity command,false,1,0.9000000000000006,0.09974331800254929,0.804564807753719,4.802163523541085
+holdout__holdout_11__teb__tau_y_150,holdout,holdout_11,teb,tau_y_150,true,external_tolerance,false,0,12.619999999999775,5.3194422092814335,0.14449855139258924,0.06661859114785307
+holdout__holdout_19__teb__e0,holdout,holdout_19,teb,e0,true,external_tolerance,false,0,12.629999999999775,5.850540512837096,0.2032814155752695,0.06839033039648638
+discovery__discovery_12__dwa__tau_w_300,discovery,discovery_12,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.08852044431305,0.1529731992513086,3.1001515406607205
+discovery__discovery_19__dwa__tau_w_300,discovery,discovery_19,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,3.170654818668046,0.09645807344228094,3.2963625475449816
+holdout__holdout_12__dwa__tau_y_500,holdout,holdout_12,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.4672289926660988,4.797485535329291
+discovery__discovery_06__teb__delay_100,discovery,discovery_06,teb,delay_100,true,external_tolerance,false,0,18.61000000000011,6.734304921513844,0.17347280525269604,0.04543700763254158
+holdout__holdout_08__teb__tau_w_100,holdout,holdout_08,teb,tau_w_100,true,external_tolerance,false,0,13.669999999999753,5.949206766914254,0.164240519849288,0.0707630292916984
+discovery__discovery_14__teb__tau_x_300,discovery,discovery_14,teb,tau_x_300,true,external_tolerance,false,0,12.219999999999784,5.197282858747763,0.07310233661107365,0.07882741935975336
+discovery__discovery_03__dwa__tau_y_300,discovery,discovery_03,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.5767083318281437,4.799915338987383
+holdout__holdout_07__dwa__delay_100,holdout,holdout_07,dwa,delay_100,false,plugin returned no valid velocity command,false,1,17.249999999999897,1.1950307786529668,0.21510587228582817,3.7256013182042778
+discovery__discovery_15__teb__tau_y_500,discovery,discovery_15,teb,tau_y_500,true,external_tolerance,false,0,21.330000000000535,6.426242469808451,0.0302452078602239,0.07991895245007312
+holdout__holdout_12__teb__delay_100,holdout,holdout_12,teb,delay_100,true,external_tolerance,false,0,12.469999999999779,5.200231915316513,0.10184577518757439,0.06335448589061932
+holdout__holdout_06__teb__tau_y_150,holdout,holdout_06,teb,tau_y_150,true,external_tolerance,false,0,14.149999999999743,6.0421824286243595,0.05624798688266727,0.05991816272270342
+holdout__holdout_03__teb__tau_y_150,holdout,holdout_03,teb,tau_y_150,true,external_tolerance,false,0,13.729999999999752,5.502592425452643,0.15356891363595565,0.07987752476729737
+discovery__discovery_11__dwa__tau_y_300,discovery,discovery_11,dwa,tau_y_300,true,external_tolerance,false,0,26.190000000001294,6.2068551990044565,0.18928561772772792,0.07416992468281554
+discovery__discovery_08__teb__tau_y_300,discovery,discovery_08,teb,tau_y_300,true,external_tolerance,false,0,13.689999999999753,5.229784577290072,0.15787589603012406,0.07981159112397457
+holdout__holdout_04__dwa__tau_x_100,holdout,holdout_04,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.11273341326251649,0.5294157630008397,4.749535392668288
+holdout__holdout_03__dwa__tau_x_300,holdout,holdout_03,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.44028356828152276,4.7987688891493585
+holdout__holdout_15__teb__tau_w_100,holdout,holdout_15,teb,tau_w_100,true,external_tolerance,false,0,12.519999999999778,4.961178871334012,0.2310304192912901,0.05984384514416764
+discovery__discovery_19__dwa__e0,discovery,discovery_19,dwa,e0,false,logical_timeout,false,0,30.00000000000189,3.1934470087008786,0.06352370778690548,3.34736673311757
+holdout__holdout_12__teb__tau_y_150,holdout,holdout_12,teb,tau_y_150,true,external_tolerance,false,0,12.239999999999783,5.221037607230482,0.12542414754303755,0.07853363452032323
+discovery__discovery_13__teb__tau_y_150,discovery,discovery_13,teb,tau_y_150,true,external_tolerance,false,0,12.329999999999782,5.512824116720483,0.20423399596110628,0.06569252315018248
+holdout__holdout_11__teb__tau_w_300,holdout,holdout_11,teb,tau_w_300,true,external_tolerance,false,0,16.209999999999734,5.247940761230301,0.15723020803457205,0.02885115649913957
+holdout__holdout_04__dwa__e0,holdout,holdout_04,dwa,e0,false,logical_timeout,false,0,30.00000000000189,1.9098349966012036,0.060852266956320435,3.4372139852061556
+holdout__holdout_17__dwa__e0,holdout,holdout_17,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.38289520206218225,4.800342967782957
+holdout__holdout_20__dwa__delay_200,holdout,holdout_20,dwa,delay_200,false,plugin returned no valid velocity command,false,1,23.60000000000089,1.9595429689996071,0.12132189992093212,2.976430986122181
+holdout__holdout_08__dwa__e0,holdout,holdout_08,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.5304484433093017,4.800342967782957
+discovery__discovery_11__teb__tau_x_300,discovery,discovery_11,teb,tau_x_300,true,external_tolerance,false,0,17.07999999999987,6.287682556100659,0.06043241535591497,0.0776728554428146
+holdout__holdout_13__teb__tau_w_300,holdout,holdout_13,teb,tau_w_300,true,external_tolerance,false,0,17.01999999999986,5.099009849458407,0.14272200029984816,0.04385155530118739
+discovery__discovery_08__teb__tau_w_100,discovery,discovery_08,teb,tau_w_100,true,external_tolerance,false,0,11.739999999999794,5.123119482186174,0.1760686217565947,0.06294786418098854
+discovery__discovery_06__teb__tau_x_300,discovery,discovery_06,teb,tau_x_300,true,external_tolerance,false,0,19.280000000000214,6.973744057466727,0.18195998131954574,0.07904813733349213
+discovery__discovery_16__teb__tau_y_300,discovery,discovery_16,teb,tau_y_300,true,external_tolerance,false,0,15.429999999999715,6.078219629011574,0.16486625772377012,0.07511689544068406
+holdout__holdout_16__teb__e0,holdout,holdout_16,teb,e0,true,external_tolerance,false,0,11.149999999999807,5.02612241570375,0.17476053419175605,0.06430988906898327
+discovery__discovery_15__teb__tau_w_100,discovery,discovery_15,teb,tau_w_100,true,external_tolerance,false,0,14.909999999999727,6.126452519848916,0.14967601297300775,0.07773503767584948
+holdout__holdout_15__dwa__delay_050,holdout,holdout_15,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.697775819605341,4.800409713394666
+holdout__holdout_12__teb__delay_200,holdout,holdout_12,teb,delay_200,true,external_tolerance,false,0,14.939999999999726,5.338153865293756,0.13421220022449382,0.06696058582613447
+discovery__discovery_05__teb__delay_050,discovery,discovery_05,teb,delay_050,true,external_tolerance,false,0,14.669999999999732,6.302591386703066,0.19469865260561234,0.018994235549275283
+holdout__holdout_11__teb__delay_100,holdout,holdout_11,teb,delay_100,true,external_tolerance,false,0,14.399999999999737,5.305997390592627,0.16521305903217978,0.06097687902405086
+holdout__holdout_05__teb__delay_050,holdout,holdout_05,teb,delay_050,true,external_tolerance,false,0,12.119999999999786,5.273937330568528,0.11183191067010755,0.07693154828319144
+holdout__holdout_16__dwa__e0,holdout,holdout_16,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.597551315350956,4.750728787406146
+holdout__holdout_19__dwa__delay_100,holdout,holdout_19,dwa,delay_100,false,plugin returned no valid velocity command,false,1,2.149999999999998,0.022803454559040807,0.49446178709082494,4.782126715165411
+discovery__discovery_12__dwa__tau_x_100,discovery,discovery_12,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.7612104101039326,4.797483142941365
+discovery__discovery_14__dwa__delay_200,discovery,discovery_14,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,5.272097263440414,0.04610915385563239,0.12410114877262231
+holdout__holdout_06__dwa__tau_w_300,holdout,holdout_06,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.1309074568165762,0.3129094160206624,3.021389634454535
+discovery__discovery_11__dwa__tau_y_500,discovery,discovery_11,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.2402668769081666,0.25449789517657234,3.3438993336589653
+discovery__discovery_11__teb__tau_y_500,discovery,discovery_11,teb,tau_y_500,false,footprint_collision,true,0,10.719999999999816,4.108466461327645,0.0,1.6552596014273282
+discovery__discovery_20__teb__delay_200,discovery,discovery_20,teb,delay_200,false,plugin returned no valid velocity command,false,1,7.149999999999892,2.2285988909043293,0.11954505003111038,3.088395565558634
+discovery__discovery_06__teb__tau_w_300,discovery,discovery_06,teb,tau_w_300,true,external_tolerance,false,0,23.53000000000088,6.563496583704724,0.1766638440134153,0.022798068304496186
+holdout__holdout_05__dwa__delay_200,holdout,holdout_05,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.9210500412375878,4.798693959698342
+discovery__discovery_08__dwa__tau_y_300,discovery,discovery_08,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.7170418537115383,4.799915338987383
+holdout__holdout_09__dwa__tau_y_150,holdout,holdout_09,dwa,tau_y_150,true,external_tolerance,false,0,15.69999999999971,5.003848444000737,0.07207370170943074,0.07857627969260296
+discovery__discovery_12__dwa__e0,discovery,discovery_12,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.7744980337831191,4.800342967782957
+discovery__discovery_11__dwa__delay_050,discovery,discovery_11,dwa,delay_050,false,plugin returned no valid velocity command,false,1,20.800000000000452,2.4090474210290433,0.2228833505611234,3.1260763473379485
+discovery__discovery_16__dwa__e0,discovery,discovery_16,dwa,e0,true,external_tolerance,false,0,17.039999999999864,5.983349324180807,0.05645476605935234,0.07720861542721656
+holdout__holdout_01__teb__tau_x_300,holdout,holdout_01,teb,tau_x_300,true,external_tolerance,false,0,13.32999999999976,5.451471788744524,0.05859861450122322,0.07645660234993855
+discovery__discovery_17__teb__tau_w_300,discovery,discovery_17,teb,tau_w_300,false,plugin returned no valid velocity command,false,1,6.549999999999905,2.6996043368686835,0.07265065894879497,2.713599720262089
+holdout__holdout_08__dwa__tau_y_500,holdout,holdout_08,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.5081682090769482,4.797485535329291
+holdout__holdout_17__dwa__tau_x_300,holdout,holdout_17,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.3789200887172612,4.7987983755832255
+holdout__holdout_20__dwa__tau_y_500,holdout,holdout_20,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.0748885263660575,0.07258472414397454,3.1976946153228667
+holdout__holdout_11__dwa__tau_y_150,holdout,holdout_11,dwa,tau_y_150,true,external_tolerance,false,0,17.57999999999995,5.323959714621785,0.04475856473189294,0.0799571785854058
+discovery__discovery_19__teb__tau_y_300,discovery,discovery_19,teb,tau_y_300,true,external_tolerance,false,0,17.669999999999963,6.735996798708099,0.07018119812053583,0.07641339697854982
+discovery__discovery_14__teb__delay_100,discovery,discovery_14,teb,delay_100,true,external_tolerance,false,0,13.219999999999763,5.276150378073472,0.014278036118498556,0.07899288754819463
+discovery__discovery_05__dwa__tau_x_100,discovery,discovery_05,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.7286485452828331,4.797483142941365
+holdout__holdout_11__teb__tau_y_500,holdout,holdout_11,teb,tau_y_500,true,external_tolerance,false,0,17.960000000000008,5.472714114023536,0.044682382745020725,0.0784271955134144
+holdout__holdout_07__dwa__tau_w_100,holdout,holdout_07,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.32721629855414786,4.750198638426072
+holdout__holdout_08__teb__tau_x_300,holdout,holdout_08,teb,tau_x_300,true,external_tolerance,false,0,14.149999999999743,5.924982790506519,0.1430367626303739,0.07896670337220758
+discovery__discovery_13__dwa__e0,discovery,discovery_13,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.9792871605104038,0.2878796508457245,4.645680378932575
+holdout__holdout_12__dwa__tau_y_150,holdout,holdout_12,dwa,tau_y_150,true,external_tolerance,false,0,15.789999999999708,5.059624629420881,0.161045484801137,0.07708587866948548
+discovery__discovery_11__dwa__e0,discovery,discovery_11,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.16701177287789892,0.6185,4.802087381230043
+discovery__discovery_01__teb__tau_y_500,discovery,discovery_01,teb,tau_y_500,true,external_tolerance,false,0,14.869999999999727,5.512403787079953,0.07633850141650896,0.016729520919628725
+discovery__discovery_01__dwa__tau_w_300,discovery,discovery_01,dwa,tau_w_300,true,external_tolerance,false,0,28.09000000000159,5.588196961956762,0.1739021974346443,0.07844221282463085
+holdout__holdout_15__teb__tau_y_150,holdout,holdout_15,teb,tau_y_150,true,external_tolerance,false,0,11.719999999999795,4.998822887979887,0.22965615980891643,0.07942990746890884
+discovery__discovery_14__dwa__tau_y_500,discovery,discovery_14,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,3.5132123842333276,0.14655660179152005,1.8603535364341477
+holdout__holdout_13__dwa__tau_x_100,holdout,holdout_13,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.6772310374969203,4.751622632976504
+discovery__discovery_05__teb__tau_w_300,discovery,discovery_05,teb,tau_w_300,true,external_tolerance,false,0,18.790000000000138,6.213131951587003,0.16075895964175735,0.04454224713011506
+holdout__holdout_10__teb__delay_050,holdout,holdout_10,teb,delay_050,true,external_tolerance,false,0,12.309999999999782,5.394398174483646,0.04720442592273478,0.0772711980859324
+holdout__holdout_04__teb__tau_w_300,holdout,holdout_04,teb,tau_w_300,true,external_tolerance,false,0,26.130000000001285,5.689957603445557,0.1701320642792473,0.028667405236912663
+discovery__discovery_19__dwa__tau_y_150,discovery,discovery_19,dwa,tau_y_150,true,external_tolerance,false,0,18.790000000000138,6.562281431756557,0.06583844409581795,0.07750312847806184
+discovery__discovery_18__teb__tau_x_100,discovery,discovery_18,teb,tau_x_100,true,external_tolerance,false,0,14.219999999999741,6.001142286414572,0.21265929887070045,0.028016609144170323
+holdout__holdout_05__teb__tau_y_150,holdout,holdout_05,teb,tau_y_150,true,external_tolerance,false,0,13.509999999999756,5.334155013582802,0.15783401450261092,0.0790583801341914
+discovery__discovery_19__dwa__delay_100,discovery,discovery_19,dwa,delay_100,true,external_tolerance,false,0,19.300000000000217,6.674118409145739,0.1474820924343071,0.07765866760972055
+discovery__discovery_01__teb__tau_y_300,discovery,discovery_01,teb,tau_y_300,true,external_tolerance,false,0,13.83999999999975,5.500826583369357,0.04757751398646782,0.024665252970343672
+discovery__discovery_20__teb__tau_y_150,discovery,discovery_20,teb,tau_y_150,false,plugin returned no valid velocity command,false,1,4.999999999999938,2.18169500128483,0.12305356018615664,3.084619294895893
+holdout__holdout_18__teb__tau_x_100,holdout,holdout_18,teb,tau_x_100,true,external_tolerance,false,0,11.339999999999803,5.028988597532653,0.14361987471780055,0.049756238385997624
+discovery__discovery_14__teb__delay_200,discovery,discovery_14,teb,delay_200,true,external_tolerance,false,0,16.989999999999856,5.360949086899756,0.002440124802262926,0.07931209768396551
+holdout__holdout_19__dwa__tau_y_150,holdout,holdout_19,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,0.9825796741759477,0.4275799653651002,4.4417133504836634
+discovery__discovery_03__teb__e0,discovery,discovery_03,teb,e0,true,external_tolerance,false,0,13.469999999999757,5.894994067311355,0.13511574428300452,0.020926336741592305
+holdout__holdout_03__dwa__tau_x_100,holdout,holdout_03,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.11273341326251649,0.3760947616115824,4.749535392668288
+holdout__holdout_17__teb__delay_100,holdout,holdout_17,teb,delay_100,false,plugin returned no valid velocity command,false,1,3.799999999999963,1.4787577178063318,0.16102218630538492,3.402538893096547
+holdout__holdout_11__dwa__delay_200,holdout,holdout_11,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,5.032482042745948,0.0039655100941811735,0.18986996866770406
+holdout__holdout_13__teb__delay_200,holdout,holdout_13,teb,delay_200,true,external_tolerance,false,0,17.739999999999974,5.5806872346044125,0.0931383673645235,0.07904763780588611
+discovery__discovery_09__teb__delay_200,discovery,discovery_09,teb,delay_200,true,external_tolerance,false,0,18.390000000000075,5.773145969869031,0.1565333841627808,0.079256792920273
+discovery__discovery_02__teb__tau_y_500,discovery,discovery_02,teb,tau_y_500,true,external_tolerance,false,0,21.710000000000594,5.786264126144399,0.009863909168587703,0.07966889578257297
+discovery__discovery_07__teb__e0,discovery,discovery_07,teb,e0,true,external_tolerance,false,0,13.299999999999761,5.819145429111791,0.17832069678350537,0.013155129464635085
+holdout__holdout_07__dwa__tau_y_500,holdout,holdout_07,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,1.2377179984081932,0.19957163219836865,3.897784436069874
+holdout__holdout_17__dwa__tau_y_300,holdout,holdout_17,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.3666295217207295,4.799915338987383
+holdout__holdout_19__dwa__tau_y_300,holdout,holdout_19,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.19643775794537108,0.4282733193122719,4.772319817493077
+holdout__holdout_14__teb__tau_w_100,holdout,holdout_14,teb,tau_w_100,true,external_tolerance,false,0,15.879999999999706,6.403305094963268,0.10552015210896513,0.023917005545343435
+discovery__discovery_04__dwa__tau_w_300,discovery,discovery_04,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.1732053866945877,0.17266876848602752,3.3678881252618917
+discovery__discovery_06__teb__delay_050,discovery,discovery_06,teb,delay_050,true,external_tolerance,false,0,16.809999999999828,6.646587988525394,0.17672264163249796,0.013022647344652435
+discovery__discovery_09__dwa__delay_100,discovery,discovery_09,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.4560162580484062,4.799886964378005
+discovery__discovery_05__dwa__delay_200,discovery,discovery_05,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.7047859640601312,4.798693959698342
+discovery__discovery_19__teb__tau_w_100,discovery,discovery_19,teb,tau_w_100,true,external_tolerance,false,0,16.089999999999716,6.575791072716527,0.16133894073468263,0.07596458485255292
+discovery__discovery_18__dwa__tau_y_150,discovery,discovery_18,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,3.0827681975289045,0.014712357048907474,2.8276130490507088
+holdout__holdout_11__teb__tau_w_100,holdout,holdout_11,teb,tau_w_100,true,external_tolerance,false,0,13.139999999999764,5.245418962040849,0.17686338792004747,0.04236043930268357
+discovery__discovery_14__teb__tau_y_500,discovery,discovery_14,teb,tau_y_500,true,external_tolerance,false,0,18.260000000000055,5.439904718681308,0.05630061670515729,0.07838224610831604
+discovery__discovery_08__teb__delay_200,discovery,discovery_08,teb,delay_200,true,external_tolerance,false,0,17.45999999999993,5.609666700229048,0.203389763055099,0.07848052402268704
+discovery__discovery_18__dwa__e0,discovery,discovery_18,dwa,e0,false,footprint_collision,true,0,22.050000000000647,1.8526063752188577,0.0,3.924499772276902
+holdout__holdout_03__teb__tau_y_500,holdout,holdout_03,teb,tau_y_500,true,external_tolerance,false,0,15.25999999999972,5.340287715718238,0.1540346776447852,0.07883097326543292
+discovery__discovery_03__dwa__tau_y_150,discovery,discovery_03,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,3.1672523011632983,0.20403098848437998,2.053432669421392
+holdout__holdout_11__dwa__tau_w_300,holdout,holdout_11,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,3.0642435619382096,0.09911608144308635,2.3648047088194666
+discovery__discovery_07__teb__tau_w_100,discovery,discovery_07,teb,tau_w_100,true,external_tolerance,false,0,13.889999999999748,5.814949323964029,0.17894857921527144,0.020872527248650696
+discovery__discovery_16__teb__delay_100,discovery,discovery_16,teb,delay_100,true,external_tolerance,false,0,16.68999999999981,6.093375403681471,0.09446092518458069,0.05454428266068326
+discovery__discovery_20__dwa__tau_y_300,discovery,discovery_20,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,1.6687616646177432,0.6305277032999757,3.905857239263553
+discovery__discovery_11__teb__tau_x_100,discovery,discovery_11,teb,tau_x_100,true,external_tolerance,false,0,14.159999999999743,5.98050189311891,0.0671208848996626,0.05399165407139126
+holdout__holdout_17__teb__tau_x_300,holdout,holdout_17,teb,tau_x_300,false,plugin returned no valid velocity command,false,1,4.599999999999946,1.5220837249032935,0.1059126258167806,3.3965821335049404
+holdout__holdout_20__teb__tau_y_500,holdout,holdout_20,teb,tau_y_500,true,external_tolerance,false,0,15.509999999999714,5.488286355735784,0.10340553837170842,0.07985756351048699
+holdout__holdout_14__teb__delay_100,holdout,holdout_14,teb,delay_100,true,external_tolerance,false,0,17.38999999999992,6.5501640798483916,0.09146964155923154,0.02253140381359363
+discovery__discovery_15__dwa__tau_y_300,discovery,discovery_15,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,1.4422623884777928,0.5229383814125255,4.290023482143806
+discovery__discovery_02__dwa__tau_w_300,discovery,discovery_02,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.6260421068833646,0.4227986964683418,3.349602688662264
+discovery__discovery_20__teb__tau_w_300,discovery,discovery_20,teb,tau_w_300,false,plugin returned no valid velocity command,false,1,8.299999999999867,2.206598571637553,0.10712181086603945,3.0819842470828083
+holdout__holdout_01__teb__tau_y_500,holdout,holdout_01,teb,tau_y_500,false,plugin returned no valid velocity command,false,1,9.849999999999834,3.0105932692046258,0.014943163351453403,2.3737746518400935
+discovery__discovery_20__teb__tau_x_300,discovery,discovery_20,teb,tau_x_300,false,plugin returned no valid velocity command,false,1,5.9999999999999165,2.150794147343978,0.15322799582510083,3.1259332499763057
+holdout__holdout_07__teb__delay_100,holdout,holdout_07,teb,delay_100,false,plugin returned no valid velocity command,false,1,6.099999999999914,2.4653936640239817,0.1170558467647318,2.809206012800841
+holdout__holdout_08__teb__delay_100,holdout,holdout_08,teb,delay_100,true,external_tolerance,false,0,14.78999999999973,5.9569719970784885,0.1312285523092687,0.07751996277195691
+discovery__discovery_06__dwa__delay_200,discovery,discovery_06,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.6694408612036901,4.798693959698342
+discovery__discovery_09__dwa__e0,discovery,discovery_09,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.4777349416811121,4.800342967782957
+holdout__holdout_19__dwa__e0,holdout,holdout_19,dwa,e0,false,logical_timeout,false,0,30.00000000000189,1.0640103891719273,0.39991802599475534,4.459308348430912
+discovery__discovery_19__teb__delay_200,discovery,discovery_19,teb,delay_200,true,external_tolerance,false,0,23.200000000000827,6.804388515532295,0.06247506619323639,0.0775108173630502
+discovery__discovery_15__dwa__tau_y_150,discovery,discovery_15,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.1805475536606191,0.5281486368120529,4.3413672328913835
+discovery__discovery_05__dwa__tau_x_300,discovery,discovery_05,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.720552607547274,4.7987983755832255
+discovery__discovery_11__dwa__delay_200,discovery,discovery_11,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.16842252434971516,0.6185,4.800337210610185
+discovery__discovery_19__teb__tau_x_100,discovery,discovery_19,teb,tau_x_100,true,external_tolerance,false,0,15.349999999999717,6.586505992188788,0.13868250374323118,0.07619009645994095
+holdout__holdout_06__teb__tau_x_300,holdout,holdout_06,teb,tau_x_300,true,external_tolerance,false,0,14.29999999999974,5.935745588353412,0.14586325366679234,0.0489390389724531
+holdout__holdout_03__teb__tau_w_100,holdout,holdout_03,teb,tau_w_100,true,external_tolerance,false,0,13.529999999999756,5.3356559542837045,0.1660627976071701,0.05805824149863421
+discovery__discovery_10__dwa__tau_y_150,discovery,discovery_10,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,0.4114496888617774,0.7947405481796124,4.80090004381641
+holdout__holdout_11__dwa__tau_y_500,holdout,holdout_11,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.9228906181124015,0.12324101344144962,2.401482585304721
+discovery__discovery_18__teb__delay_200,discovery,discovery_18,teb,delay_200,true,external_tolerance,false,0,24.89000000000109,6.281286344915535,0.17372512015225317,0.06865793908018371
+holdout__holdout_06__dwa__tau_y_300,holdout,holdout_06,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,2.2646863720095656,0.31776315870183935,3.1090003864513642
+holdout__holdout_10__teb__tau_y_500,holdout,holdout_10,teb,tau_y_500,true,external_tolerance,false,0,18.81000000000014,5.585190820083978,0.06737477375454239,0.07958690093732196
+holdout__holdout_07__teb__delay_050,holdout,holdout_07,teb,delay_050,false,plugin returned no valid velocity command,false,1,5.749999999999922,2.4930522671567656,0.09875559512118848,2.799239260994375
+holdout__holdout_15__teb__tau_y_500,holdout,holdout_15,teb,tau_y_500,true,external_tolerance,false,0,13.019999999999767,5.034968392745869,0.1788290466998838,0.0793406881974234
+holdout__holdout_16__teb__tau_x_300,holdout,holdout_16,teb,tau_x_300,true,external_tolerance,false,0,12.259999999999783,5.043759930241792,0.1769329687130887,0.053534047492544104
+holdout__holdout_16__dwa__tau_x_300,holdout,holdout_16,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.6329514994841314,4.7987688891493585
+discovery__discovery_06__dwa__delay_050,discovery,discovery_06,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.6671015547648299,4.800409713394666
+holdout__holdout_13__teb__e0,holdout,holdout_13,teb,e0,true,external_tolerance,false,0,11.209999999999805,5.115591993804226,0.150275305530295,0.0795521739316048
+holdout__holdout_06__teb__tau_w_100,holdout,holdout_06,teb,tau_w_100,true,external_tolerance,false,0,13.80999999999975,5.929366208366477,0.12380620649345156,0.053296805468430825
+holdout__holdout_20__teb__delay_050,holdout,holdout_20,teb,delay_050,true,external_tolerance,false,0,12.539999999999777,5.399341358394802,0.1517324631626651,0.06016375279975453
+discovery__discovery_12__teb__tau_w_100,discovery,discovery_12,teb,tau_w_100,true,external_tolerance,false,0,13.669999999999753,5.094072878538158,0.16543168957918447,0.057099711666110664
+holdout__holdout_12__dwa__e0,holdout,holdout_12,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.4894754709442799,4.800342967782957
+holdout__holdout_11__dwa__tau_x_300,holdout,holdout_11,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.5234999999999999,4.7987688891493585
+discovery__discovery_07__dwa__tau_y_150,discovery,discovery_07,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.974403535679563,0.029869495662891415,2.233317600849198
+discovery__discovery_08__teb__delay_100,discovery,discovery_08,teb,delay_100,true,external_tolerance,false,0,12.749999999999773,5.2257243551729715,0.19022253758459667,0.07936920123578653
+discovery__discovery_12__teb__delay_050,discovery,discovery_12,teb,delay_050,true,external_tolerance,false,0,12.739999999999773,5.106105034838982,0.16374820691802797,0.06401269266890476
+discovery__discovery_07__teb__tau_y_500,discovery,discovery_07,teb,tau_y_500,true,external_tolerance,false,0,19.940000000000317,6.026882115035409,0.09034129117455274,0.03294284179997323
+discovery__discovery_20__dwa__tau_x_100,discovery,discovery_20,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.631947523341957,4.751622632976504
+discovery__discovery_09__dwa__tau_y_300,discovery,discovery_09,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.45693029464674034,4.799915338987383
+holdout__holdout_06__dwa__tau_x_100,holdout,holdout_06,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.7454999999999998,4.751622632976504
+holdout__holdout_20__teb__tau_w_300,holdout,holdout_20,teb,tau_w_300,true,external_tolerance,false,0,17.219999999999892,5.347550783593825,0.1512648690821731,0.045616571219830745
+discovery__discovery_16__dwa__tau_x_100,discovery,discovery_16,dwa,tau_x_100,true,external_tolerance,false,0,16.989999999999856,6.020405359568637,0.09830488733253633,0.07269676873468393
+holdout__holdout_12__teb__tau_w_100,holdout,holdout_12,teb,tau_w_100,true,external_tolerance,false,0,11.759999999999794,5.142804186793485,0.10132476016882726,0.039587738739651976
+holdout__holdout_01__teb__delay_100,holdout,holdout_01,teb,delay_100,true,external_tolerance,false,0,14.419999999999737,5.555382509704802,0.016049115024586922,0.07832924448390695
+holdout__holdout_04__teb__delay_100,holdout,holdout_04,teb,delay_100,true,external_tolerance,false,0,17.64999999999996,5.773701528732678,0.20774863196328439,0.02025942011925439
+discovery__discovery_07__dwa__e0,discovery,discovery_07,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.5532121583953385,4.750728787406146
+holdout__holdout_01__teb__e0,holdout,holdout_01,teb,e0,true,external_tolerance,false,0,11.95999999999979,5.398479087058974,0.053275207916061044,0.0787493453824806
+discovery__discovery_12__teb__e0,discovery,discovery_12,teb,e0,true,external_tolerance,false,0,11.4699999999998,5.116202825056417,0.17677016380274382,0.054469215409993596
+holdout__holdout_18__teb__tau_x_300,holdout,holdout_18,teb,tau_x_300,true,external_tolerance,false,0,12.239999999999783,5.033004214545989,0.1420911836331486,0.057772937504596965
+discovery__discovery_03__teb__tau_y_150,discovery,discovery_03,teb,tau_y_150,true,external_tolerance,false,0,15.379999999999717,6.036412639755873,0.09776303762658042,0.021278794969096747
+discovery__discovery_13__dwa__tau_x_300,discovery,discovery_13,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.3837988799553691,0.4249726698996225,4.847191900628959
+holdout__holdout_02__dwa__tau_w_300,holdout,holdout_02,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.5428040321375478,0.40235762380957873,3.9340832290536865
+holdout__holdout_03__dwa__tau_w_100,holdout,holdout_03,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,2.8737582197838676,0.042579036771993824,2.8348544577920394
+discovery__discovery_10__teb__tau_y_500,discovery,discovery_10,teb,tau_y_500,true,external_tolerance,false,0,22.77000000000076,6.526666693731273,0.1116276311349695,0.07952903498265507
+discovery__discovery_16__dwa__tau_y_300,discovery,discovery_16,dwa,tau_y_300,true,external_tolerance,false,0,17.77999999999998,6.0460133410071615,0.15984802590139643,0.0784840825575634
+holdout__holdout_11__teb__e0,holdout,holdout_11,teb,e0,true,external_tolerance,false,0,11.799999999999793,5.2642276808548685,0.16772211294684586,0.04087835176996578
+holdout__holdout_13__dwa__e0,holdout,holdout_13,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.6547618197316738,4.750728787406146
+discovery__discovery_20__dwa__delay_050,discovery,discovery_20,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.6402903399032303,4.789388221964771
+discovery__discovery_06__teb__tau_w_100,discovery,discovery_06,teb,tau_w_100,true,external_tolerance,false,0,16.95999999999985,6.558699086993707,0.1674167455346167,0.016275046765051843
+discovery__discovery_11__dwa__tau_w_100,discovery,discovery_11,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,2.4165447401971005,0.23430568239502936,3.168065680450634
+holdout__holdout_12__teb__tau_w_300,holdout,holdout_12,teb,tau_w_300,true,external_tolerance,false,0,12.959999999999768,5.093235226647072,0.14597673231772812,0.04421419454333021
+holdout__holdout_10__dwa__tau_y_300,holdout,holdout_10,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.7791242094480707,4.799915338987383
+discovery__discovery_02__dwa__e0,discovery,discovery_02,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.4329949468215036,4.750728787406146
+discovery__discovery_01__teb__tau_x_100,discovery,discovery_01,teb,tau_x_100,true,external_tolerance,false,0,12.88999999999977,5.5342210468045865,0.08229699343465399,0.047453224219184936
+holdout__holdout_09__teb__tau_y_150,holdout,holdout_09,teb,tau_y_150,true,external_tolerance,false,0,12.359999999999781,5.11174246398979,0.07200706677503192,0.07931569768265341
+holdout__holdout_14__dwa__tau_w_300,holdout,holdout_14,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,3.2125412494956502,0.16120360219538354,3.2345036882859564
+holdout__holdout_09__teb__tau_y_300,holdout,holdout_09,teb,tau_y_300,false,plugin returned no valid velocity command,false,1,6.0499999999999154,2.2631121953716526,0.003296044214179403,2.7952413477150224
+discovery__discovery_07__dwa__tau_y_500,discovery,discovery_07,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,3.221469939073557,0.14867793386723183,2.189414143661713
+holdout__holdout_14__dwa__delay_100,holdout,holdout_14,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.692189754527417,4.799886964378005
+holdout__holdout_09__teb__tau_x_100,holdout,holdout_09,teb,tau_x_100,true,external_tolerance,false,0,11.269999999999804,4.981252304712004,0.1323332691760634,0.07896276761292234
+holdout__holdout_18__dwa__tau_x_100,holdout,holdout_18,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.43015005518926014,4.751622632976504
+holdout__holdout_01__dwa__delay_100,holdout,holdout_01,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.5970311968398299,4.799886964378005
+holdout__holdout_05__teb__e0,holdout,holdout_05,teb,e0,true,external_tolerance,false,0,11.239999999999805,5.140065204165502,0.1578111907592472,0.07578411610534366
+discovery__discovery_05__dwa__tau_y_150,discovery,discovery_05,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.4736775832168156,0.16553260376233503,2.9473752500449213
+discovery__discovery_08__teb__tau_w_300,discovery,discovery_08,teb,tau_w_300,true,external_tolerance,false,0,15.549999999999713,5.113311884968986,0.18151858207213337,0.07688294820698502
+holdout__holdout_02__dwa__tau_y_300,holdout,holdout_02,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,1.3974524357318103,4.799915338987383
+discovery__discovery_17__dwa__e0,discovery,discovery_17,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,1.47510436969883,4.800342967782957
+discovery__discovery_07__teb__delay_100,discovery,discovery_07,teb,delay_100,true,external_tolerance,false,0,15.939999999999705,5.983127069499791,0.16936157751354086,0.028908847876960405
+discovery__discovery_10__dwa__tau_w_300,discovery,discovery_10,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,0.6169101383469078,0.804564807753719,4.75626160717355
+holdout__holdout_02__teb__tau_w_100,holdout,holdout_02,teb,tau_w_100,true,external_tolerance,false,0,14.459999999999736,5.753303096531296,0.13541027422190038,0.06821720622074497
+holdout__holdout_03__teb__tau_w_300,holdout,holdout_03,teb,tau_w_300,true,external_tolerance,false,0,19.8200000000003,5.317531397720781,0.17946982785368817,0.04718629421013164
+holdout__holdout_01__dwa__tau_y_500,holdout,holdout_01,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.5970311968398299,4.797485535329291
+discovery__discovery_18__teb__e0,discovery,discovery_18,teb,e0,true,external_tolerance,false,0,13.78999999999975,5.9593540241783955,0.2121098359547276,0.019714560679748028
+holdout__holdout_06__teb__tau_y_300,holdout,holdout_06,teb,tau_y_300,true,external_tolerance,false,0,16.359999999999758,6.043850066163741,0.06998403397506683,0.07930317659174538
+holdout__holdout_09__dwa__delay_200,holdout,holdout_09,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.8035557500980427,4.798693959698342
+discovery__discovery_17__dwa__delay_100,discovery,discovery_17,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,1.4706897545274167,4.799886964378005
+holdout__holdout_14__teb__tau_x_100,holdout,holdout_14,teb,tau_x_100,true,external_tolerance,false,0,15.299999999999718,6.515997757788982,0.10701563122149706,0.053996963715836316
+holdout__holdout_16__teb__delay_100,holdout,holdout_16,teb,delay_100,true,external_tolerance,false,0,12.929999999999769,5.0925418591206935,0.15552483402162576,0.05494289053994565
+holdout__holdout_03__dwa__tau_y_300,holdout,holdout_03,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,2.401738727055693,0.04780488332968112,2.7933513213193955
+holdout__holdout_13__teb__tau_w_100,holdout,holdout_13,teb,tau_w_100,true,external_tolerance,false,0,12.36999999999978,5.1162777298239765,0.18173315071085977,0.05991956620917042
+holdout__holdout_01__dwa__e0,holdout,holdout_01,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.5970311968398299,4.800342967782957
+discovery__discovery_12__dwa__tau_y_150,discovery,discovery_12,dwa,tau_y_150,true,external_tolerance,false,0,14.72999999999973,5.021335010928331,0.027522629133952585,0.07923353990852365
+holdout__holdout_14__dwa__tau_y_300,holdout,holdout_14,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.686931445143472,4.799915338987383
+discovery__discovery_09__teb__tau_w_100,discovery,discovery_09,teb,tau_w_100,true,external_tolerance,false,0,13.509999999999756,5.6060304189202235,0.17020483057216282,0.06676408575475486
+discovery__discovery_01__dwa__delay_050,discovery,discovery_01,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.5444237779524329,4.800409713394666
+discovery__discovery_10__teb__e0,discovery,discovery_10,teb,e0,true,external_tolerance,false,0,13.749999999999751,6.098237394994855,0.10298002091205657,0.07901955010855422
+holdout__holdout_03__teb__delay_100,holdout,holdout_03,teb,delay_100,true,external_tolerance,false,0,15.269999999999719,5.532051620280602,0.13975516951395123,0.07658507078400384
+discovery__discovery_17__teb__e0,discovery,discovery_17,teb,e0,false,plugin returned no valid velocity command,false,1,6.0499999999999154,2.698985993866058,0.09103150125994164,2.7229211459080207
+discovery__discovery_08__dwa__tau_y_500,discovery,discovery_08,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.7166682090769483,4.797485535329291
+holdout__holdout_17__teb__tau_y_150,holdout,holdout_17,teb,tau_y_150,false,plugin returned no valid velocity command,false,1,3.649999999999966,1.5926534323264268,0.10425276287816539,3.28866191978194
+discovery__discovery_11__teb__tau_w_100,discovery,discovery_11,teb,tau_w_100,true,external_tolerance,false,0,16.11999999999972,5.897348073275363,0.06424858960712101,0.02003719068435294
+holdout__holdout_19__dwa__tau_y_500,holdout,holdout_19,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.39181516405931216,0.4343446039128532,4.786073864726401
+discovery__discovery_19__teb__tau_x_300,discovery,discovery_19,teb,tau_x_300,false,plugin returned no valid velocity command,false,1,5.34999999999993,1.4307976657180164,0.06422880151381775,4.54075654515212
+holdout__holdout_07__teb__tau_w_100,holdout,holdout_07,teb,tau_w_100,false,plugin returned no valid velocity command,false,1,5.549999999999926,2.5036474682343988,0.06573738883538116,2.771997873420488
+holdout__holdout_14__dwa__delay_050,holdout,holdout_14,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.6931828856569324,4.800409713394666
+holdout__holdout_15__dwa__tau_y_300,holdout,holdout_15,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.6985278643892375,4.799915338987383
+holdout__holdout_16__teb__tau_w_300,holdout,holdout_16,teb,tau_w_300,true,external_tolerance,false,0,14.949999999999726,5.003818067576697,0.17673322968985203,0.05226411508241241
+holdout__holdout_15__dwa__tau_y_150,holdout,holdout_15,dwa,tau_y_150,true,external_tolerance,false,0,15.749999999999709,4.982642018717109,0.24426805013955372,0.07784733247712879
+holdout__holdout_19__teb__tau_y_150,holdout,holdout_19,teb,tau_y_150,true,external_tolerance,false,0,13.129999999999765,5.8420541084595135,0.19433516665343828,0.07745074971144478
+discovery__discovery_15__dwa__tau_x_100,discovery,discovery_15,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,1.5410941128490383,0.29930164435650863,4.2998850337288355
+holdout__holdout_06__teb__delay_050,holdout,holdout_06,teb,delay_050,true,external_tolerance,false,0,14.079999999999744,5.938261322932475,0.11952435667382932,0.0660856206988658
+holdout__holdout_06__teb__delay_100,holdout,holdout_06,teb,delay_100,true,external_tolerance,false,0,14.989999999999725,5.992200817417307,0.06122740184353237,0.06754062393069254
+discovery__discovery_11__teb__delay_050,discovery,discovery_11,teb,delay_050,true,external_tolerance,false,0,14.679999999999731,5.950315935540737,0.06489118954011211,0.012925149494660445
+holdout__holdout_02__teb__delay_100,holdout,holdout_02,teb,delay_100,true,external_tolerance,false,0,14.899999999999727,5.797833817791221,0.04527285428222194,0.0797078335580378
+discovery__discovery_16__dwa__tau_y_150,discovery,discovery_16,dwa,tau_y_150,true,external_tolerance,false,0,17.639999999999958,6.038047111279737,0.16571858258255118,0.07785471921439534
+holdout__holdout_17__dwa__tau_x_100,holdout,holdout_17,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.3849277883611997,4.797483142941365
+holdout__holdout_18__dwa__tau_y_150,holdout,holdout_18,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.2790982775427557,0.13512063404812186,2.782750905023758
+discovery__discovery_18__teb__delay_100,discovery,discovery_18,teb,delay_100,true,external_tolerance,false,0,18.88000000000015,6.041464461738863,0.2033100427655972,0.01585876774616549
+holdout__holdout_05__teb__delay_100,holdout,holdout_05,teb,delay_100,true,external_tolerance,false,0,13.709999999999752,5.371138354879542,0.11521238054952065,0.07965215996427119
+discovery__discovery_09__teb__tau_y_150,discovery,discovery_09,teb,tau_y_150,true,external_tolerance,false,0,13.239999999999762,5.664209372379023,0.1425325502720106,0.07842628694937541
+discovery__discovery_02__teb__tau_y_300,discovery,discovery_02,teb,tau_y_300,true,external_tolerance,false,0,15.959999999999704,5.433334358019817,0.05710873583176923,0.0730663486114408
+discovery__discovery_18__dwa__delay_100,discovery,discovery_18,dwa,delay_100,false,plugin returned no valid velocity command,false,1,2.149999999999998,0.022803454559040807,0.6778807585728704,4.782126715165411
+holdout__holdout_19__dwa__tau_x_300,holdout,holdout_19,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.3837988799553691,0.4082947249189979,4.847191900628959
+holdout__holdout_04__teb__tau_x_100,holdout,holdout_04,teb,tau_x_100,true,external_tolerance,false,0,13.939999999999747,5.791602689921834,0.2098164384021547,0.04760231462100254
+discovery__discovery_15__teb__delay_100,discovery,discovery_15,teb,delay_100,true,external_tolerance,false,0,16.599999999999795,6.282479051524943,0.0784839679095725,0.0775608084570135
+holdout__holdout_19__dwa__tau_x_100,holdout,holdout_19,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.1542350907733699,0.39928354133883015,4.83973905106104
+holdout__holdout_05__teb__delay_200,holdout,holdout_05,teb,delay_200,true,external_tolerance,false,0,16.23999999999974,5.43160130249468,0.12984080318820299,0.0767013233299602
+discovery__discovery_12__teb__tau_y_500,discovery,discovery_12,teb,tau_y_500,true,external_tolerance,false,0,15.309999999999718,5.284012038452312,0.1224192813635932,0.0795386892348654
+holdout__holdout_02__teb__delay_200,holdout,holdout_02,teb,delay_200,true,external_tolerance,false,0,19.95000000000032,5.970349147472173,0.03751279313842982,0.07963936351413874
+holdout__holdout_12__teb__tau_x_300,holdout,holdout_12,teb,tau_x_300,true,external_tolerance,false,0,12.36999999999978,5.123561171923066,0.12631709685618023,0.054602839227958194
+holdout__holdout_04__dwa__tau_y_300,holdout,holdout_04,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,2.2249428529966973,0.09440490301672272,3.3845098902445834
+holdout__holdout_07__dwa__tau_x_100,holdout,holdout_07,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.3516101145199447,4.751622632976504
+holdout__holdout_04__dwa__tau_x_300,holdout,holdout_04,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.5190331063502436,4.7987688891493585
+discovery__discovery_07__teb__tau_w_300,discovery,discovery_07,teb,tau_w_300,true,external_tolerance,false,0,18.760000000000133,5.8144108971073765,0.17083643815740857,0.01965102468007752
+discovery__discovery_20__teb__e0,discovery,discovery_20,teb,e0,false,plugin returned no valid velocity command,false,1,5.099999999999936,2.20443048428666,0.11784517074462597,3.092774529204049
+discovery__discovery_18__dwa__tau_x_100,discovery,discovery_18,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.1542350907733699,0.5883536683716011,4.83973905106104
+discovery__discovery_05__dwa__delay_100,discovery,discovery_05,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.7040026506876254,4.799886964378005
+holdout__holdout_20__dwa__e0,holdout,holdout_20,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.6549420647886863,4.750728787406146
+holdout__holdout_15__teb__delay_050,holdout,holdout_15,teb,delay_050,true,external_tolerance,false,0,12.069999999999787,4.9783903752119025,0.22334737950489317,0.07320074653686381
+holdout__holdout_08__dwa__delay_200,holdout,holdout_08,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.507377325410184,4.798693959698342
+holdout__holdout_01__dwa__tau_y_300,holdout,holdout_01,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.5970311968398299,4.799915338987383
+discovery__discovery_15__teb__tau_y_300,discovery,discovery_15,teb,tau_y_300,true,external_tolerance,false,0,20.60000000000042,6.46970918489634,0.04939986327371976,0.07948879651750822
+holdout__holdout_10__dwa__delay_050,holdout,holdout_10,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.7794218829669509,4.800409713394666
+discovery__discovery_10__teb__tau_w_300,discovery,discovery_10,teb,tau_w_300,true,external_tolerance,false,0,21.450000000000554,6.078921840512161,0.11951229520969672,0.07869158621094223
+holdout__holdout_20__dwa__tau_x_100,holdout,holdout_20,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.6549420647886863,4.751622632976504
+holdout__holdout_09__teb__tau_w_100,holdout,holdout_09,teb,tau_w_100,true,external_tolerance,false,0,11.329999999999803,5.035068843703476,0.07916805264386144,0.07656462606935811
+holdout__holdout_18__dwa__tau_y_500,holdout,holdout_18,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.4583310260448226,0.15557168861257614,2.7266314958921187
+holdout__holdout_07__dwa__tau_w_300,holdout,holdout_07,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.553867609045186,0.2653324003722361,3.847896006192771
+discovery__discovery_18__teb__delay_050,discovery,discovery_18,teb,delay_050,true,external_tolerance,false,0,15.079999999999723,5.952531030553993,0.21137131706117984,0.03451401536387673
+holdout__holdout_08__dwa__delay_050,holdout,holdout_08,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.50996991935106,4.800409713394666
+holdout__holdout_13__dwa__tau_y_500,holdout,holdout_13,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.3812672346170545,0.39481221578185005,2.749888071653823
+discovery__discovery_11__dwa__tau_y_150,discovery,discovery_11,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,0.817245706080055,0.5318616190783475,4.615589298673842
+discovery__discovery_17__teb__tau_y_150,discovery,discovery_17,teb,tau_y_150,false,plugin returned no valid velocity command,false,1,6.099999999999914,2.696405330338277,0.11312871301302874,2.729836633042914
+holdout__holdout_01__dwa__delay_200,holdout,holdout_01,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.5970311968398299,4.798693959698342
+discovery__discovery_12__dwa__delay_100,discovery,discovery_12,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.7703271399529189,4.799886964378005
+holdout__holdout_16__dwa__tau_w_300,holdout,holdout_16,dwa,tau_w_300,false,plugin returned no valid velocity command,false,1,8.749999999999858,2.078506918459029,0.006626239858530158,2.8984532862701364
+holdout__holdout_04__dwa__tau_w_100,holdout,holdout_04,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,1.9004865622035476,0.05189230676207727,3.4184049520683186
+discovery__discovery_20__teb__delay_100,discovery,discovery_20,teb,delay_100,false,plugin returned no valid velocity command,false,1,5.799999999999921,2.2271297368836884,0.09951060611009142,3.0682435294758688
+discovery__discovery_05__dwa__tau_y_500,discovery,discovery_05,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.7045637586345174,4.797485535329291
+discovery__discovery_19__dwa__delay_050,discovery,discovery_19,dwa,delay_050,false,plugin returned no valid velocity command,false,1,12.249999999999783,2.897337484099001,0.09172845675011035,3.324673260168778
+discovery__discovery_10__dwa__tau_y_300,discovery,discovery_10,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.780887704446978,0.7935570260531355,4.7570092306604055
+holdout__holdout_16__dwa__tau_y_500,holdout,holdout_16,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,1.7013833911965632,0.22336988011945927,3.6462614646023908
+holdout__holdout_02__dwa__e0,holdout,holdout_02,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,1.3983885873927713,4.800342967782957
+discovery__discovery_06__dwa__tau_x_300,discovery,discovery_06,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.681080212339259,4.7987983755832255
+discovery__discovery_18__dwa__tau_y_500,discovery,discovery_18,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.39181516405931216,0.6263446039128532,4.786073864726401
+discovery__discovery_17__dwa__delay_200,discovery,discovery_17,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,1.4686857704011862,4.798693959698342
+discovery__discovery_10__dwa__tau_w_100,discovery,discovery_10,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.4786106807067937,0.804564807753719,4.802281356825087
+holdout__holdout_01__teb__delay_050,holdout,holdout_01,teb,delay_050,true,external_tolerance,false,0,12.979999999999768,5.514762290316825,0.03998882026550492,0.0775448255468566
+holdout__holdout_20__dwa__delay_100,holdout,holdout_20,dwa,delay_100,false,plugin returned no valid velocity command,false,1,18.150000000000038,1.6926277647443257,0.05369899813555394,3.176989950025349
+discovery__discovery_15__teb__tau_w_300,discovery,discovery_15,teb,tau_w_300,true,external_tolerance,false,0,27.460000000001493,6.122035911789338,0.08501803636376841,0.03798115937644796
+discovery__discovery_20__teb__delay_050,discovery,discovery_20,teb,delay_050,false,plugin returned no valid velocity command,false,1,5.34999999999993,2.2138342248562353,0.10477216941063315,3.0819638529804214
+discovery__discovery_05__dwa__tau_w_300,discovery,discovery_05,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.911913271471555,0.16253691445135887,2.9476942049391557
+discovery__discovery_16__dwa__tau_w_300,discovery,discovery_16,dwa,tau_w_300,true,external_tolerance,false,0,19.400000000000233,5.996880800896759,0.10354198565308813,0.07821751782041561
+discovery__discovery_05__teb__delay_200,discovery,discovery_05,teb,delay_200,true,external_tolerance,false,0,21.24000000000052,6.404189649468048,0.16491481288556523,0.05628170039872951
+holdout__holdout_06__dwa__delay_200,holdout,holdout_06,dwa,delay_200,false,plugin returned no valid velocity command,false,1,24.400000000001015,2.310834195295598,0.2877150455267065,2.742169005585133
+discovery__discovery_15__dwa__tau_y_500,discovery,discovery_15,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.6027625976139978,0.8818178748130895,4.713803668789121
+discovery__discovery_17__dwa__tau_w_100,discovery,discovery_17,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,1.4773985424777225,4.79937960160367
+discovery__discovery_03__dwa__tau_y_500,discovery,discovery_03,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.5767083318281437,4.797485535329291
+discovery__discovery_11__teb__delay_200,discovery,discovery_11,teb,delay_200,false,plugin returned no valid velocity command,false,1,16.099999999999717,4.351011285034102,0.01507066886141908,1.496029750561485
+discovery__discovery_14__dwa__tau_x_100,discovery,discovery_14,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.9398867547192299,4.751622632976504
+holdout__holdout_15__teb__delay_200,holdout,holdout_15,teb,delay_200,true,external_tolerance,false,0,16.56999999999979,5.114012306205071,0.1929205191694283,0.07924167958571214
+holdout__holdout_19__dwa__delay_200,holdout,holdout_19,dwa,delay_200,false,plugin returned no valid velocity command,false,1,2.849999999999983,0.06160157427554287,0.4798632083370386,4.7586053591429724
+discovery__discovery_17__dwa__tau_y_500,discovery,discovery_17,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,1.460993943270171,4.797485535329291
+holdout__holdout_05__dwa__tau_x_300,holdout,holdout_05,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.9210500412375878,4.7987983755832255
+holdout__holdout_15__dwa__tau_x_300,holdout,holdout_15,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.7105421236154116,4.7987983755832255
+holdout__holdout_02__dwa__delay_100,holdout,holdout_02,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,1.3967347853335215,4.799886964378005
+holdout__holdout_07__dwa__tau_x_300,holdout,holdout_07,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.38229631582135304,4.7987688891493585
+discovery__discovery_14__teb__tau_w_300,discovery,discovery_14,teb,tau_w_300,true,external_tolerance,false,0,15.589999999999712,5.172201603648281,0.024193718581711755,0.0781607391462508
+discovery__discovery_14__dwa__tau_y_300,discovery,discovery_14,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,3.7177561416871256,0.0726329881254938,1.8606643730351213
+discovery__discovery_09__dwa__delay_200,discovery,discovery_09,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.45773258277510803,4.798693959698342
+discovery__discovery_18__dwa__delay_050,discovery,discovery_18,dwa,delay_050,false,footprint_collision,true,0,29.380000000001793,1.8884238431003566,0.0,3.8391887228740145
+discovery__discovery_03__teb__tau_w_300,discovery,discovery_03,teb,tau_w_300,true,external_tolerance,false,0,19.530000000000253,5.82084360117422,0.12096275498491424,0.027166130502681515
+discovery__discovery_01__dwa__delay_200,discovery,discovery_01,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.5444237779524329,4.798693959698342
+holdout__holdout_14__dwa__tau_x_300,holdout,holdout_14,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.6948698919597506,4.7987983755832255
+holdout__holdout_16__dwa__tau_x_100,holdout,holdout_16,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.6358145075445691,4.751622632976504
+holdout__holdout_03__dwa__tau_y_150,holdout,holdout_03,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.6067503038469404,0.06300127661674418,2.7280824623756494
+holdout__holdout_06__teb__e0,holdout,holdout_06,teb,e0,true,external_tolerance,false,0,13.029999999999767,5.891112605754112,0.10575615960631721,0.05338798982062338
+holdout__holdout_12__dwa__tau_w_300,holdout,holdout_12,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.930011750605917,0.38534669058661625,3.4663302449874647
+holdout__holdout_14__teb__delay_050,holdout,holdout_14,teb,delay_050,true,external_tolerance,false,0,15.419999999999716,6.473794737847201,0.09940661962614893,0.015353870457404273
+holdout__holdout_18__teb__delay_050,holdout,holdout_18,teb,delay_050,true,external_tolerance,false,0,11.679999999999795,5.062939590451895,0.09629596183635702,0.07505762033191722
+discovery__discovery_04__teb__delay_200,discovery,discovery_04,teb,delay_200,true,external_tolerance,false,0,20.040000000000333,5.859212836826906,0.03994154500072944,0.01433789773874557
+discovery__discovery_11__dwa__delay_100,discovery,discovery_11,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.15223332564838277,0.6185,4.801677528406165
+holdout__holdout_10__dwa__tau_w_300,holdout,holdout_10,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.6493006136207358,0.4366570702031709,3.7219456347376236
+holdout__holdout_19__dwa__tau_w_300,holdout,holdout_19,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.1085916975823706,0.5095880349580886,4.402955831908456
+holdout__holdout_17__teb__tau_x_100,holdout,holdout_17,teb,tau_x_100,false,plugin returned no valid velocity command,false,1,3.699999999999965,1.4846201943165773,0.1618445627570048,3.419203182246743
+holdout__holdout_14__dwa__tau_y_500,holdout,holdout_14,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.6788414814060523,4.797485535329291
+holdout__holdout_02__dwa__tau_y_500,holdout,holdout_02,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,1.3814459027030732,4.797485535329291
+holdout__holdout_20__teb__e0,holdout,holdout_20,teb,e0,true,external_tolerance,false,0,11.979999999999789,5.345319770794278,0.14140222363279475,0.05511002537640963
+discovery__discovery_16__teb__tau_x_100,discovery,discovery_16,teb,tau_x_100,true,external_tolerance,false,0,14.30999999999974,6.12511075466929,0.11212420190767242,0.022128606700939874
+discovery__discovery_19__dwa__tau_x_100,discovery,discovery_19,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,3.5559909250830226,0.13249079214410667,3.461339266722038
+holdout__holdout_19__teb__tau_w_100,holdout,holdout_19,teb,tau_w_100,true,external_tolerance,false,0,13.83999999999975,5.8444272192196,0.18761658692820526,0.048504529898732086
+holdout__holdout_08__teb__tau_y_500,holdout,holdout_08,teb,tau_y_500,true,external_tolerance,false,0,17.689999999999966,6.075951718090231,0.14815863053595765,0.07883524498096647
+discovery__discovery_16__teb__tau_y_500,discovery,discovery_16,teb,tau_y_500,true,external_tolerance,false,0,18.73000000000013,6.156856040043838,0.07270465961916622,0.07871248059768138
+holdout__holdout_20__dwa__tau_y_150,holdout,holdout_20,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.892107478591879,0.024059408297117724,3.1972954601578327
+holdout__holdout_07__dwa__tau_y_150,holdout,holdout_07,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.8140978055138877,0.15907883170458387,3.8233085044587596
+holdout__holdout_01__dwa__tau_w_100,holdout,holdout_01,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.5970311968398299,4.79937960160367
+holdout__holdout_08__teb__tau_y_300,holdout,holdout_08,teb,tau_y_300,true,external_tolerance,false,0,15.389999999999716,6.022392908012504,0.15664339828172666,0.07911591849038266
+discovery__discovery_16__dwa__delay_100,discovery,discovery_16,dwa,delay_100,false,plugin returned no valid velocity command,false,1,0.9000000000000006,0.10202583828040537,0.4567355660014023,4.80218548367512
+discovery__discovery_18__dwa__tau_x_300,discovery,discovery_18,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.3837988799553691,0.5967723673036515,4.847191900628959
+holdout__holdout_05__teb__tau_y_300,holdout,holdout_05,teb,tau_y_300,true,external_tolerance,false,0,17.099999999999874,5.4813934029611495,0.1223076163859143,0.07805733779557801
+discovery__discovery_08__teb__tau_y_150,discovery,discovery_08,teb,tau_y_150,true,external_tolerance,false,0,12.40999999999978,5.213104421827094,0.18602100332092508,0.07907950766571745
+discovery__discovery_02__dwa__tau_y_300,discovery,discovery_02,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,2.2491775133463277,0.33908177067205564,3.211158159196017
+discovery__discovery_03__dwa__delay_100,discovery,discovery_03,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.5767083318281437,4.799886964378005
+discovery__discovery_15__teb__tau_x_100,discovery,discovery_15,teb,tau_x_100,true,external_tolerance,false,0,13.939999999999747,6.161797655493622,0.152927266078373,0.07535178417090338
+holdout__holdout_12__teb__tau_y_500,holdout,holdout_12,teb,tau_y_500,true,external_tolerance,false,0,17.2799999999999,5.298010432853809,0.0535494512728146,0.06709936189308321
+discovery__discovery_11__dwa__tau_w_300,discovery,discovery_11,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,3.8858827384940837,0.18878599847871394,2.054185203028747
+holdout__holdout_10__teb__delay_200,holdout,holdout_10,teb,delay_200,true,external_tolerance,false,0,21.060000000000493,5.918305602493159,0.10753374946979682,0.07990950052776576
+holdout__holdout_06__dwa__tau_x_300,holdout,holdout_06,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.7454999999999998,4.7987688891493585
+discovery__discovery_20__dwa__delay_200,discovery,discovery_20,dwa,delay_200,false,plugin returned no valid velocity command,false,1,21.350000000000538,1.3894101480482155,0.6266030426359963,3.75224107644339
+discovery__discovery_10__teb__delay_200,discovery,discovery_10,teb,delay_200,true,external_tolerance,false,0,20.640000000000427,6.433641236076818,0.1384071905577452,0.07920009706196206
+discovery__discovery_12__teb__tau_x_100,discovery,discovery_12,teb,tau_x_100,true,external_tolerance,false,0,11.749999999999794,5.118655285252274,0.17035471343722014,0.07485134818720171
+holdout__holdout_17__teb__e0,holdout,holdout_17,teb,e0,false,plugin returned no valid velocity command,false,1,3.5999999999999672,1.5909170230419571,0.07511033449097373,3.3086687798132424
+discovery__discovery_17__dwa__tau_y_150,discovery,discovery_17,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.872491110651523,0.4143692385594871,3.4855283265434687
+discovery__discovery_15__dwa__e0,discovery,discovery_15,dwa,e0,false,logical_timeout,false,0,30.00000000000189,1.470449940799143,0.4850296003875325,4.332740373100962
+holdout__holdout_15__teb__delay_100,holdout,holdout_15,teb,delay_100,true,external_tolerance,false,0,14.73999999999973,5.093131679353561,0.17861287956242192,0.07540478701257636
+discovery__discovery_02__dwa__tau_w_100,discovery,discovery_02,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.4384403807821566,4.750198638426072
+discovery__discovery_11__teb__tau_y_300,discovery,discovery_11,teb,tau_y_300,false,plugin returned no valid velocity command,false,1,10.09999999999983,4.132374563101858,0.004115228016152908,1.6203771230929742
+discovery__discovery_08__dwa__delay_100,discovery,discovery_08,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.7169458490326739,4.799886964378005
+holdout__holdout_15__teb__tau_x_100,holdout,holdout_15,teb,tau_x_100,true,external_tolerance,false,0,11.329999999999803,4.985536509500282,0.2294254759043837,0.06773944758518573
+holdout__holdout_07__dwa__tau_y_300,holdout,holdout_07,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,1.7866361777255981,0.20803722849310113,3.838610679773752
+discovery__discovery_18__teb__tau_w_100,discovery,discovery_18,teb,tau_w_100,true,external_tolerance,false,0,16.24999999999974,5.927068823199648,0.21218167130738125,0.03617127663800467
+holdout__holdout_04__teb__tau_x_300,holdout,holdout_04,teb,tau_x_300,true,external_tolerance,false,0,17.419999999999924,6.151390133133114,0.21040129291260343,0.07718245376414258
+discovery__discovery_01__dwa__tau_y_150,discovery,discovery_01,dwa,tau_y_150,true,external_tolerance,false,0,16.31999999999975,5.481848155004556,0.1637192641289678,0.07721790305570979
+holdout__holdout_05__dwa__tau_y_300,holdout,holdout_05,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.9210500412375878,4.799915338987383
+holdout__holdout_01__teb__delay_200,holdout,holdout_01,teb,delay_200,false,plugin returned no valid velocity command,false,1,7.899999999999876,2.695683767739372,0.025048191323431182,2.6130874893576492
+discovery__discovery_11__teb__e0,discovery,discovery_11,teb,e0,true,external_tolerance,false,0,13.709999999999752,5.9113143837111854,0.06461478465378703,0.01984575871902401
+holdout__holdout_12__teb__tau_x_100,holdout,holdout_12,teb,tau_x_100,true,external_tolerance,false,0,11.4499999999998,5.090946441603928,0.14319856779111043,0.0735216222907198
+holdout__holdout_13__teb__tau_y_500,holdout,holdout_13,teb,tau_y_500,false,plugin returned no valid velocity command,false,1,8.749999999999858,3.561941323071922,0.025599090923854175,1.5391648704712886
+discovery__discovery_17__teb__delay_050,discovery,discovery_17,teb,delay_050,true,external_tolerance,false,0,14.989999999999725,6.323767844453736,0.1761865803076008,0.01455423771337164
+holdout__holdout_13__teb__delay_100,holdout,holdout_13,teb,delay_100,true,external_tolerance,false,0,13.619999999999754,5.176199505590167,0.1497844588062691,0.049338848445731213
+discovery__discovery_18__dwa__tau_w_300,discovery,discovery_18,dwa,tau_w_300,false,footprint_collision,true,0,6.229999999999912,1.6794999820167336,0.0,3.7970066278338788
+discovery__discovery_18__dwa__tau_w_100,discovery,discovery_18,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.42427196801886025,0.5887818187026576,4.846350580980265
+discovery__discovery_11__teb__tau_y_150,discovery,discovery_11,teb,tau_y_150,true,external_tolerance,false,0,14.129999999999743,5.944794762075666,0.03826710874523875,0.01144958807560044
+holdout__holdout_17__teb__tau_y_300,holdout,holdout_17,teb,tau_y_300,false,plugin returned no valid velocity command,false,1,4.049999999999958,1.503354740174453,0.17838605637401217,3.3698442560459383
+discovery__discovery_04__teb__e0,discovery,discovery_04,teb,e0,true,external_tolerance,false,0,13.519999999999756,5.784164194056772,0.14370538311720982,0.016797205220796408
+holdout__holdout_07__teb__tau_y_300,holdout,holdout_07,teb,tau_y_300,false,plugin returned no valid velocity command,false,1,7.299999999999889,2.5622252634177767,0.06928168574704596,2.7560658505283815
+discovery__discovery_16__teb__e0,discovery,discovery_16,teb,e0,true,external_tolerance,false,0,13.979999999999746,6.127768027960449,0.1139601782557379,0.03075269133227265
+discovery__discovery_17__teb__delay_100,discovery,discovery_17,teb,delay_100,true,external_tolerance,false,0,16.579999999999792,6.4184148720077765,0.13742890584870177,0.01632120042477061
+holdout__holdout_09__teb__tau_y_500,holdout,holdout_09,teb,tau_y_500,false,plugin returned no valid velocity command,false,1,7.4999999999998845,2.381285320581215,0.003924993319654908,2.7392992155277356
+holdout__holdout_04__dwa__delay_200,holdout,holdout_04,dwa,delay_200,false,plugin returned no valid velocity command,false,1,21.650000000000585,2.071034810680967,0.04598310940488312,3.072469446024454
+holdout__holdout_18__teb__delay_100,holdout,holdout_18,teb,delay_100,true,external_tolerance,false,0,12.979999999999768,5.167927640906973,0.10529456535010362,0.07843997289784153
+discovery__discovery_09__teb__tau_w_300,discovery,discovery_09,teb,tau_w_300,true,external_tolerance,false,0,17.809999999999985,5.5990680639709565,0.16867502226247055,0.05256601098952415
+discovery__discovery_10__teb__delay_100,discovery,discovery_10,teb,delay_100,true,external_tolerance,false,0,16.219999999999736,6.177770984784882,0.1300923760075452,0.07884372765674086
+discovery__discovery_11__dwa__tau_x_300,discovery,discovery_11,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,6.343890219649272,0.1570388371067788,0.2575619487495918
+discovery__discovery_02__teb__tau_x_100,discovery,discovery_02,teb,tau_x_100,true,external_tolerance,false,0,11.689999999999795,5.212063842713656,0.17387967428274828,0.05456673884438266
+discovery__discovery_19__dwa__tau_w_100,discovery,discovery_19,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,3.464038782001218,0.03625250429512472,3.327000006929735
+discovery__discovery_01__dwa__tau_y_300,discovery,discovery_01,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.5442043905118665,4.799915338987383
+holdout__holdout_09__dwa__delay_050,holdout,holdout_09,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.8035557500980427,4.800409713394666
+holdout__holdout_18__dwa__delay_050,holdout,holdout_18,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.45740437179750265,4.789388221964771
+discovery__discovery_15__dwa__delay_050,discovery,discovery_15,dwa,delay_050,false,plugin returned no valid velocity command,false,1,3.9499999999999598,1.0671043500435544,0.45503427115995065,4.232208380527272
+holdout__holdout_19__dwa__delay_050,holdout,holdout_19,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,1.0843686792864422,0.4465512139602157,4.39578059080506
+discovery__discovery_06__dwa__tau_y_500,discovery,discovery_06,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.6677301682492381,4.797485535329291
+discovery__discovery_14__dwa__delay_100,discovery,discovery_14,dwa,delay_100,false,plugin returned no valid velocity command,false,1,21.150000000000507,3.1367937376230164,0.04904482972089342,1.8438067804690386
+discovery__discovery_04__teb__tau_w_300,discovery,discovery_04,teb,tau_w_300,true,external_tolerance,false,0,20.200000000000358,5.790962949901157,0.1312399372111455,0.014181248284851632
+discovery__discovery_10__dwa__tau_y_500,discovery,discovery_10,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.25111634048292025,0.787295055679499,4.80096935748661
+discovery__discovery_08__teb__tau_y_500,discovery,discovery_08,teb,tau_y_500,true,external_tolerance,false,0,14.959999999999726,5.267082828809353,0.16722488375644695,0.0777144178089312
+discovery__discovery_10__dwa__e0,discovery,discovery_10,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.8742636020750174,0.804564807753719,4.72029108206253
+discovery__discovery_17__teb__delay_200,discovery,discovery_17,teb,delay_200,false,plugin returned no valid velocity command,false,1,7.099999999999893,2.6598668892595865,0.11100274322933056,2.7201233416751927
+discovery__discovery_07__dwa__delay_200,discovery,discovery_07,dwa,delay_200,false,plugin returned no valid velocity command,false,1,25.150000000001132,3.0841421289642112,0.14089774262352361,2.0308166951715263
+holdout__holdout_06__dwa__delay_100,holdout,holdout_06,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,2.1442699453484484,0.31059543223805236,3.1153600829292967
+holdout__holdout_18__teb__tau_w_100,holdout,holdout_18,teb,tau_w_100,true,external_tolerance,false,0,11.299999999999804,4.9824049830167505,0.12340370459565007,0.051020968183729795
+holdout__holdout_05__teb__tau_w_100,holdout,holdout_05,teb,tau_w_100,true,external_tolerance,false,0,12.029999999999788,5.142230440902659,0.12510772932456676,0.07846974510618865
+holdout__holdout_08__teb__delay_050,holdout,holdout_08,teb,delay_050,true,external_tolerance,false,0,13.419999999999758,5.871731977638163,0.05780921926479893,0.07900627486810703
+holdout__holdout_19__teb__delay_100,holdout,holdout_19,teb,delay_100,true,external_tolerance,false,0,15.23999999999972,5.912078891121984,0.17345673369505887,0.04300675935288405
+holdout__holdout_17__dwa__delay_200,holdout,holdout_17,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.36925852809483234,4.798693959698342
+holdout__holdout_02__teb__tau_y_500,holdout,holdout_02,teb,tau_y_500,true,external_tolerance,false,0,17.879999999999995,5.89899775971595,0.0675666430793267,0.0795100201654976
+holdout__holdout_11__teb__tau_x_100,holdout,holdout_11,teb,tau_x_100,true,external_tolerance,false,0,12.219999999999784,5.25768077379466,0.16600658787788544,0.040566723789474506
+holdout__holdout_03__teb__e0,holdout,holdout_03,teb,e0,true,external_tolerance,false,0,11.93999999999979,5.301244302998402,0.1571996517807476,0.05889713558792859
+holdout__holdout_20__dwa__tau_w_300,holdout,holdout_20,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.913980039487308,0.06657440720579723,3.1964545961540325
+holdout__holdout_15__dwa__e0,holdout,holdout_15,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.7143539515836996,4.800342967782957
+holdout__holdout_07__teb__tau_y_500,holdout,holdout_07,teb,tau_y_500,false,plugin returned no valid velocity command,false,1,9.049999999999851,2.5403082224953,0.15445288188625828,2.863451205987202
+discovery__discovery_14__dwa__e0,discovery,discovery_14,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.9417938847237654,4.750728787406146
+holdout__holdout_09__dwa__tau_x_300,holdout,holdout_09,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.8035557500980427,4.7987983755832255
+discovery__discovery_14__dwa__delay_050,discovery,discovery_14,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.9945472000759373,4.789388221964771
+holdout__holdout_04__dwa__delay_050,holdout,holdout_04,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,2.137299703281152,0.06261592834238702,3.363487542243192
+discovery__discovery_04__dwa__e0,discovery,discovery_04,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.4883988882964072,4.750728787406146
+discovery__discovery_03__teb__delay_100,discovery,discovery_03,teb,delay_100,true,external_tolerance,false,0,16.42999999999977,6.0615580532125,0.1219306647113285,0.023297983697022764
+holdout__holdout_14__teb__e0,holdout,holdout_14,teb,e0,true,external_tolerance,false,0,14.669999999999732,6.419905590320217,0.10466047807521063,0.02322055637115195
+holdout__holdout_14__teb__tau_x_300,holdout,holdout_14,teb,tau_x_300,true,external_tolerance,false,0,19.140000000000192,6.923689934809956,0.10507057214386302,0.07923951991271465
+discovery__discovery_03__dwa__e0,discovery,discovery_03,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.5767083318281437,4.800342967782957
+holdout__holdout_09__dwa__e0,holdout,holdout_09,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.8035557500980427,4.800342967782957
+holdout__holdout_16__dwa__delay_050,holdout,holdout_16,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.6409474526706697,4.789388221964771
+discovery__discovery_03__teb__tau_w_100,discovery,discovery_03,teb,tau_w_100,true,external_tolerance,false,0,14.579999999999734,5.859571916026766,0.12355423682054881,0.024716588913258373
+holdout__holdout_06__dwa__tau_w_100,holdout,holdout_06,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.7454999999999998,4.750198638426072
+discovery__discovery_17__teb__tau_x_100,discovery,discovery_17,teb,tau_x_100,true,external_tolerance,false,0,14.509999999999735,6.352180558100537,0.1607432911119707,0.060172661702020847
+holdout__holdout_12__teb__delay_050,holdout,holdout_12,teb,delay_050,true,external_tolerance,false,0,11.569999999999798,5.160636705769249,0.12496234982949316,0.07178131279722656
+discovery__discovery_17__teb__tau_y_500,discovery,discovery_17,teb,tau_y_500,false,plugin returned no valid velocity command,false,1,7.899999999999876,2.7368501227903095,0.13041973373338278,2.7813576564656017
+discovery__discovery_13__teb__delay_050,discovery,discovery_13,teb,delay_050,true,external_tolerance,false,0,13.589999999999755,5.550601639667658,0.21020662004995716,0.05764090881201167
+discovery__discovery_03__dwa__delay_200,discovery,discovery_03,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.5767083318281437,4.798693959698342
+discovery__discovery_04__teb__tau_y_150,discovery,discovery_04,teb,tau_y_150,true,external_tolerance,false,0,15.089999999999723,5.991082100534019,0.12288540363362105,0.017654176421963142
+discovery__discovery_01__teb__delay_050,discovery,discovery_01,teb,delay_050,true,external_tolerance,false,0,13.229999999999762,5.526756795469208,0.0660565966385336,0.022929009308082376
+holdout__holdout_04__dwa__tau_y_500,holdout,holdout_04,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.1802654449066017,0.14774451273901093,3.3824391173894512
+holdout__holdout_03__dwa__tau_y_500,holdout,holdout_03,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.6743292827763603,0.0601028802296676,2.7166637149230732
+holdout__holdout_08__teb__tau_y_150,holdout,holdout_08,teb,tau_y_150,true,external_tolerance,false,0,14.079999999999744,5.993441266112932,0.16949697717394643,0.07767377465534021
+discovery__discovery_10__teb__tau_y_300,discovery,discovery_10,teb,tau_y_300,true,external_tolerance,false,0,16.799999999999827,6.2690886664884555,0.12840747201041727,0.07980101159307697
+holdout__holdout_01__dwa__tau_x_300,holdout,holdout_01,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.5970311968398299,4.7987983755832255
+discovery__discovery_02__dwa__tau_x_300,discovery,discovery_02,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.464317043845097,4.7987688891493585
+discovery__discovery_14__teb__tau_w_100,discovery,discovery_14,teb,tau_w_100,true,external_tolerance,false,0,12.189999999999785,5.173510995836696,0.06292132639306144,0.07768573622995976
+holdout__holdout_20__teb__tau_w_100,holdout,holdout_20,teb,tau_w_100,true,external_tolerance,false,0,13.029999999999767,5.372480209060342,0.16730191755450677,0.032419533699125744
+discovery__discovery_19__dwa__tau_x_300,discovery,discovery_19,dwa,tau_x_300,true,external_tolerance,false,0,23.760000000000915,7.506710065391809,0.1340459422518406,0.027099572318038917
+discovery__discovery_13__dwa__tau_y_500,discovery,discovery_13,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.39181516405931216,0.38253308260531554,4.786073864726401
+discovery__discovery_05__teb__e0,discovery,discovery_05,teb,e0,true,external_tolerance,false,0,13.999999999999746,6.266898623884694,0.181006985734597,0.01574340610640872
+discovery__discovery_07__dwa__delay_050,discovery,discovery_07,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.5937903399032302,4.789388221964771
+discovery__discovery_06__dwa__e0,discovery,discovery_06,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.685646152655456,4.800342967782957
+holdout__holdout_18__teb__delay_200,holdout,holdout_18,teb,delay_200,true,external_tolerance,false,0,15.039999999999724,5.258132196595162,0.1130795950259349,0.044697189143666036
+discovery__discovery_04__dwa__tau_w_100,discovery,discovery_04,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.4903864189021048,4.750198638426072
+discovery__discovery_02__dwa__delay_200,discovery,discovery_02,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,4.995972865286398,0.02002941865349565,0.1541024636073344
+discovery__discovery_02__teb__e0,discovery,discovery_02,teb,e0,true,external_tolerance,false,0,11.329999999999803,5.188801043789954,0.1694659512638086,0.0652238029783286
+discovery__discovery_13__teb__tau_y_300,discovery,discovery_13,teb,tau_y_300,true,external_tolerance,false,0,15.059999999999723,5.675454148415969,0.19487280109714436,0.07909031140121894
+discovery__discovery_19__teb__tau_y_150,discovery,discovery_19,teb,tau_y_150,true,external_tolerance,false,0,15.549999999999713,6.6230820289239265,0.14074172825845793,0.07674071613307717
+discovery__discovery_15__teb__tau_y_150,discovery,discovery_15,teb,tau_y_150,true,external_tolerance,false,0,15.929999999999705,6.337818560268209,0.07433829431252198,0.0775138684279111
+discovery__discovery_04__teb__tau_y_500,discovery,discovery_04,teb,tau_y_500,false,footprint_collision,true,0,11.519999999999799,3.8879028768538415,0.0,1.9302806218291968
+holdout__holdout_02__teb__tau_y_150,holdout,holdout_02,teb,tau_y_150,true,external_tolerance,false,0,13.83999999999975,5.775660291765764,0.05702190611360536,0.07843983945989424
+discovery__discovery_12__teb__tau_w_300,discovery,discovery_12,teb,tau_w_300,true,external_tolerance,false,0,20.890000000000466,5.063814026461841,0.1194928961283677,0.03980668848634136
+holdout__holdout_11__dwa__delay_050,holdout,holdout_11,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.5234999999999999,4.789388221964771
+holdout__holdout_18__dwa__delay_100,holdout,holdout_18,dwa,delay_100,false,plugin returned no valid velocity command,false,1,19.750000000000288,2.3744427296941493,0.13992784010790488,2.550267237762588
+holdout__holdout_15__teb__tau_y_300,holdout,holdout_15,teb,tau_y_300,true,external_tolerance,false,0,12.559999999999777,5.015884797903949,0.20746700139422994,0.07989338363807003
+holdout__holdout_19__teb__delay_200,holdout,holdout_19,teb,delay_200,true,external_tolerance,false,0,20.4700000000004,6.1326329609179595,0.07429877644090371,0.03836920932983548
+discovery__discovery_12__teb__delay_200,discovery,discovery_12,teb,delay_200,true,external_tolerance,false,0,18.200000000000045,5.1522477064937355,0.0654480942975345,0.07913813648863115
+discovery__discovery_13__dwa__delay_200,discovery,discovery_13,dwa,delay_200,false,plugin returned no valid velocity command,false,1,2.849999999999983,0.06160157427554287,0.418144155709406,4.7586053591429724
+discovery__discovery_05__dwa__tau_w_100,discovery,discovery_05,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.708028875576841,4.79937960160367
+holdout__holdout_08__dwa__tau_y_150,holdout,holdout_08,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.8076192584490676,0.2770859532283744,3.7839920787225
+discovery__discovery_06__teb__tau_y_150,discovery,discovery_06,teb,tau_y_150,true,external_tolerance,false,0,16.209999999999734,6.691670700353945,0.1852687143593994,0.024954469678564992
+holdout__holdout_14__teb__tau_y_300,holdout,holdout_14,teb,tau_y_300,true,external_tolerance,false,0,20.960000000000477,6.7083024722407245,0.07552836081119563,0.059430239684827045
+discovery__discovery_04__dwa__tau_y_150,discovery,discovery_04,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.6758448707723541,0.1771587309830669,3.421435653174133
+discovery__discovery_10__teb__tau_w_100,discovery,discovery_10,teb,tau_w_100,true,external_tolerance,false,0,15.089999999999723,6.082385262431628,0.14237869098561395,0.07844210621105294
+discovery__discovery_19__teb__tau_w_300,discovery,discovery_19,teb,tau_w_300,true,external_tolerance,false,0,25.870000000001244,6.540789135386968,0.031371697355832125,0.07698490080540828
+discovery__discovery_10__teb__tau_x_300,discovery,discovery_10,teb,tau_x_300,true,external_tolerance,false,0,14.579999999999734,6.042721263455642,0.11502819567915439,0.07708147421009814
+holdout__holdout_01__teb__tau_y_300,holdout,holdout_01,teb,tau_y_300,false,plugin returned no valid velocity command,false,1,8.14999999999987,2.8099197701605,0.02955229651442132,2.6062583266037787
+holdout__holdout_10__teb__tau_y_150,holdout,holdout_10,teb,tau_y_150,true,external_tolerance,false,0,12.819999999999771,5.423928469184687,0.11226799952497678,0.07837074076379467
+discovery__discovery_13__teb__delay_200,discovery,discovery_13,teb,delay_200,true,external_tolerance,false,0,17.619999999999955,5.699095595648316,0.0890997375949621,0.07955672996835367
+discovery__discovery_19__teb__delay_100,discovery,discovery_19,teb,delay_100,true,external_tolerance,false,0,17.619999999999955,6.647800394701747,0.16439826483860467,0.07642586310204648
+discovery__discovery_09__dwa__tau_y_150,discovery,discovery_09,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.011966056480011,0.15041444935004147,3.216359637580112
+discovery__discovery_05__dwa__tau_y_300,discovery,discovery_05,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.7046497078128477,4.799915338987383
+discovery__discovery_09__dwa__delay_050,discovery,discovery_09,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.45748848255727803,4.800409713394666
+holdout__holdout_13__teb__delay_050,holdout,holdout_13,teb,delay_050,true,external_tolerance,false,0,12.219999999999784,5.161252034342596,0.17799367996748433,0.0725999695813941
+discovery__discovery_08__teb__delay_050,discovery,discovery_08,teb,delay_050,true,external_tolerance,false,0,11.93999999999979,5.161714299573678,0.17552715406608957,0.07761668223228073
+discovery__discovery_09__dwa__tau_x_100,discovery,discovery_09,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.48024918009393147,4.797483142941365
+holdout__holdout_16__dwa__tau_y_300,holdout,holdout_16,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,1.8049076770626533,0.14459324339863094,3.5948996793601675
+discovery__discovery_01__teb__delay_100,discovery,discovery_01,teb,delay_100,true,external_tolerance,false,0,14.339999999999739,5.544822826167849,0.04815425830480047,0.016138127363452288
+discovery__discovery_16__teb__tau_w_100,discovery,discovery_16,teb,tau_w_100,true,external_tolerance,false,0,15.569999999999713,6.059451919486834,0.09720166893786099,0.04922804475011432
+holdout__holdout_20__teb__tau_y_150,holdout,holdout_20,teb,tau_y_150,true,external_tolerance,false,0,12.499999999999778,5.420897346647126,0.14746465703011535,0.060311668482584034
+holdout__holdout_07__teb__delay_200,holdout,holdout_07,teb,delay_200,false,plugin returned no valid velocity command,false,1,7.849999999999877,2.553440329005384,0.11047343705594104,2.8000923655284047
+holdout__holdout_03__dwa__delay_200,holdout,holdout_03,dwa,delay_200,false,plugin returned no valid velocity command,false,1,22.350000000000694,2.4926498480281185,0.06546917403130255,2.538087537836867
+holdout__holdout_03__dwa__delay_050,holdout,holdout_03,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,2.7639358209125784,0.05279846917402481,2.800876602127678
+holdout__holdout_10__dwa__tau_y_150,holdout,holdout_10,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.9931931170554604,0.41934680797511664,3.614425722679432
+discovery__discovery_04__teb__delay_050,discovery,discovery_04,teb,delay_050,true,external_tolerance,false,0,14.939999999999726,5.861569040657224,0.13684660563526085,0.003866762466368159
+discovery__discovery_13__dwa__tau_y_300,discovery,discovery_13,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.19643775794537108,0.3799554680710816,4.772319817493077
+discovery__discovery_02__dwa__delay_050,discovery,discovery_02,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.4739193770853988,4.789388221964771
+discovery__discovery_06__teb__delay_200,discovery,discovery_06,teb,delay_200,true,external_tolerance,false,0,21.63000000000058,6.881723405033753,0.15337599420770248,0.0773575882658966
+holdout__holdout_05__teb__tau_x_300,holdout,holdout_05,teb,tau_x_300,true,external_tolerance,false,0,12.159999999999785,5.149495492121218,0.1090752685150369,0.07640140799551058
+holdout__holdout_11__dwa__e0,holdout,holdout_11,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.5234999999999999,4.750728787406146
+discovery__discovery_06__dwa__tau_x_100,discovery,discovery_06,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.6878650183424233,4.797483142941365
+discovery__discovery_08__teb__e0,discovery,discovery_08,teb,e0,true,external_tolerance,false,0,11.239999999999805,5.182736287931109,0.18936140469515655,0.07741089692694693
+holdout__holdout_02__teb__tau_x_300,holdout,holdout_02,teb,tau_x_300,true,external_tolerance,false,0,13.709999999999752,5.728185832789229,0.09236556157152886,0.0664227777280428
+holdout__holdout_16__teb__tau_y_300,holdout,holdout_16,teb,tau_y_300,true,external_tolerance,false,0,12.719999999999773,5.08800801595742,0.14183587372039055,0.06532579113599184
+holdout__holdout_17__dwa__tau_w_300,holdout,holdout_17,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.9074102477200388,0.1874071441785701,2.6541973225044377
+holdout__holdout_18__dwa__tau_y_300,holdout,holdout_18,dwa,tau_y_300,false,plugin returned no valid velocity command,false,1,10.599999999999818,2.7547078795086506,0.08086497425648931,2.1796801002855815
+holdout__holdout_02__teb__tau_w_300,holdout,holdout_02,teb,tau_w_300,true,external_tolerance,false,0,20.050000000000335,5.733178186557535,0.1014335140708101,0.056512755335511936
+holdout__holdout_04__teb__tau_y_300,holdout,holdout_04,teb,tau_y_300,true,external_tolerance,false,0,16.909999999999844,5.969685236769744,0.1612945213679935,0.07854231315253017
+holdout__holdout_06__dwa__tau_y_150,holdout,holdout_06,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.0871787711083902,0.32403889464792934,3.151367489476429
+discovery__discovery_15__dwa__tau_x_300,discovery,discovery_15,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,1.903519635415007,0.33744600272889996,4.327755226404838
+discovery__discovery_02__teb__tau_x_300,discovery,discovery_02,teb,tau_x_300,true,external_tolerance,false,0,12.43999999999978,5.187410779205645,0.1691907794191754,0.049072201222348844
+holdout__holdout_12__dwa__tau_x_300,holdout,holdout_12,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.48389261962244184,4.7987983755832255
+holdout__holdout_18__teb__tau_y_150,holdout,holdout_18,teb,tau_y_150,true,external_tolerance,false,0,12.549999999999777,5.15633959602619,0.07954845617006767,0.06631715988944986
+holdout__holdout_01__teb__tau_y_150,holdout,holdout_01,teb,tau_y_150,true,external_tolerance,false,0,13.509999999999756,5.6383986138447835,0.036748806976460234,0.078971852936822
+holdout__holdout_17__teb__tau_w_300,holdout,holdout_17,teb,tau_w_300,false,plugin returned no valid velocity command,false,1,3.3999999999999715,1.4745334156894057,0.15443479843321736,3.412865257103738
+holdout__holdout_01__teb__tau_x_100,holdout,holdout_01,teb,tau_x_100,true,external_tolerance,false,0,12.37999999999978,5.43500573897764,0.059495228893379465,0.07783929036443914
+holdout__holdout_05__dwa__tau_y_150,holdout,holdout_05,dwa,tau_y_150,true,external_tolerance,false,0,14.899999999999727,5.072552586216585,0.04933252599375246,0.07547519010306328
+holdout__holdout_04__teb__tau_y_500,holdout,holdout_04,teb,tau_y_500,true,external_tolerance,false,0,16.289999999999747,5.761370195256148,0.14260326832680767,0.017135244902898465
+discovery__discovery_18__dwa__tau_y_300,discovery,discovery_18,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.19643775794537108,0.620273319312272,4.772319817493077
+holdout__holdout_08__dwa__tau_y_300,holdout,holdout_08,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.5085418537115383,4.799915338987383
+holdout__holdout_12__teb__e0,holdout,holdout_12,teb,e0,true,external_tolerance,false,0,11.139999999999807,5.100398395927692,0.1687193674286074,0.07685010083328776
+holdout__holdout_05__dwa__tau_w_300,holdout,holdout_05,dwa,tau_w_300,true,external_tolerance,false,0,26.49000000000134,5.199003236333173,0.04429747111982713,0.07729414459753153
+discovery__discovery_09__teb__tau_y_300,discovery,discovery_09,teb,tau_y_300,true,external_tolerance,false,0,14.539999999999734,5.690270087273735,0.12048062901594929,0.07818890105562672
+discovery__discovery_01__dwa__tau_x_300,discovery,discovery_01,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.5444237779524329,4.7987983755832255
+discovery__discovery_20__teb__tau_w_100,discovery,discovery_20,teb,tau_w_100,false,plugin returned no valid velocity command,false,1,5.599999999999925,2.2233173285209458,0.10228596042684535,3.0801108227348215
+holdout__holdout_10__dwa__tau_x_300,holdout,holdout_10,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.7941198300741082,4.7987983755832255
+discovery__discovery_08__dwa__e0,discovery,discovery_08,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.738948443309302,4.800342967782957
+holdout__holdout_12__dwa__tau_w_100,holdout,holdout_12,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.47193091437191725,4.79937960160367
+holdout__holdout_10__teb__tau_y_300,holdout,holdout_10,teb,tau_y_300,true,external_tolerance,false,0,14.509999999999735,5.458337299410219,0.0995773289429599,0.07856510430777569
+holdout__holdout_09__teb__tau_w_300,holdout,holdout_09,teb,tau_w_300,true,external_tolerance,false,0,12.749999999999773,4.978102116804249,0.12438364787871037,0.07714952656399834
+discovery__discovery_12__dwa__tau_y_500,discovery,discovery_12,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.7664129783802295,4.797485535329291
+holdout__holdout_02__dwa__delay_200,holdout,holdout_02,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,1.3886206275341793,4.798693959698342
+discovery__discovery_18__teb__tau_y_150,discovery,discovery_18,teb,tau_y_150,true,external_tolerance,false,0,14.029999999999745,5.9184736443679595,0.18803244646765985,0.057910735548244587
+discovery__discovery_07__teb__tau_x_100,discovery,discovery_07,teb,tau_x_100,true,external_tolerance,false,0,13.639999999999754,5.877373842228635,0.17714363369673558,0.04552389160827555
+discovery__discovery_10__dwa__tau_x_100,discovery,discovery_10,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.7192958938910345,0.7705369563794715,4.787966334873421
+discovery__discovery_07__dwa__tau_x_100,discovery,discovery_07,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.5738101510179078,4.751622632976504
+holdout__holdout_09__dwa__delay_100,holdout,holdout_09,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.8035557500980427,4.799886964378005
+discovery__discovery_11__teb__delay_100,discovery,discovery_11,teb,delay_100,true,external_tolerance,false,0,16.099999999999717,5.93031966636361,0.027904427054153687,0.013052819943652344
+discovery__discovery_04__teb__tau_y_300,discovery,discovery_04,teb,tau_y_300,true,external_tolerance,false,0,17.759999999999977,5.9871508393676365,0.09567204987281994,0.07941716956023229
+discovery__discovery_17__dwa__tau_w_300,discovery,discovery_17,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.8559727461291984,0.37991966610695227,3.3946391689420423
+holdout__holdout_07__teb__e0,holdout,holdout_07,teb,e0,false,plugin returned no valid velocity command,false,1,5.499999999999927,2.4942392146524313,0.07287780098044429,2.777452250781547
+holdout__holdout_08__dwa__delay_100,holdout,holdout_08,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.5084458490326738,4.799886964378005
+discovery__discovery_03__dwa__tau_x_300,discovery,discovery_03,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.5767083318281437,4.7987983755832255
+discovery__discovery_08__dwa__tau_w_100,discovery,discovery_08,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.7209084132018339,4.79937960160367
+holdout__holdout_08__teb__delay_200,holdout,holdout_08,teb,delay_200,true,external_tolerance,false,0,17.930000000000003,5.987198641014414,0.12285082509423176,0.07957031125311789
+discovery__discovery_14__teb__tau_y_150,discovery,discovery_14,teb,tau_y_150,true,external_tolerance,false,0,13.179999999999763,5.2802568078547445,0.009016929455384152,0.07894984624389709
+holdout__holdout_11__dwa__tau_y_300,holdout,holdout_11,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,3.1051068646844127,0.06059855052315611,2.3220152448312246
+discovery__discovery_20__teb__tau_y_300,discovery,discovery_20,teb,tau_y_300,false,plugin returned no valid velocity command,false,1,5.749999999999922,2.281573184184018,0.07849898791740362,3.0470201322480013
+discovery__discovery_18__teb__tau_y_500,discovery,discovery_18,teb,tau_y_500,true,external_tolerance,false,0,17.13999999999988,6.186833357335338,0.1481142516298169,0.050040067359625
+discovery__discovery_05__dwa__delay_050,discovery,discovery_05,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.7055056752444058,4.800409713394666
+holdout__holdout_07__teb__tau_y_150,holdout,holdout_07,teb,tau_y_150,false,plugin returned no valid velocity command,false,1,5.9999999999999165,2.533882495027165,0.07924570279752041,2.787562222146551
+holdout__holdout_20__dwa__tau_w_100,holdout,holdout_20,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.6549420647886863,4.750198638426072
+discovery__discovery_04__teb__tau_x_300,discovery,discovery_04,teb,tau_x_300,true,external_tolerance,false,0,16.339999999999755,6.082688231880107,0.10070344226319324,0.07865934463194306
+discovery__discovery_16__teb__tau_w_300,discovery,discovery_16,teb,tau_w_300,true,external_tolerance,false,0,23.630000000000894,6.052346406019842,0.12924975710182943,0.04754372627804639
+holdout__holdout_14__teb__tau_w_300,holdout,holdout_14,teb,tau_w_300,true,external_tolerance,false,0,20.180000000000355,6.401389808390025,0.10384806807767952,0.03049293450347547
+discovery__discovery_16__teb__tau_y_150,discovery,discovery_16,teb,tau_y_150,true,external_tolerance,false,0,14.809999999999729,6.1472068702799385,0.16638488022321005,0.058577031916996626
+discovery__discovery_16__dwa__tau_x_300,discovery,discovery_16,dwa,tau_x_300,true,external_tolerance,false,0,25.53000000000119,6.881101721304814,0.22355057304966852,0.02936232579880357
+discovery__discovery_07__dwa__tau_w_300,discovery,discovery_07,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,3.3297840821269538,0.12894518355797002,2.217640389362648
+discovery__discovery_01__teb__tau_x_300,discovery,discovery_01,teb,tau_x_300,true,external_tolerance,false,0,16.739999999999817,5.95537161842772,0.07347693715609009,0.0794021869977169
+holdout__holdout_18__dwa__e0,holdout,holdout_18,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.40024083672580263,4.750728787406146
+holdout__holdout_05__dwa__tau_y_500,holdout,holdout_05,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.9210500412375878,4.797485535329291
+holdout__holdout_02__dwa__tau_y_150,holdout,holdout_02,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.2543820564742267,0.7282460796502412,4.441766501379751
+holdout__holdout_13__teb__tau_x_300,holdout,holdout_13,teb,tau_x_300,true,external_tolerance,false,0,12.39999999999978,5.152753246765736,0.1558653479696691,0.042385861807562535
+holdout__holdout_07__teb__tau_x_100,holdout,holdout_07,teb,tau_x_100,false,plugin returned no valid velocity command,false,1,5.949999999999918,2.5002460290640642,0.06831541307267841,2.7751639376283372
+discovery__discovery_20__dwa__delay_100,discovery,discovery_20,dwa,delay_100,false,plugin returned no valid velocity command,false,1,17.249999999999897,1.3347800934173917,0.6288845323885947,3.7585499029921086
+discovery__discovery_05__teb__delay_100,discovery,discovery_05,teb,delay_100,true,external_tolerance,false,0,16.289999999999747,6.3485449459751075,0.18412702941441728,0.017252831886055184
+discovery__discovery_05__dwa__e0,discovery,discovery_05,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.7260038403609901,4.800342967782957
+discovery__discovery_05__teb__tau_y_500,discovery,discovery_05,teb,tau_y_500,true,external_tolerance,false,0,19.77000000000029,6.379088808663505,0.16875149609957976,0.06362736675502126
+discovery__discovery_13__teb__tau_y_500,discovery,discovery_13,teb,tau_y_500,true,external_tolerance,false,0,16.419999999999767,5.671327648620726,0.11323165246382105,0.06855552504366756
+discovery__discovery_12__teb__delay_100,discovery,discovery_12,teb,delay_100,true,external_tolerance,false,0,15.349999999999717,5.140222282564974,0.13770494479529205,0.05672822757383721
+discovery__discovery_19__teb__tau_y_500,discovery,discovery_19,teb,tau_y_500,true,external_tolerance,false,0,19.740000000000286,6.682715531192445,0.133359819852523,0.0764837027170128
+holdout__holdout_15__dwa__tau_x_100,holdout,holdout_15,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.7163257795217921,4.797483142941365
+discovery__discovery_02__dwa__tau_y_500,discovery,discovery_02,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.0047486306283857,0.3970669504608415,3.304358612970513
+holdout__holdout_01__dwa__tau_y_150,holdout,holdout_01,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.8261387282186479,0.46909351811406,3.850844135168197
+holdout__holdout_13__dwa__tau_w_100,holdout,holdout_13,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.6592835127682695,4.750198638426072
+holdout__holdout_18__teb__e0,holdout,holdout_18,teb,e0,true,external_tolerance,false,0,10.859999999999813,4.987153351512152,0.11155530251289901,0.07761182829826115
+holdout__holdout_04__dwa__tau_w_300,holdout,holdout_04,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,0.16099556378639623,0.447580012270848,4.737872958385285
+holdout__holdout_09__teb__delay_050,holdout,holdout_09,teb,delay_050,true,external_tolerance,false,0,11.4999999999998,5.077555952800046,0.09240152752834976,0.0769895670422857
+holdout__holdout_10__dwa__tau_x_100,holdout,holdout_10,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.8016267637817229,4.797483142941365
+holdout__holdout_17__dwa__tau_w_100,holdout,holdout_17,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.36682901687652525,4.79937960160367
+holdout__holdout_09__dwa__tau_w_100,holdout,holdout_09,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.8035557500980427,4.79937960160367
+discovery__discovery_16__teb__tau_x_300,discovery,discovery_16,teb,tau_x_300,true,external_tolerance,false,0,14.859999999999728,6.096699077313207,0.10018796174762698,0.017857498851746523
+holdout__holdout_12__dwa__delay_200,holdout,holdout_12,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.4665458795249887,4.798693959698342
+holdout__holdout_04__teb__tau_y_150,holdout,holdout_04,teb,tau_y_150,true,external_tolerance,false,0,14.069999999999744,5.8050800932982485,0.20910682346504866,0.028822419630926677
+discovery__discovery_13__teb__e0,discovery,discovery_13,teb,e0,true,external_tolerance,false,0,12.109999999999786,5.502775468694733,0.24205502402866938,0.0769468664669992
+holdout__holdout_16__teb__delay_200,holdout,holdout_16,teb,delay_200,true,external_tolerance,false,0,15.509999999999714,5.143499010385374,0.14512991191840108,0.0501363848035646
+discovery__discovery_02__teb__delay_100,discovery,discovery_02,teb,delay_100,true,external_tolerance,false,0,12.37999999999978,5.247115552931882,0.15839499120447312,0.038032432872015104
+holdout__holdout_05__teb__tau_x_100,holdout,holdout_05,teb,tau_x_100,true,external_tolerance,false,0,11.4999999999998,5.1445736541621585,0.1554705547723845,0.0756158273938754
+discovery__discovery_07__dwa__tau_x_300,discovery,discovery_07,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.5818039297308732,4.7987688891493585
+holdout__holdout_20__teb__tau_x_100,holdout,holdout_20,teb,tau_x_100,true,external_tolerance,false,0,12.269999999999783,5.350633664971822,0.15142758179517754,0.05061039120554287
+discovery__discovery_04__dwa__delay_050,discovery,discovery_04,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.5442345262308858,4.789388221964771
+discovery__discovery_01__dwa__delay_100,discovery,discovery_01,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.5444237779524329,4.799886964378005
+holdout__holdout_20__teb__tau_x_300,holdout,holdout_20,teb,tau_x_300,true,external_tolerance,false,0,13.109999999999765,5.408171034485971,0.16051958957937726,0.03554413131488891
+discovery__discovery_19__dwa__tau_y_300,discovery,discovery_19,dwa,tau_y_300,true,external_tolerance,false,0,19.480000000000246,6.626835351854701,0.1186051406909724,0.07772357018435613
+discovery__discovery_06__teb__e0,discovery,discovery_06,teb,e0,true,external_tolerance,false,0,15.309999999999718,6.551501562977745,0.1881301891784337,0.019732198480756833
+discovery__discovery_03__teb__delay_200,discovery,discovery_03,teb,delay_200,true,external_tolerance,false,0,21.580000000000574,6.369867890365099,0.06531323371503578,0.03738200029404391
+discovery__discovery_09__teb__tau_x_300,discovery,discovery_09,teb,tau_x_300,true,external_tolerance,false,0,13.489999999999757,5.624871670222486,0.18408575622848625,0.07618072423848454
+discovery__discovery_01__dwa__tau_x_100,discovery,discovery_01,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.5444237779524329,4.797483142941365
+discovery__discovery_08__dwa__delay_050,discovery,discovery_08,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.7184699193510603,4.800409713394666
+discovery__discovery_08__teb__tau_x_100,discovery,discovery_08,teb,tau_x_100,true,external_tolerance,false,0,11.579999999999798,5.184449717842551,0.1755085726763527,0.07562928000577418
+holdout__holdout_07__teb__tau_x_300,holdout,holdout_07,teb,tau_x_300,false,plugin returned no valid velocity command,false,1,6.7499999999999005,2.5039136861763915,0.06954939000652294,2.7747656422798834
+discovery__discovery_20__dwa__tau_w_100,discovery,discovery_20,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.6067927943315239,4.750198638426072
+discovery__discovery_02__teb__tau_y_150,discovery,discovery_02,teb,tau_y_150,true,external_tolerance,false,0,12.659999999999775,5.296213144320622,0.1543197734422721,0.0797909742716617
+discovery__discovery_08__dwa__delay_200,discovery,discovery_08,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.7158773254101842,4.798693959698342
+holdout__holdout_14__teb__tau_y_150,holdout,holdout_14,teb,tau_y_150,true,external_tolerance,false,0,16.209999999999734,6.548629261897374,0.10696706584193683,0.024135810314921798
+discovery__discovery_04__teb__tau_w_100,discovery,discovery_04,teb,tau_w_100,true,external_tolerance,false,0,16.29999999999975,5.797175556152098,0.1631429731541692,0.022645119014437838
+discovery__discovery_11__dwa__tau_x_100,discovery,discovery_11,dwa,tau_x_100,true,external_tolerance,false,0,29.120000000001752,6.02625175772185,0.14925654241471364,0.0732964333413812
+discovery__discovery_13__teb__tau_x_100,discovery,discovery_13,teb,tau_x_100,true,external_tolerance,false,0,12.139999999999786,5.4992786148075785,0.20813495947692937,0.0753189983811975
+holdout__holdout_03__dwa__tau_w_300,holdout,holdout_03,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,0.16099556378639623,0.34277470240872127,4.737872958385285
+holdout__holdout_20__dwa__tau_y_300,holdout,holdout_20,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,2.0106399673461643,0.021019199610409878,3.197205676395896
+holdout__holdout_01__dwa__delay_050,holdout,holdout_01,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.5970311968398299,4.800409713394666
+holdout__holdout_16__dwa__tau_y_150,holdout,holdout_16,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.8397122360114,0.12267053727336427,3.5702993369770333
+discovery__discovery_15__teb__delay_200,discovery,discovery_15,teb,delay_200,true,external_tolerance,false,0,21.660000000000586,6.245263490768247,0.046234207982885224,0.07906464475853575
+discovery__discovery_15__teb__delay_050,discovery,discovery_15,teb,delay_050,true,external_tolerance,false,0,15.21999999999972,6.246971161471202,0.10803658586990196,0.07922805145366267
+discovery__discovery_06__dwa__tau_y_300,discovery,discovery_06,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.6673289351616003,4.799915338987383
+discovery__discovery_20__dwa__tau_y_150,discovery,discovery_20,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.711773601641785,0.6421882242481107,3.9074307593640887
+discovery__discovery_12__teb__tau_y_300,discovery,discovery_12,teb,tau_y_300,true,external_tolerance,false,0,12.43999999999978,5.177328337380222,0.13624033976522443,0.06199421468200573
+holdout__holdout_04__teb__tau_w_100,holdout,holdout_04,teb,tau_w_100,true,external_tolerance,false,0,16.10999999999972,5.718099738764152,0.20801118366881205,0.018106884912192738
+holdout__holdout_17__teb__delay_200,holdout,holdout_17,teb,delay_200,false,plugin returned no valid velocity command,false,1,4.89999999999994,1.560581594869972,0.18603286616044834,3.3297832082324783
+holdout__holdout_03__teb__delay_200,holdout,holdout_03,teb,delay_200,true,external_tolerance,false,0,21.24000000000052,5.7600065571637415,0.13611718197301698,0.07978672338683468
+holdout__holdout_15__dwa__tau_w_300,holdout,holdout_15,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.486322001175102,0.2310585190375542,2.894013325176978
+holdout__holdout_14__dwa__tau_x_100,holdout,holdout_14,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.680049010444806,4.797483142941365
+discovery__discovery_13__dwa__delay_100,discovery,discovery_13,dwa,delay_100,false,plugin returned no valid velocity command,false,1,2.149999999999998,0.022803454559040807,0.43857049816987836,4.782126715165411
+holdout__holdout_13__teb__tau_y_300,holdout,holdout_13,teb,tau_y_300,true,external_tolerance,false,0,14.699999999999731,5.29074964932313,0.016845400887441835,0.07964638382994184
+discovery__discovery_17__teb__tau_y_300,discovery,discovery_17,teb,tau_y_300,true,external_tolerance,false,0,17.2599999999999,6.464521177741454,0.13353865116985805,0.032348431540200326
+holdout__holdout_20__teb__delay_200,holdout,holdout_20,teb,delay_200,true,external_tolerance,false,0,17.609999999999953,5.69976250444491,0.09488256384026494,0.04486778195996794
+holdout__holdout_09__teb__delay_200,holdout,holdout_09,teb,delay_200,true,external_tolerance,false,0,18.080000000000027,5.6825587395714745,0.03266186327486749,0.07942265422370035
+discovery__discovery_04__dwa__tau_y_300,discovery,discovery_04,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,1.5732542191169014,0.1650983944900684,3.4850538532547293
+holdout__holdout_10__dwa__delay_200,holdout,holdout_10,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.780346322771357,4.798693959698342
+discovery__discovery_12__dwa__delay_050,discovery,discovery_12,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.771043979314678,4.800409713394666
+discovery__discovery_01__teb__delay_200,discovery,discovery_01,teb,delay_200,false,plugin returned no valid velocity command,false,1,7.5499999999998835,1.938009474601547,0.011346609374355054,3.3635054713877817
+discovery__discovery_20__dwa__tau_w_300,discovery,discovery_20,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.4729665074632048,0.6450125433531981,3.959876476206241
+discovery__discovery_07__teb__tau_y_300,discovery,discovery_07,teb,tau_y_300,true,external_tolerance,false,0,16.6399999999998,6.017840308917024,0.13815061035550097,0.010799567510953564
+holdout__holdout_20__dwa__tau_x_300,holdout,holdout_20,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.6549420647886863,4.7987688891493585
+discovery__discovery_01__dwa__e0,discovery,discovery_01,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.5444237779524329,4.800342967782957
+discovery__discovery_07__teb__delay_050,discovery,discovery_07,teb,delay_050,true,external_tolerance,false,0,14.129999999999743,5.872419597872091,0.1635510444892807,0.009659317906927608
+discovery__discovery_18__dwa__delay_200,discovery,discovery_18,dwa,delay_200,false,plugin returned no valid velocity command,false,1,2.849999999999983,0.06160157427554287,0.6655039728937572,4.7586053591429724
+discovery__discovery_14__dwa__tau_x_300,discovery,discovery_14,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,1.0074220512105605,4.7987688891493585
+holdout__holdout_01__dwa__tau_w_300,holdout,holdout_01,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.3911471809788643,0.4218846792060827,3.8400957617367912
+holdout__holdout_13__dwa__tau_w_300,holdout,holdout_13,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.953611500227269,0.2787268486449506,2.168838747733801
+holdout__holdout_08__teb__tau_w_300,holdout,holdout_08,teb,tau_w_300,true,external_tolerance,false,0,20.170000000000353,5.9292096394675635,0.16749205021733177,0.056863044375307405
+holdout__holdout_08__dwa__tau_w_100,holdout,holdout_08,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.5112056193175623,4.79937960160367
+discovery__discovery_15__dwa__tau_w_300,discovery,discovery_15,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,0.36990387999414165,0.9406879862382822,4.788035235269964
+holdout__holdout_18__teb__tau_y_300,holdout,holdout_18,teb,tau_y_300,true,external_tolerance,false,0,13.289999999999761,5.076482446164128,0.08831175241135969,0.07316567717307804
+holdout__holdout_15__dwa__delay_100,holdout,holdout_15,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.6966021492514725,4.799886964378005
+discovery__discovery_04__dwa__tau_x_100,discovery,discovery_04,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.4959825434795566,4.751622632976504
+holdout__holdout_20__teb__tau_y_300,holdout,holdout_20,teb,tau_y_300,true,external_tolerance,false,0,13.239999999999762,5.424153651650368,0.1556684250908069,0.06782489791074897
+discovery__discovery_07__teb__tau_y_150,discovery,discovery_07,teb,tau_y_150,true,external_tolerance,false,0,13.82999999999975,5.926202584383313,0.14740658639476625,0.00800147290353501
+discovery__discovery_17__teb__tau_w_100,discovery,discovery_17,teb,tau_w_100,false,plugin returned no valid velocity command,false,1,5.9999999999999165,2.6757815455624407,0.1121328859999373,2.740610785138368
+discovery__discovery_16__dwa__tau_w_100,discovery,discovery_16,dwa,tau_w_100,true,external_tolerance,false,0,18.080000000000027,5.972733098627373,0.07117086360122464,0.07737176182514689
+discovery__discovery_17__dwa__tau_x_300,discovery,discovery_17,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,1.4744131678580215,4.7987983755832255
+holdout__holdout_14__dwa__tau_y_150,holdout,holdout_14,dwa,tau_y_150,true,external_tolerance,false,0,17.9,6.118325885694948,0.11731137363787322,0.07944490580938976
+holdout__holdout_09__dwa__tau_y_300,holdout,holdout_09,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.8035557500980427,4.799915338987383
+discovery__discovery_14__dwa__tau_w_100,discovery,discovery_14,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.9394353554948885,4.750198638426072
+discovery__discovery_03__dwa__tau_w_300,discovery,discovery_03,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,3.19515192827919,0.11590921225062825,2.049947284645755
+discovery__discovery_02__teb__delay_050,discovery,discovery_02,teb,delay_050,true,external_tolerance,false,0,12.049999999999788,5.281811149057587,0.13602129514230032,0.04765180697725104
+discovery__discovery_19__teb__delay_050,discovery,discovery_19,teb,delay_050,true,external_tolerance,false,0,16.229999999999738,6.622961946793611,0.14450166749585738,0.07948451922789332
+discovery__discovery_08__dwa__tau_y_150,discovery,discovery_08,dwa,tau_y_150,true,external_tolerance,false,0,16.289999999999747,5.095636841320138,0.19492170055271674,0.0767582634416836
+discovery__discovery_19__teb__e0,discovery,discovery_19,teb,e0,true,external_tolerance,false,0,14.879999999999727,6.613477279267236,0.045336762252608076,0.0786296354654839
+discovery__discovery_16__teb__delay_050,discovery,discovery_16,teb,delay_050,true,external_tolerance,false,0,15.159999999999721,6.157787902752865,0.09420415145393922,0.018952019769828427
+holdout__holdout_07__dwa__delay_050,holdout,holdout_07,dwa,delay_050,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.060793762754946544,0.3781641504416214,4.789388221964771
+discovery__discovery_12__teb__tau_y_150,discovery,discovery_12,teb,tau_y_150,true,external_tolerance,false,0,11.89999999999979,5.207956197540659,0.15667935051858872,0.061259969215246665
+discovery__discovery_01__teb__tau_w_100,discovery,discovery_01,teb,tau_w_100,true,external_tolerance,false,0,13.519999999999756,5.45976905243114,0.07523157736465792,0.01664345506656962
+discovery__discovery_10__dwa__delay_200,discovery,discovery_10,dwa,delay_200,false,plugin returned no valid velocity command,false,1,1.6000000000000012,0.1713260750611314,0.804564807753719,4.804322281281297
+holdout__holdout_10__teb__e0,holdout,holdout_10,teb,e0,true,external_tolerance,false,0,11.569999999999798,5.37177132271746,0.1766846239568327,0.07671972209409342
+holdout__holdout_04__teb__e0,holdout,holdout_04,teb,e0,true,external_tolerance,false,0,13.639999999999754,5.735740359808492,0.20926965311595933,0.013980248722179784
+holdout__holdout_03__teb__delay_050,holdout,holdout_03,teb,delay_050,true,external_tolerance,false,0,12.90999999999977,5.410355646342282,0.15940164992060535,0.07395906205623629
+discovery__discovery_07__dwa__tau_y_300,discovery,discovery_07,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,3.4033512924021,0.05731942077847475,2.2300333024276315
+holdout__holdout_11__teb__tau_x_300,holdout,holdout_11,teb,tau_x_300,true,external_tolerance,false,0,12.969999999999768,5.260327620275266,0.16866225862962686,0.02225023857448568
+discovery__discovery_20__teb__tau_y_500,discovery,discovery_20,teb,tau_y_500,false,plugin returned no valid velocity command,false,1,5.799999999999921,2.235971484326988,0.11572498789566056,3.1014355259865
+holdout__holdout_05__dwa__tau_w_100,holdout,holdout_05,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.9210500412375878,4.79937960160367
+holdout__holdout_13__dwa__tau_y_150,holdout,holdout_13,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,3.19718359374576,0.2928485629350132,2.2832627130774514
+discovery__discovery_02__dwa__delay_100,discovery,discovery_02,dwa,delay_100,false,plugin returned no valid velocity command,false,1,18.5500000000001,1.8068698254265827,0.34341473814585544,3.1818355722241267
+holdout__holdout_02__dwa__tau_x_100,holdout,holdout_02,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,1.3801112520922225,4.797483142941365
+holdout__holdout_19__teb__delay_050,holdout,holdout_19,teb,delay_050,true,external_tolerance,false,0,13.35999999999976,5.81463468014719,0.18787692565396044,0.0563772528802556
+discovery__discovery_06__teb__tau_y_500,discovery,discovery_06,teb,tau_y_500,true,external_tolerance,false,0,18.080000000000027,6.628732144663119,0.1559265657121601,0.02721066897789623
+holdout__holdout_07__dwa__e0,holdout,holdout_07,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.29686420154556653,0.32141898088567,4.750728787406146
+discovery__discovery_03__teb__tau_x_300,discovery,discovery_03,teb,tau_x_300,true,external_tolerance,false,0,17.13999999999988,6.325110388354259,0.13038875837778802,0.07869546213105978
+holdout__holdout_14__teb__tau_y_500,holdout,holdout_14,teb,tau_y_500,true,external_tolerance,false,0,24.830000000001082,6.817206341750423,0.06768856653958809,0.07958867928122693
+discovery__discovery_08__teb__tau_x_300,discovery,discovery_08,teb,tau_x_300,true,external_tolerance,false,0,12.359999999999781,5.1580839799215426,0.19731910076470832,0.07312427030768068
+discovery__discovery_06__dwa__delay_100,discovery,discovery_06,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.6657742546687756,4.799886964378005
+discovery__discovery_17__teb__tau_x_300,discovery,discovery_17,teb,tau_x_300,false,plugin returned no valid velocity command,false,1,7.149999999999892,2.6891196121225165,0.09622458095373966,2.7288808605990282
+holdout__holdout_09__teb__tau_x_300,holdout,holdout_09,teb,tau_x_300,true,external_tolerance,false,0,11.93999999999979,5.001990079757088,0.10746023160420594,0.07734854900948555
+holdout__holdout_19__teb__tau_w_300,holdout,holdout_19,teb,tau_w_300,true,external_tolerance,false,0,19.160000000000196,5.814800731352451,0.16737545094345194,0.045250968833886934
+discovery__discovery_07__dwa__delay_100,discovery,discovery_07,dwa,delay_100,false,plugin returned no valid velocity command,false,1,20.250000000000366,2.790171108407311,0.04493864866880428,2.208657096382548
+discovery__discovery_01__teb__e0,discovery,discovery_01,teb,e0,true,external_tolerance,false,0,12.449999999999779,5.457911133337483,0.07194672202400983,0.01750247852357216
+holdout__holdout_18__dwa__tau_w_300,holdout,holdout_18,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,2.633545687664624,0.16524645052578363,2.6476262838983353
+discovery__discovery_07__teb__delay_200,discovery,discovery_07,teb,delay_200,true,external_tolerance,false,0,18.960000000000164,6.029430294858002,0.13590691574082614,0.04551373239491982
+discovery__discovery_07__dwa__tau_w_100,discovery,discovery_07,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.5586281688581571,4.750198638426072
+holdout__holdout_12__dwa__tau_y_300,holdout,holdout_12,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.46758144649378036,4.799915338987383
+discovery__discovery_01__dwa__tau_y_500,discovery,discovery_01,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.543419851705262,4.797485535329291
+discovery__discovery_03__teb__tau_x_100,discovery,discovery_03,teb,tau_x_100,true,external_tolerance,false,0,14.029999999999745,5.929938675208462,0.1310677211613611,0.018737743316133613
+holdout__holdout_11__teb__delay_200,holdout,holdout_11,teb,delay_200,true,external_tolerance,false,0,18.340000000000067,5.420535860065918,0.11476867782786304,0.07793231042537313
+discovery__discovery_04__dwa__tau_x_300,discovery,discovery_04,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.557637016004257,4.7987688891493585
+holdout__holdout_06__teb__delay_200,holdout,holdout_06,teb,delay_200,false,plugin returned no valid velocity command,false,1,10.649999999999817,3.6649407629539943,0.02546557254175319,2.2771886618201265
+holdout__holdout_04__dwa__tau_y_150,holdout,holdout_04,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,1.9405388677537476,0.11018841325790915,3.4376010471101526
+holdout__holdout_12__teb__tau_y_300,holdout,holdout_12,teb,tau_y_300,true,external_tolerance,false,0,15.749999999999709,5.387335554484697,0.08278069366580106,0.0792659353706729
+discovery__discovery_05__teb__tau_x_100,discovery,discovery_05,teb,tau_x_100,true,external_tolerance,false,0,14.509999999999735,6.338954296729898,0.1716938499940576,0.048845158912246736
+discovery__discovery_10__dwa__delay_050,discovery,discovery_10,dwa,delay_050,false,plugin returned no valid velocity command,false,1,0.8500000000000005,0.11781696169492327,0.804564807753719,4.803673914255166
+discovery__discovery_18__teb__tau_x_300,discovery,discovery_18,teb,tau_x_300,true,external_tolerance,false,0,18.61000000000011,6.541185670743434,0.21531284051079871,0.07754612660453135
+discovery__discovery_14__teb__delay_050,discovery,discovery_14,teb,delay_050,true,external_tolerance,false,0,12.169999999999785,5.237883215901565,0.04915422913449677,0.0786748812865105
+holdout__holdout_11__teb__delay_050,holdout,holdout_11,teb,delay_050,true,external_tolerance,false,0,13.029999999999767,5.27460986418744,0.16496767134631962,0.052042096698901696
+discovery__discovery_12__dwa__tau_y_300,discovery,discovery_12,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,0.7752223108195064,4.799915338987383
+discovery__discovery_09__teb__tau_y_500,discovery,discovery_09,teb,tau_y_500,true,external_tolerance,false,0,17.33999999999991,5.742547041437186,0.09183581068025508,0.07871925105920796
+discovery__discovery_01__dwa__tau_w_100,discovery,discovery_01,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.5444237779524329,4.79937960160367
+discovery__discovery_09__teb__e0,discovery,discovery_09,teb,e0,true,external_tolerance,false,0,12.36999999999978,5.636853787780508,0.18570349833832264,0.0781231203109487
+discovery__discovery_08__dwa__tau_w_300,discovery,discovery_08,dwa,tau_w_300,true,external_tolerance,false,0,27.720000000001534,5.25604694588262,0.22431971796494812,0.07874037526576545
+holdout__holdout_03__dwa__delay_100,holdout,holdout_03,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.16409217009744978,0.3474038141513517,4.743023007822322
+discovery__discovery_15__teb__e0,discovery,discovery_15,teb,e0,true,external_tolerance,false,0,13.729999999999752,6.153468533743255,0.1548895913378645,0.0798087339786268
+discovery__discovery_05__teb__tau_y_150,discovery,discovery_05,teb,tau_y_150,true,external_tolerance,false,0,14.989999999999725,6.3344535747273785,0.20900103272439913,0.03175333618475948
+discovery__discovery_03__dwa__delay_050,discovery,discovery_03,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.5767083318281437,4.800409713394666
+discovery__discovery_05__teb__tau_y_300,discovery,discovery_05,teb,tau_y_300,true,external_tolerance,false,0,16.399999999999764,6.321929522763889,0.19006403354048737,0.04081636455945568
+holdout__holdout_18__teb__tau_w_300,holdout,holdout_18,teb,tau_w_300,true,external_tolerance,false,0,13.709999999999752,5.0184080840211385,0.12926371875959242,0.05217796271337904
+discovery__discovery_18__teb__tau_y_300,discovery,discovery_18,teb,tau_y_300,true,external_tolerance,false,0,15.129999999999722,5.947179297159183,0.17637596457171026,0.06542023739598345
+holdout__holdout_02__dwa__tau_w_100,holdout,holdout_02,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,1.3867780025917795,4.79937960160367
+holdout__holdout_16__dwa__delay_200,holdout,holdout_16,dwa,delay_200,false,plugin returned no valid velocity command,false,1,22.300000000000686,1.6985082200136763,0.18570853176133614,3.279339944857766
+discovery__discovery_15__dwa__tau_w_100,discovery,discovery_15,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,1.446936197783761,0.48547740527353045,4.307416392352358
+holdout__holdout_04__teb__delay_200,holdout,holdout_04,teb,delay_200,true,external_tolerance,false,0,22.660000000000743,5.838881767624295,0.13806042880129846,0.046214043016969894
+holdout__holdout_16__dwa__tau_w_100,holdout,holdout_16,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.603118524323674,4.750198638426072
+discovery__discovery_14__dwa__tau_y_150,discovery,discovery_14,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,3.1682349174408357,0.06205327696777448,1.9210892374975375
+discovery__discovery_16__teb__delay_200,discovery,discovery_16,teb,delay_200,true,external_tolerance,false,0,22.220000000000674,6.203633702854065,0.0548691398908547,0.07920710255794543
+holdout__holdout_07__teb__tau_w_300,holdout,holdout_07,teb,tau_w_300,false,plugin returned no valid velocity command,false,1,6.899999999999897,2.4464113435600447,0.1019820027727909,2.794155206847948
+holdout__holdout_08__dwa__tau_x_100,holdout,holdout_08,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.5332969649864016,4.797483142941365
+discovery__discovery_08__dwa__tau_x_300,discovery,discovery_08,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.7333630164381261,4.7987983755832255
+discovery__discovery_09__teb__delay_050,discovery,discovery_09,teb,delay_050,true,external_tolerance,false,0,12.939999999999769,5.620266707732743,0.16724513162140203,0.0797653984747734
+holdout__holdout_01__teb__tau_w_300,holdout,holdout_01,teb,tau_w_300,true,external_tolerance,false,0,18.93000000000016,5.46330811712492,0.0656937896048471,0.05524779591994061
+discovery__discovery_14__dwa__tau_w_300,discovery,discovery_14,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,3.6440782789480495,0.07727263921043377,1.906261439739067
+holdout__holdout_16__teb__delay_050,holdout,holdout_16,teb,delay_050,true,external_tolerance,false,0,11.849999999999792,5.069133213246769,0.17824094540867774,0.05347050589911738
+discovery__discovery_10__dwa__tau_x_300,discovery,discovery_10,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.49112915961980225,0.804564807753719,4.776020240300031
+holdout__holdout_17__teb__tau_y_500,holdout,holdout_17,teb,tau_y_500,false,plugin returned no valid velocity command,false,1,4.4499999999999496,1.5512538315539872,0.14974398555176033,3.3096131430491993
+holdout__holdout_15__dwa__tau_w_100,holdout,holdout_15,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.6985783503107775,4.79937960160367
+holdout__holdout_06__dwa__tau_y_500,holdout,holdout_06,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,2.2430856568412842,0.31494328527479676,3.1529223589499025
+holdout__holdout_01__dwa__tau_x_100,holdout,holdout_01,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.5970311968398299,4.797483142941365
+holdout__holdout_04__teb__delay_050,holdout,holdout_04,teb,delay_050,true,external_tolerance,false,0,15.129999999999722,5.740529074234161,0.21231158688746876,0.001122153918139633
+holdout__holdout_18__dwa__tau_x_300,holdout,holdout_18,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.4623629043812177,4.7987688891493585
+holdout__holdout_02__teb__delay_050,holdout,holdout_02,teb,delay_050,true,external_tolerance,false,0,13.659999999999753,5.784804990100633,0.10757448647441098,0.07713470405086796
+discovery__discovery_12__dwa__tau_x_300,discovery,discovery_12,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.7711618570354221,4.7987983755832255
+holdout__holdout_10__dwa__tau_y_500,holdout,holdout_10,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.7792966697511763,4.797485535329291
+holdout__holdout_09__dwa__tau_w_300,holdout,holdout_09,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.3714114046224395,0.3602819767010461,3.9488747089592695
+holdout__holdout_12__dwa__delay_100,holdout,holdout_12,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.4674561242962847,4.799886964378005
+holdout__holdout_10__teb__tau_w_300,holdout,holdout_10,teb,tau_w_300,true,external_tolerance,false,0,16.459999999999773,5.3842617732380855,0.1702759497954766,0.06380554843799939
+holdout__holdout_16__teb__tau_x_100,holdout,holdout_16,teb,tau_x_100,true,external_tolerance,false,0,11.549999999999798,5.013745497098687,0.18185312424083344,0.0654098740417233
+discovery__discovery_10__teb__delay_050,discovery,discovery_10,teb,delay_050,true,external_tolerance,false,0,14.499999999999735,6.074442957602305,0.08424507235036677,0.0799994889474556
+discovery__discovery_12__dwa__tau_w_100,discovery,discovery_12,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.7622509264652538,4.79937960160367
+discovery__discovery_17__dwa__delay_050,discovery,discovery_17,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,1.4716828856569322,4.800409713394666
+holdout__holdout_13__dwa__tau_y_300,holdout,holdout_13,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,3.1252242828748256,0.2868325261601462,2.3869694424718024
+holdout__holdout_04__dwa__delay_100,holdout,holdout_04,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.16409217009744978,0.4635040066702266,4.743023007822322
+holdout__holdout_08__dwa__tau_w_300,holdout,holdout_08,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,1.3413151022786522,0.418370372341033,4.200933258337118
+holdout__holdout_18__dwa__delay_200,holdout,holdout_18,dwa,delay_200,false,plugin returned no valid velocity command,false,1,24.150000000000976,2.763772884326514,0.1448377234284178,2.1921615584543575
+discovery__discovery_04__dwa__delay_100,discovery,discovery_04,dwa,delay_100,false,plugin returned no valid velocity command,false,1,18.000000000000014,1.7358267132380913,0.07604556274914506,3.309637599724016
+discovery__discovery_13__teb__tau_w_300,discovery,discovery_13,teb,tau_w_300,true,external_tolerance,false,0,15.869999999999706,5.488383010225294,0.167988182290905,0.03213601220866656
+discovery__discovery_06__teb__tau_x_100,discovery,discovery_06,teb,tau_x_100,true,external_tolerance,false,0,15.739999999999709,6.617656722081615,0.1810568444054003,0.06625230724666542
+holdout__holdout_09__dwa__tau_x_100,holdout,holdout_09,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.8035557500980427,4.797483142941365
+holdout__holdout_10__teb__tau_w_100,holdout,holdout_10,teb,tau_w_100,true,external_tolerance,false,0,12.269999999999783,5.302273267127873,0.1185163053906461,0.06962420560065793
+holdout__holdout_12__dwa__delay_050,holdout,holdout_12,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.4689803608113008,4.800409713394666
+holdout__holdout_06__teb__tau_y_500,holdout,holdout_06,teb,tau_y_500,true,external_tolerance,false,0,15.289999999999718,5.883170427099915,0.1203246458749221,0.06757328273020138
+holdout__holdout_17__dwa__tau_y_500,holdout,holdout_17,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.36722946229776193,4.797485535329291
+holdout__holdout_15__dwa__tau_y_500,holdout,holdout_15,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.6991438732371059,4.797485535329291
+holdout__holdout_15__dwa__delay_200,holdout,holdout_15,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.7010096814387524,4.798693959698342
+holdout__holdout_14__dwa__delay_200,holdout,holdout_14,dwa,delay_200,false,logical_timeout,false,0,30.00000000000189,0.11073616392538553,0.6901857704011864,4.798693959698342
+discovery__discovery_02__dwa__tau_y_150,discovery,discovery_02,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,2.190274031651163,0.39746396508645354,3.273844879241594
+holdout__holdout_05__dwa__tau_x_100,holdout,holdout_05,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.9210500412375878,4.797483142941365
+discovery__discovery_12__teb__tau_x_300,discovery,discovery_12,teb,tau_x_300,true,external_tolerance,false,0,12.649999999999775,5.149862271046583,0.17746019621441017,0.04863448299125987
+holdout__holdout_12__dwa__tau_x_100,holdout,holdout_12,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.08024138001756845,0.4923156539887914,4.797483142941365
+holdout__holdout_08__dwa__tau_x_300,holdout,holdout_08,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.524863016438126,4.7987983755832255
+discovery__discovery_01__teb__tau_w_300,discovery,discovery_01,teb,tau_w_300,true,external_tolerance,false,0,17.33999999999991,5.453456069093275,0.09355333030725736,0.017931636342681533
+discovery__discovery_03__dwa__tau_w_100,discovery,discovery_03,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.5767083318281437,4.79937960160367
+discovery__discovery_13__dwa__tau_w_300,discovery,discovery_13,dwa,tau_w_300,false,logical_timeout,false,0,30.00000000000189,0.7601580732579563,0.29561012603583825,4.643570302373042
+holdout__holdout_03__teb__tau_x_100,holdout,holdout_03,teb,tau_x_100,true,external_tolerance,false,0,12.139999999999786,5.374861913572116,0.13685069461036292,0.04702065925811943
+discovery__discovery_19__dwa__tau_y_500,discovery,discovery_19,dwa,tau_y_500,true,external_tolerance,false,0,24.540000000001037,6.983645801317894,0.09782677377661889,0.06550853032409754
+holdout__holdout_11__dwa__tau_x_100,holdout,holdout_11,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.5234999999999999,4.751622632976504
+discovery__discovery_19__dwa__delay_200,discovery,discovery_19,dwa,delay_200,false,plugin returned no valid velocity command,false,1,8.949999999999854,3.1634613197014363,0.1874412128875996,3.2742953237597603
+discovery__discovery_02__teb__tau_w_300,discovery,discovery_02,teb,tau_w_300,true,external_tolerance,false,0,13.009999999999767,5.200684215638733,0.1594379984254109,0.02586981860409351
+holdout__holdout_17__dwa__delay_050,holdout,holdout_17,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,0.36593131153863556,4.800409713394666
+holdout__holdout_10__teb__tau_x_100,holdout,holdout_10,teb,tau_x_100,true,external_tolerance,false,0,11.709999999999795,5.330089935351359,0.06704064853637932,0.07869660937389175
+holdout__holdout_05__teb__tau_y_500,holdout,holdout_05,teb,tau_y_500,true,external_tolerance,false,0,20.760000000000446,5.5016084549061715,0.12331348823083836,0.07824300604959834
+discovery__discovery_20__dwa__tau_x_300,discovery,discovery_20,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.6283039297308733,4.7987688891493585
+holdout__holdout_11__dwa__tau_w_100,holdout,holdout_11,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.37930497239196737,0.5234999999999999,4.750198638426072
+discovery__discovery_09__dwa__tau_y_500,discovery,discovery_09,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.45698896423413704,4.797485535329291
+holdout__holdout_05__dwa__delay_100,holdout,holdout_05,dwa,delay_100,false,logical_timeout,false,0,30.00000000000189,0.10753009517542378,0.9210500412375878,4.799886964378005
+holdout__holdout_18__teb__tau_y_500,holdout,holdout_18,teb,tau_y_500,true,external_tolerance,false,0,16.6199999999998,5.193754405716659,0.06369270457106607,0.07944405554818833
+discovery__discovery_06__dwa__tau_w_100,discovery,discovery_06,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.6685424134059849,4.79937960160367
+holdout__holdout_06__teb__tau_w_300,holdout,holdout_06,teb,tau_w_300,true,external_tolerance,false,0,19.210000000000203,5.795233632501637,0.05165729672429582,0.042391641676541796
+discovery__discovery_15__dwa__delay_100,discovery,discovery_15,dwa,delay_100,false,plugin returned no valid velocity command,false,1,0.9000000000000006,0.10202583828040537,0.9402694701129707,4.80218548367512
+discovery__discovery_10__teb__tau_x_100,discovery,discovery_10,teb,tau_x_100,true,external_tolerance,false,0,13.989999999999746,6.105759239363632,0.09754043315759728,0.07837392478450139
+discovery__discovery_09__teb__tau_x_100,discovery,discovery_09,teb,tau_x_100,true,external_tolerance,false,0,12.689999999999774,5.606456456871213,0.18291035258805452,0.06637517493871334
+discovery__discovery_04__teb__tau_x_100,discovery,discovery_04,teb,tau_x_100,true,external_tolerance,false,0,13.989999999999746,5.875287805994121,0.16297096297468322,0.03622787493282213
+discovery__discovery_03__teb__tau_y_300,discovery,discovery_03,teb,tau_y_300,true,external_tolerance,false,0,16.37999999999976,5.9856291083078235,0.09821107286694246,0.05866676999081967
+holdout__holdout_10__teb__tau_x_300,holdout,holdout_10,teb,tau_x_300,true,external_tolerance,false,0,12.639999999999775,5.34076180157872,0.1575874907877342,0.07509552286528828
+discovery__discovery_16__dwa__delay_050,discovery,discovery_16,dwa,delay_050,true,external_tolerance,false,0,18.340000000000067,6.027594410152955,0.1448093857359618,0.07507363390849384
+discovery__discovery_02__dwa__tau_x_100,discovery,discovery_02,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.12779152653451933,0.47089248931156213,4.751622632976504
+holdout__holdout_17__teb__tau_w_100,holdout,holdout_17,teb,tau_w_100,false,plugin returned no valid velocity command,false,1,3.5499999999999683,1.5649523676654886,0.09103718804518261,3.3296751610461053
+discovery__discovery_13__dwa__tau_x_100,discovery,discovery_13,dwa,tau_x_100,false,logical_timeout,false,0,30.00000000000189,0.1542350907733699,0.47018748297299257,4.83973905106104
+discovery__discovery_03__teb__delay_050,discovery,discovery_03,teb,delay_050,true,external_tolerance,false,0,14.649999999999732,5.934668727709289,0.12389744565869465,0.018160706982231573
+holdout__holdout_13__teb__tau_x_100,holdout,holdout_13,teb,tau_x_100,true,external_tolerance,false,0,11.4899999999998,5.102163524881585,0.1868035752982844,0.07679418920649957
+discovery__discovery_04__dwa__delay_200,discovery,discovery_04,dwa,delay_200,false,plugin returned no valid velocity command,false,1,23.40000000000086,2.212427330197968,0.13234758696490673,3.051721602803652
+holdout__holdout_13__dwa__tau_x_300,holdout,holdout_13,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.05226722964506285,0.7235362866176539,4.7987688891493585
+holdout__holdout_13__teb__tau_y_150,holdout,holdout_13,teb,tau_y_150,true,external_tolerance,false,0,12.599999999999776,5.216670472141348,0.09314155011540076,0.07950628601585412
+discovery__discovery_05__teb__tau_x_300,discovery,discovery_05,teb,tau_x_300,true,external_tolerance,false,0,18.320000000000064,6.743053025704989,0.1921031055621054,0.0781693602631958
+discovery__discovery_18__teb__tau_w_300,discovery,discovery_18,teb,tau_w_300,true,external_tolerance,false,0,25.700000000001218,5.915962817335463,0.1900260293705465,0.06068013262455462
+holdout__holdout_19__teb__tau_x_300,holdout,holdout_19,teb,tau_x_300,true,external_tolerance,false,0,13.609999999999754,5.8448331201365376,0.16975591719607952,0.050030211880336434
+holdout__holdout_17__teb__delay_050,holdout,holdout_17,teb,delay_050,false,plugin returned no valid velocity command,false,1,3.4499999999999704,1.4075582114639356,0.24140756823383558,3.458262483352853
+holdout__holdout_19__dwa__tau_w_100,holdout,holdout_19,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.42427196801886025,0.3992462256555913,4.846350580980265
+holdout__holdout_10__dwa__e0,holdout,holdout_10,dwa,e0,false,logical_timeout,false,0,30.00000000000189,0.08043681154258775,0.7992442634154772,4.800342967782957
+holdout__holdout_05__teb__tau_w_300,holdout,holdout_05,teb,tau_w_300,true,external_tolerance,false,0,16.129999999999722,5.141170388835618,0.12130263561641397,0.07952812407452109
+holdout__holdout_02__teb__e0,holdout,holdout_02,teb,e0,true,external_tolerance,false,0,12.43999999999978,5.723008326245789,0.010554967022965281,0.07780628937943918
+discovery__discovery_07__teb__tau_x_300,discovery,discovery_07,teb,tau_x_300,true,external_tolerance,false,0,16.739999999999817,6.216654496892235,0.18344360331295206,0.07886037608856658
+holdout__holdout_08__teb__e0,holdout,holdout_08,teb,e0,true,external_tolerance,false,0,13.179999999999763,5.919643838891338,0.16096020222398044,0.07879368888727493
+discovery__discovery_16__dwa__delay_200,discovery,discovery_16,dwa,delay_200,false,plugin returned no valid velocity command,false,1,8.699999999999859,3.1026574039857033,0.20122592329736988,2.780522666755246
+holdout__holdout_16__teb__tau_y_500,holdout,holdout_16,teb,tau_y_500,true,external_tolerance,false,0,14.049999999999745,5.128634007876725,0.1463511650979215,0.060203450899007444
+holdout__holdout_19__teb__tau_y_500,holdout,holdout_19,teb,tau_y_500,true,external_tolerance,false,0,17.739999999999974,5.967781021142185,0.04915834574179316,0.06912264898301239
+holdout__holdout_09__dwa__tau_y_500,holdout,holdout_09,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,0.14694983650681062,0.8035557500980427,4.797485535329291
+holdout__holdout_03__dwa__e0,holdout,holdout_03,dwa,e0,false,logical_timeout,false,0,30.00000000000189,2.7172098771740227,0.062095896127664515,2.792945207502556
+discovery__discovery_06__dwa__tau_y_150,discovery,discovery_06,dwa,tau_y_150,true,external_tolerance,false,0,19.430000000000238,6.353165252852996,0.04311493311303847,0.07418101876541468
+discovery__discovery_20__teb__tau_x_100,discovery,discovery_20,teb,tau_x_100,false,plugin returned no valid velocity command,false,1,5.399999999999929,2.227612460487033,0.09390326731271426,3.072797785329325
+discovery__discovery_17__dwa__tau_y_300,discovery,discovery_17,dwa,tau_y_300,false,logical_timeout,false,0,30.00000000000189,0.1320295164372248,1.465431445143472,4.799915338987383
+holdout__holdout_03__teb__tau_x_300,holdout,holdout_03,teb,tau_x_300,true,external_tolerance,false,0,12.769999999999772,5.367055947791304,0.16158594241942772,0.06512556366623266
+holdout__holdout_16__teb__tau_y_150,holdout,holdout_16,teb,tau_y_150,true,external_tolerance,false,0,12.079999999999787,5.102330747622794,0.1547629606104519,0.06505180303288631
+discovery__discovery_05__teb__tau_w_100,discovery,discovery_05,teb,tau_w_100,true,external_tolerance,false,0,14.76999999999973,6.252235493524812,0.1761586394173916,0.02401894809095772
+discovery__discovery_09__dwa__tau_x_300,discovery,discovery_09,dwa,tau_x_300,false,logical_timeout,false,0,30.00000000000189,0.08880162185125437,0.47241698241573593,4.7987983755832255
+discovery__discovery_16__dwa__tau_y_500,discovery,discovery_16,dwa,tau_y_500,true,external_tolerance,false,0,25.170000000001135,6.428741942214964,0.1567453675673496,0.0769845007294873
+holdout__holdout_14__teb__delay_200,holdout,holdout_14,teb,delay_200,true,external_tolerance,false,0,22.300000000000686,6.747109752649698,0.08957934867396333,0.03312457174521806
+discovery__discovery_20__dwa__tau_y_500,discovery,discovery_20,dwa,tau_y_500,false,logical_timeout,false,0,30.00000000000189,1.4267751775119772,0.5602728190563376,3.8970340910218666
+discovery__discovery_13__teb__delay_100,discovery,discovery_13,teb,delay_100,true,external_tolerance,false,0,15.169999999999721,5.643154702584373,0.20330841368808703,0.07504545932819726
+holdout__holdout_14__dwa__tau_w_100,holdout,holdout_14,dwa,tau_w_100,false,logical_timeout,false,0,30.00000000000189,0.10350131892526561,0.6909602424302571,4.79937960160367
+discovery__discovery_09__teb__delay_100,discovery,discovery_09,teb,delay_100,true,external_tolerance,false,0,14.72999999999973,5.683490180645769,0.15231208862325032,0.07829346129276246
+holdout__holdout_11__teb__tau_y_300,holdout,holdout_11,teb,tau_y_300,true,external_tolerance,false,0,14.799999999999729,5.387566880392722,0.08693456844347798,0.06773921011421272
+discovery__discovery_13__dwa__tau_y_150,discovery,discovery_13,dwa,tau_y_150,false,logical_timeout,false,0,30.00000000000189,0.8083252648917617,0.3157125702862655,4.584272332472624
+discovery__discovery_14__teb__tau_y_300,discovery,discovery_14,teb,tau_y_300,true,external_tolerance,false,0,14.909999999999727,5.292599302049975,0.04840358266586456,0.07938736540676031
+holdout__holdout_07__dwa__delay_200,holdout,holdout_07,dwa,delay_200,false,plugin returned no valid velocity command,false,1,21.55000000000057,1.27080004898861,0.2438195133505753,3.685575245335245
+holdout__holdout_01__teb__tau_w_100,holdout,holdout_01,teb,tau_w_100,true,external_tolerance,false,0,13.029999999999767,5.429732371704253,0.053347350183409165,0.07612506477043644
+discovery__discovery_13__teb__tau_w_100,discovery,discovery_13,teb,tau_w_100,true,external_tolerance,false,0,13.76999999999975,5.5109255562523,0.2431185379329696,0.056570869360227
+holdout__holdout_02__dwa__delay_050,holdout,holdout_02,dwa,delay_050,false,logical_timeout,false,0,30.00000000000189,0.10330025774373841,1.3976242240143597,4.800409713394666
+discovery__discovery_04__teb__delay_100,discovery,discovery_04,teb,delay_100,true,external_tolerance,false,0,17.799999999999983,5.928537374548035,0.045993470081734884,0.0011319618201111156

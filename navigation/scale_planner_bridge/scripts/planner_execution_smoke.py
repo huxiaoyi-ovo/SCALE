@@ -28,6 +28,10 @@ TOLERANCE = 1e-9
 SYNTHETIC_PROVENANCE = "SYNTHETIC - NOT PHYSICALLY IDENTIFIED"
 
 
+class ContractViolation(RuntimeError):
+    """A benchmark invariant failed; callers must stop rather than retry."""
+
+
 def quat(yaw):
     return Quaternion(z=math.sin(yaw / 2.0), w=math.cos(yaw / 2.0))
 
@@ -57,8 +61,25 @@ def map_from_layout(layout, resolution=0.05):
     return grid
 
 
-def fixed_plan(start, goal):
+def fixed_plan(start, goal, global_path=None):
+    """Build a fixed ROS path, retaining the legacy five-point fallback."""
     plan = RosPath(); plan.header.frame_id = "map"
+    if global_path is not None:
+        if not isinstance(global_path, list) or not global_path:
+            raise ValueError("global_path must be a nonempty list")
+        first, last = global_path[0], global_path[-1]
+        for label, actual, expected in (("global_path start x", first.get("x"), start["x"]),
+                                        ("global_path start y", first.get("y"), start["y"]),
+                                        ("global_path goal x", last.get("x"), goal["x"]),
+                                        ("global_path goal y", last.get("y"), goal["y"])):
+            if actual is None or abs(float(actual) - float(expected)) > TOLERANCE:
+                raise ValueError("{} does not match layout endpoint".format(label))
+        for item in global_path:
+            pose = PoseStamped(); pose.header.frame_id = "map"
+            pose.pose.position.x, pose.pose.position.y = float(item["x"]), float(item["y"])
+            pose.pose.orientation = quat(float(item.get("yaw", 0.0)))
+            plan.poses.append(pose)
+        return plan
     for ratio in (0.0, 0.25, 0.5, 0.75, 1.0):
         pose = PoseStamped(); pose.header.frame_id = "map"
         pose.pose.position.x = start["x"] + ratio * (goal["x"] - start["x"])
@@ -88,7 +109,7 @@ def feedback_record(message):
 
 def assert_close(label, actual, expected):
     if abs(actual - expected) > TOLERANCE:
-        raise RuntimeError("{} mismatch: {} != {}".format(label, actual, expected))
+        raise ContractViolation("{} mismatch: {} != {}".format(label, actual, expected))
 
 
 def verify_feedback(reply, state, clock_epoch):
@@ -127,7 +148,7 @@ def verify_command_hold(trace):
     for sample in trace["execution_samples"]:
         expected = trace["planner_calls"][sample["planner_index"]]["command"]
         if sample["held_command"] != expected:
-            raise RuntimeError("planner command changed inside an execution hold interval")
+            raise ContractViolation("planner command changed inside an execution hold interval")
 
 
 def run(config, trace_output=None):
@@ -147,7 +168,8 @@ def run(config, trace_output=None):
     initialize = rospy.ServiceProxy("/initialize", Initialize)
     step = rospy.ServiceProxy("/step", Step)
     initial = initialize(InitializeRequest(map=map_from_layout(raw_layout),
-                                           plan=fixed_plan(raw_layout["start"], raw_layout["goal"]),
+                                           plan=fixed_plan(raw_layout["start"], raw_layout["goal"],
+                                                           raw_layout.get("global_path")),
                                            planner_period=planner_period))
     if not initial.ok:
         raise RuntimeError(initial.error)
@@ -233,13 +255,19 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/pilot.yaml")
     parser.add_argument("--trace-output")
+    parser.add_argument("--allow-algorithm-outcome", action="store_true",
+                        help="Return zero for a structurally valid non-success study outcome.")
     args = parser.parse_args()
     with resolve_config(args.config).open() as stream:
         config = yaml.safe_load(stream)
     rospy.init_node("planner_execution_smoke", anonymous=True)
-    summary = run(config, args.trace_output)
+    try:
+        summary = run(config, args.trace_output)
+    except ContractViolation as error:
+        print(json.dumps({"fatal_kind": "contract", "error": str(error)}, sort_keys=True))
+        raise SystemExit(2)
     print(json.dumps(summary, sort_keys=True))
-    if not summary["success"]:
+    if not summary["success"] and not args.allow_algorithm_outcome:
         raise SystemExit(1)
 
 

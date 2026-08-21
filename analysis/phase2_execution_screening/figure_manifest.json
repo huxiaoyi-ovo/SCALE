@@ -1,0 +1,20 @@
+{
+  "audience": "provisional general audience",
+  "confidence_interval": "95% percentile",
+  "estimator": "mean; sample SD in descriptives; paired layout percentile bootstrap where contrasted",
+  "journal_compliance_claim": false,
+  "packages": {
+    "matplotlib": "3.7.2",
+    "python": "3.8.20"
+  },
+  "resamples": 5000,
+  "seed": 20260822,
+  "sources": [
+    "episodes.csv",
+    "figure_source_episodes.csv",
+    "bootstrap_ci.csv",
+    "paired_effects.csv",
+    "interaction_contrasts.csv"
+  ],
+  "unit": "layout"
+}

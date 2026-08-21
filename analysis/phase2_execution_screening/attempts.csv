@@ -1,0 +1,881 @@
+timestamp,episode_id,attempt,status,detail
+2026-08-20T12:51:41.710162+00:00,holdout__holdout_10__dwa__delay_100,1,algorithm,duration
+2026-08-20T12:51:47.836011+00:00,discovery__discovery_13__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T12:51:54.324894+00:00,holdout__holdout_19__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T12:52:01.138918+00:00,discovery__discovery_15__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T12:52:08.006145+00:00,holdout__holdout_15__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T12:52:14.457142+00:00,holdout__holdout_08__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T12:52:20.003712+00:00,discovery__discovery_09__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T12:52:26.521481+00:00,holdout__holdout_20__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T12:52:31.762540+00:00,holdout__holdout_18__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T12:52:41.331397+00:00,discovery__discovery_11__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T12:52:44.317610+00:00,holdout__holdout_13__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T12:52:47.952457+00:00,discovery__discovery_15__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T12:52:54.619387+00:00,discovery__discovery_10__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T12:52:59.642543+00:00,holdout__holdout_02__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T12:53:06.538854+00:00,holdout__holdout_02__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T12:53:11.340273+00:00,holdout__holdout_17__dwa__delay_100,1,algorithm,duration
+2026-08-20T12:53:14.155359+00:00,holdout__holdout_06__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T12:53:22.093990+00:00,discovery__discovery_06__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T12:53:26.738450+00:00,discovery__discovery_03__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T12:53:31.991945+00:00,holdout__holdout_11__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T12:53:38.533214+00:00,holdout__holdout_10__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T12:53:44.478641+00:00,discovery__discovery_04__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T12:53:49.176194+00:00,discovery__discovery_09__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T12:53:55.678513+00:00,holdout__holdout_03__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T12:54:01.002124+00:00,holdout__holdout_06__dwa__e0,1,algorithm,duration
+2026-08-20T12:54:06.895001+00:00,holdout__holdout_15__teb__e0,1,algorithm,external_tolerance
+2026-08-20T12:54:12.536193+00:00,discovery__discovery_14__teb__e0,1,algorithm,external_tolerance
+2026-08-20T12:54:17.656437+00:00,holdout__holdout_10__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T12:54:24.190571+00:00,holdout__holdout_02__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T12:54:31.114809+00:00,holdout__holdout_06__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T12:54:36.588895+00:00,discovery__discovery_17__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T12:54:43.645372+00:00,discovery__discovery_06__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T12:54:48.884759+00:00,holdout__holdout_14__dwa__e0,1,algorithm,duration
+2026-08-20T12:54:54.295051+00:00,discovery__discovery_12__dwa__delay_200,1,algorithm,duration
+2026-08-20T12:55:00.528075+00:00,discovery__discovery_01__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T12:55:05.842247+00:00,holdout__holdout_05__dwa__e0,1,algorithm,duration
+2026-08-20T12:55:12.241616+00:00,holdout__holdout_13__dwa__delay_100,1,algorithm,external_tolerance
+2026-08-20T12:55:17.448380+00:00,holdout__holdout_05__dwa__delay_050,1,algorithm,duration
+2026-08-20T12:55:22.668702+00:00,discovery__discovery_20__dwa__e0,1,algorithm,duration
+2026-08-20T12:55:29.236486+00:00,holdout__holdout_17__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T12:55:35.730118+00:00,discovery__discovery_02__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T12:55:43.250747+00:00,discovery__discovery_02__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T12:55:48.707381+00:00,discovery__discovery_08__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T12:55:55.069895+00:00,discovery__discovery_13__dwa__delay_050,1,algorithm,duration
+2026-08-20T12:56:01.003302+00:00,holdout__holdout_09__teb__e0,1,algorithm,external_tolerance
+2026-08-20T12:56:07.581201+00:00,holdout__holdout_16__dwa__delay_100,1,algorithm,external_tolerance
+2026-08-20T12:56:13.546413+00:00,discovery__discovery_13__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T12:56:19.736884+00:00,discovery__discovery_14__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T12:56:28.309939+00:00,discovery__discovery_03__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T12:56:34.854480+00:00,holdout__holdout_13__dwa__delay_200,1,algorithm,duration
+2026-08-20T12:56:40.887944+00:00,holdout__holdout_16__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T12:56:43.981647+00:00,holdout__holdout_20__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T12:56:50.607495+00:00,holdout__holdout_19__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T12:56:57.578779+00:00,holdout__holdout_15__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T12:57:03.931665+00:00,holdout__holdout_09__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T12:57:07.314899+00:00,discovery__discovery_10__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T12:57:13.640793+00:00,holdout__holdout_11__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T12:57:20.252085+00:00,holdout__holdout_19__teb__e0,1,algorithm,external_tolerance
+2026-08-20T12:57:26.198643+00:00,discovery__discovery_12__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T12:57:32.972020+00:00,discovery__discovery_19__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T12:57:38.690464+00:00,holdout__holdout_12__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T12:57:47.773471+00:00,discovery__discovery_06__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T12:57:54.746872+00:00,holdout__holdout_08__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T12:58:01.165362+00:00,discovery__discovery_14__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T12:58:06.333946+00:00,discovery__discovery_03__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T12:58:11.497776+00:00,holdout__holdout_07__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T12:58:20.699782+00:00,discovery__discovery_15__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T12:58:27.535089+00:00,holdout__holdout_12__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T12:58:34.957710+00:00,holdout__holdout_06__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T12:58:41.950785+00:00,holdout__holdout_03__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T12:58:48.640952+00:00,discovery__discovery_11__dwa__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T12:58:55.454670+00:00,discovery__discovery_08__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T12:59:00.910286+00:00,holdout__holdout_04__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T12:59:06.701899+00:00,holdout__holdout_03__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T12:59:13.653362+00:00,holdout__holdout_15__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T12:59:20.990212+00:00,discovery__discovery_19__dwa__e0,1,algorithm,duration
+2026-08-20T12:59:27.477195+00:00,holdout__holdout_12__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T12:59:34.229610+00:00,discovery__discovery_13__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T12:59:41.790162+00:00,holdout__holdout_11__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T12:59:47.794627+00:00,holdout__holdout_04__dwa__e0,1,algorithm,duration
+2026-08-20T12:59:53.236164+00:00,holdout__holdout_17__dwa__e0,1,algorithm,duration
+2026-08-20T12:59:59.052780+00:00,holdout__holdout_20__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:00:04.769907+00:00,holdout__holdout_08__dwa__e0,1,algorithm,duration
+2026-08-20T13:00:12.637200+00:00,discovery__discovery_11__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:00:20.366031+00:00,holdout__holdout_13__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:00:26.846638+00:00,discovery__discovery_08__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:00:36.255443+00:00,discovery__discovery_06__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:00:44.134839+00:00,discovery__discovery_16__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:00:50.598048+00:00,holdout__holdout_16__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:00:58.177211+00:00,discovery__discovery_15__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:01:04.313846+00:00,holdout__holdout_15__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:01:11.497953+00:00,holdout__holdout_12__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:01:19.314495+00:00,discovery__discovery_05__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:01:26.462661+00:00,holdout__holdout_11__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:01:32.818303+00:00,holdout__holdout_05__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:01:38.885579+00:00,holdout__holdout_16__dwa__e0,1,algorithm,duration
+2026-08-20T13:01:42.759065+00:00,holdout__holdout_19__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:01:48.745965+00:00,discovery__discovery_12__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:01:55.953625+00:00,discovery__discovery_14__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:02:02.505880+00:00,holdout__holdout_06__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:02:09.391967+00:00,discovery__discovery_11__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:02:16.802806+00:00,discovery__discovery_11__teb__tau_y_500,1,algorithm,footprint_collision
+2026-08-20T13:02:23.009552+00:00,discovery__discovery_20__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:02:33.919722+00:00,discovery__discovery_06__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:02:39.936429+00:00,holdout__holdout_05__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:02:45.875634+00:00,discovery__discovery_08__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:02:52.220842+00:00,holdout__holdout_09__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:02:58.423513+00:00,discovery__discovery_12__dwa__e0,1,algorithm,duration
+2026-08-20T13:03:04.298701+00:00,discovery__discovery_11__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:03:10.881470+00:00,discovery__discovery_16__dwa__e0,1,algorithm,external_tolerance
+2026-08-20T13:03:18.212244+00:00,holdout__holdout_01__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:03:23.980950+00:00,discovery__discovery_17__teb__tau_w_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:03:29.966677+00:00,holdout__holdout_08__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:03:35.550074+00:00,holdout__holdout_17__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:03:42.639341+00:00,holdout__holdout_20__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:03:49.456352+00:00,holdout__holdout_11__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:03:58.540920+00:00,discovery__discovery_19__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:04:05.644878+00:00,discovery__discovery_14__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:04:11.619043+00:00,discovery__discovery_05__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:04:19.600808+00:00,holdout__holdout_11__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:04:25.842851+00:00,holdout__holdout_07__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:04:33.788830+00:00,holdout__holdout_08__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:04:39.981938+00:00,discovery__discovery_13__dwa__e0,1,algorithm,duration
+2026-08-20T13:04:46.021465+00:00,holdout__holdout_12__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:04:51.864695+00:00,discovery__discovery_11__dwa__e0,1,algorithm,duration
+2026-08-20T13:04:59.099849+00:00,discovery__discovery_01__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:05:06.780392+00:00,discovery__discovery_01__dwa__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:05:13.933914+00:00,holdout__holdout_15__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:05:21.403069+00:00,discovery__discovery_14__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:05:27.376693+00:00,holdout__holdout_13__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:05:36.223511+00:00,discovery__discovery_05__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:05:43.111772+00:00,holdout__holdout_10__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:05:54.247928+00:00,holdout__holdout_04__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:06:01.156692+00:00,discovery__discovery_19__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:06:08.675695+00:00,discovery__discovery_18__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:06:15.954852+00:00,holdout__holdout_05__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:06:22.863923+00:00,discovery__discovery_19__dwa__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:06:30.167583+00:00,discovery__discovery_01__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:06:35.603487+00:00,discovery__discovery_20__teb__tau_y_150,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:06:43.111335+00:00,holdout__holdout_18__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:06:50.834265+00:00,discovery__discovery_14__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:06:58.059068+00:00,holdout__holdout_19__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:07:05.584633+00:00,discovery__discovery_03__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:07:12.158293+00:00,holdout__holdout_03__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:07:17.733506+00:00,holdout__holdout_17__teb__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:07:25.199392+00:00,holdout__holdout_11__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:07:33.621709+00:00,holdout__holdout_13__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:07:41.792876+00:00,discovery__discovery_09__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:07:51.319957+00:00,discovery__discovery_02__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:07:58.957233+00:00,discovery__discovery_07__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:08:05.941213+00:00,holdout__holdout_07__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:08:12.413053+00:00,holdout__holdout_17__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:08:18.936164+00:00,holdout__holdout_19__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:08:27.417295+00:00,holdout__holdout_14__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:08:34.718877+00:00,discovery__discovery_04__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:08:44.241528+00:00,discovery__discovery_06__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:08:50.561272+00:00,discovery__discovery_09__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:08:57.126573+00:00,discovery__discovery_05__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:09:06.152364+00:00,discovery__discovery_19__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:09:14.061824+00:00,discovery__discovery_18__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:09:21.728222+00:00,holdout__holdout_11__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:09:30.240387+00:00,discovery__discovery_14__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:09:38.560161+00:00,discovery__discovery_08__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:09:45.537755+00:00,discovery__discovery_18__dwa__e0,1,algorithm,footprint_collision
+2026-08-20T13:09:53.667638+00:00,holdout__holdout_03__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:10:01.311975+00:00,discovery__discovery_03__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:10:09.093354+00:00,holdout__holdout_11__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:10:17.100077+00:00,discovery__discovery_07__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:10:26.155283+00:00,discovery__discovery_16__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:10:33.504256+00:00,discovery__discovery_20__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:10:41.867236+00:00,discovery__discovery_11__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:10:47.626564+00:00,holdout__holdout_17__teb__tau_x_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:10:56.287130+00:00,holdout__holdout_20__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:11:05.499384+00:00,holdout__holdout_14__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:11:13.395914+00:00,discovery__discovery_15__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:11:20.895041+00:00,discovery__discovery_02__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:11:28.212459+00:00,discovery__discovery_20__teb__tau_w_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:11:36.225451+00:00,holdout__holdout_01__teb__tau_y_500,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:11:42.427997+00:00,discovery__discovery_20__teb__tau_x_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:11:48.992742+00:00,holdout__holdout_07__teb__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:11:57.581654+00:00,holdout__holdout_08__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:12:04.272544+00:00,discovery__discovery_06__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:12:10.934236+00:00,discovery__discovery_09__dwa__e0,1,algorithm,duration
+2026-08-20T13:12:18.404688+00:00,holdout__holdout_19__dwa__e0,1,algorithm,duration
+2026-08-20T13:12:29.900120+00:00,discovery__discovery_19__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:12:37.080713+00:00,discovery__discovery_15__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:12:43.744858+00:00,discovery__discovery_05__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:12:50.612357+00:00,discovery__discovery_11__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:12:59.725266+00:00,discovery__discovery_19__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:13:08.222957+00:00,holdout__holdout_06__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:13:15.748909+00:00,holdout__holdout_03__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:13:22.858619+00:00,discovery__discovery_10__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:13:30.979299+00:00,holdout__holdout_11__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:13:41.774753+00:00,discovery__discovery_18__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:13:49.353655+00:00,holdout__holdout_06__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:13:58.254777+00:00,holdout__holdout_10__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:14:05.201766+00:00,holdout__holdout_07__teb__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:14:13.107605+00:00,holdout__holdout_15__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:14:20.760915+00:00,holdout__holdout_16__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:14:27.999509+00:00,holdout__holdout_16__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:14:34.876320+00:00,discovery__discovery_06__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:14:42.475679+00:00,holdout__holdout_13__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:14:50.722262+00:00,holdout__holdout_06__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:14:58.987957+00:00,holdout__holdout_20__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:15:07.012530+00:00,discovery__discovery_12__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:15:13.970476+00:00,holdout__holdout_12__dwa__e0,1,algorithm,duration
+2026-08-20T13:15:20.757637+00:00,holdout__holdout_11__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:15:28.073565+00:00,discovery__discovery_07__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:15:35.935870+00:00,discovery__discovery_08__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:15:43.935042+00:00,discovery__discovery_12__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:15:54.025345+00:00,discovery__discovery_07__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:16:01.551050+00:00,discovery__discovery_20__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:16:08.650935+00:00,discovery__discovery_09__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:16:15.452352+00:00,holdout__holdout_06__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:16:24.230584+00:00,holdout__holdout_20__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:16:31.508039+00:00,discovery__discovery_16__dwa__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:16:39.314161+00:00,holdout__holdout_12__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:16:47.713364+00:00,holdout__holdout_01__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:16:57.297821+00:00,holdout__holdout_04__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:17:04.248257+00:00,discovery__discovery_07__dwa__e0,1,algorithm,duration
+2026-08-20T13:17:12.054080+00:00,holdout__holdout_01__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:17:20.173930+00:00,discovery__discovery_12__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:17:28.960873+00:00,holdout__holdout_18__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:17:37.883108+00:00,discovery__discovery_03__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:17:44.711539+00:00,discovery__discovery_13__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:17:52.689815+00:00,holdout__holdout_02__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:18:01.403823+00:00,holdout__holdout_03__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:18:12.063760+00:00,discovery__discovery_10__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:18:19.773948+00:00,discovery__discovery_16__dwa__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:18:27.915608+00:00,holdout__holdout_11__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:18:35.226507+00:00,holdout__holdout_13__dwa__e0,1,algorithm,duration
+2026-08-20T13:18:40.278174+00:00,discovery__discovery_20__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:18:49.940613+00:00,discovery__discovery_06__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:18:57.553888+00:00,discovery__discovery_11__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:19:05.628536+00:00,holdout__holdout_12__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:19:12.822031+00:00,holdout__holdout_10__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:19:19.802805+00:00,discovery__discovery_02__dwa__e0,1,algorithm,duration
+2026-08-20T13:19:27.672209+00:00,discovery__discovery_01__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:19:35.702916+00:00,holdout__holdout_09__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:19:44.036417+00:00,holdout__holdout_14__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:19:51.363945+00:00,holdout__holdout_09__teb__tau_y_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:19:59.805390+00:00,discovery__discovery_07__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:20:07.214052+00:00,holdout__holdout_14__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:20:15.416100+00:00,holdout__holdout_09__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:20:22.313648+00:00,holdout__holdout_18__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:20:29.408248+00:00,holdout__holdout_01__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:20:37.085848+00:00,holdout__holdout_05__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:20:45.351238+00:00,discovery__discovery_05__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:20:53.844874+00:00,discovery__discovery_08__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:21:01.579262+00:00,holdout__holdout_02__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:21:08.400924+00:00,discovery__discovery_17__dwa__e0,1,algorithm,duration
+2026-08-20T13:21:17.760392+00:00,discovery__discovery_07__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:21:25.338487+00:00,discovery__discovery_10__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:21:34.654096+00:00,holdout__holdout_02__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:21:44.106116+00:00,holdout__holdout_03__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:21:51.847662+00:00,holdout__holdout_01__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:22:00.466745+00:00,discovery__discovery_18__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:22:10.367835+00:00,holdout__holdout_06__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:22:17.517216+00:00,holdout__holdout_09__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:22:24.826692+00:00,discovery__discovery_17__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:22:34.035078+00:00,holdout__holdout_14__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:22:42.601060+00:00,holdout__holdout_16__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:22:50.611429+00:00,holdout__holdout_03__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:22:59.087437+00:00,holdout__holdout_13__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:23:06.104341+00:00,holdout__holdout_01__dwa__e0,1,algorithm,duration
+2026-08-20T13:23:13.663517+00:00,discovery__discovery_12__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:23:21.476204+00:00,holdout__holdout_14__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:23:30.306267+00:00,discovery__discovery_09__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:23:37.778551+00:00,discovery__discovery_01__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:23:46.415514+00:00,discovery__discovery_10__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:23:55.762724+00:00,holdout__holdout_03__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:24:02.999130+00:00,discovery__discovery_17__teb__e0,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:24:10.360439+00:00,discovery__discovery_08__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:24:17.165775+00:00,holdout__holdout_17__teb__tau_y_150,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:24:26.954675+00:00,discovery__discovery_11__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:24:34.970823+00:00,holdout__holdout_19__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:24:41.987749+00:00,discovery__discovery_19__teb__tau_x_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:24:49.391906+00:00,holdout__holdout_07__teb__tau_w_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:24:56.721569+00:00,holdout__holdout_14__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:25:04.216733+00:00,holdout__holdout_15__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:25:13.559473+00:00,holdout__holdout_16__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:25:21.504391+00:00,holdout__holdout_15__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:25:29.999162+00:00,holdout__holdout_19__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:25:38.468737+00:00,discovery__discovery_15__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:25:47.811407+00:00,holdout__holdout_06__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:25:57.682121+00:00,holdout__holdout_06__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:26:06.908967+00:00,discovery__discovery_11__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:26:16.390416+00:00,holdout__holdout_02__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:26:24.314365+00:00,discovery__discovery_16__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:26:32.076490+00:00,holdout__holdout_17__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:26:40.213316+00:00,holdout__holdout_18__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:26:50.734836+00:00,discovery__discovery_18__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:26:59.317001+00:00,holdout__holdout_05__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:27:08.253848+00:00,discovery__discovery_09__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:27:17.907871+00:00,discovery__discovery_02__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:27:23.684138+00:00,discovery__discovery_18__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:27:31.440663+00:00,holdout__holdout_19__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:27:40.843522+00:00,holdout__holdout_04__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:27:51.051267+00:00,discovery__discovery_15__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:27:59.013398+00:00,holdout__holdout_19__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:28:08.743145+00:00,holdout__holdout_05__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:28:18.018225+00:00,discovery__discovery_12__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:28:29.405766+00:00,holdout__holdout_02__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:28:38.492143+00:00,holdout__holdout_12__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:28:47.010441+00:00,holdout__holdout_04__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:28:54.906573+00:00,holdout__holdout_07__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:29:02.665407+00:00,holdout__holdout_04__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:29:13.406405+00:00,discovery__discovery_07__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:29:20.822470+00:00,discovery__discovery_20__teb__e0,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:29:29.068508+00:00,discovery__discovery_18__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:29:36.953421+00:00,discovery__discovery_05__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:29:44.468699+00:00,holdout__holdout_20__dwa__e0,1,algorithm,duration
+2026-08-20T13:29:53.641850+00:00,holdout__holdout_15__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:30:01.960264+00:00,holdout__holdout_08__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:30:09.629164+00:00,holdout__holdout_01__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:30:20.607105+00:00,discovery__discovery_15__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:30:28.737664+00:00,holdout__holdout_10__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:30:40.203444+00:00,discovery__discovery_10__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:30:48.476662+00:00,holdout__holdout_20__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:30:57.395357+00:00,holdout__holdout_09__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:31:06.097441+00:00,holdout__holdout_18__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:31:14.808576+00:00,holdout__holdout_07__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:31:24.520257+00:00,discovery__discovery_18__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:31:32.117241+00:00,holdout__holdout_08__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:31:41.321716+00:00,holdout__holdout_13__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:31:49.816491+00:00,discovery__discovery_11__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:31:57.899167+00:00,discovery__discovery_17__teb__tau_y_150,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:32:05.644523+00:00,holdout__holdout_01__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:32:13.871230+00:00,discovery__discovery_12__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:32:20.857872+00:00,holdout__holdout_16__dwa__tau_w_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:32:29.684851+00:00,holdout__holdout_04__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:32:37.371900+00:00,discovery__discovery_20__teb__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:32:45.169859+00:00,discovery__discovery_05__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:32:53.019685+00:00,discovery__discovery_19__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:33:01.701728+00:00,discovery__discovery_10__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:33:10.690264+00:00,holdout__holdout_16__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:33:18.942671+00:00,holdout__holdout_02__dwa__e0,1,algorithm,duration
+2026-08-20T13:33:26.689476+00:00,discovery__discovery_06__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:33:35.606491+00:00,discovery__discovery_18__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:33:44.060870+00:00,discovery__discovery_17__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:33:52.611558+00:00,discovery__discovery_10__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:34:02.032769+00:00,holdout__holdout_01__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:34:09.779856+00:00,holdout__holdout_20__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:34:23.980091+00:00,discovery__discovery_15__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:34:32.316556+00:00,discovery__discovery_20__teb__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:34:41.912673+00:00,discovery__discovery_05__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:34:51.122411+00:00,discovery__discovery_16__dwa__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:35:03.104054+00:00,discovery__discovery_05__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:35:11.405532+00:00,holdout__holdout_06__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:35:20.054271+00:00,discovery__discovery_15__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:35:28.132478+00:00,discovery__discovery_17__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:35:36.805088+00:00,discovery__discovery_03__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:35:48.431671+00:00,discovery__discovery_11__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:35:57.197623+00:00,discovery__discovery_14__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:36:07.660178+00:00,holdout__holdout_15__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:36:13.995333+00:00,holdout__holdout_19__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:36:21.822137+00:00,discovery__discovery_17__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:36:30.867105+00:00,holdout__holdout_05__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:36:39.271264+00:00,holdout__holdout_15__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:36:47.856843+00:00,holdout__holdout_02__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:36:56.577059+00:00,holdout__holdout_07__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:37:06.478534+00:00,discovery__discovery_14__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:37:16.066626+00:00,discovery__discovery_14__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:37:24.297395+00:00,discovery__discovery_09__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:37:34.100931+00:00,discovery__discovery_18__dwa__delay_050,1,algorithm,footprint_collision
+2026-08-20T13:37:45.748625+00:00,discovery__discovery_03__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:37:55.219668+00:00,discovery__discovery_01__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:38:03.609200+00:00,holdout__holdout_14__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:38:12.428108+00:00,holdout__holdout_16__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:38:22.578808+00:00,holdout__holdout_03__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:38:33.222267+00:00,holdout__holdout_06__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:38:42.443926+00:00,holdout__holdout_12__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:38:53.306265+00:00,holdout__holdout_14__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:39:02.914692+00:00,holdout__holdout_18__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:39:14.044219+00:00,discovery__discovery_04__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:39:22.561676+00:00,discovery__discovery_11__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:39:32.261454+00:00,holdout__holdout_10__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:39:41.223121+00:00,holdout__holdout_19__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:39:49.288394+00:00,holdout__holdout_17__teb__tau_x_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:39:57.634754+00:00,holdout__holdout_14__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:40:06.705172+00:00,holdout__holdout_02__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:40:16.300752+00:00,holdout__holdout_20__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:40:26.919158+00:00,discovery__discovery_16__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:40:37.167769+00:00,discovery__discovery_19__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T13:40:47.782749+00:00,holdout__holdout_19__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:40:59.282274+00:00,holdout__holdout_08__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:41:11.799802+00:00,discovery__discovery_16__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:41:21.773336+00:00,holdout__holdout_20__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:41:31.426216+00:00,holdout__holdout_07__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:41:39.936692+00:00,holdout__holdout_01__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:41:50.822873+00:00,holdout__holdout_08__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:41:57.158703+00:00,discovery__discovery_16__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:42:06.287168+00:00,discovery__discovery_18__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:42:16.986255+00:00,holdout__holdout_05__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:42:27.033207+00:00,discovery__discovery_08__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:42:37.569369+00:00,discovery__discovery_02__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:42:46.753782+00:00,discovery__discovery_03__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:42:58.005940+00:00,discovery__discovery_15__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:43:09.632759+00:00,holdout__holdout_12__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:43:20.042818+00:00,discovery__discovery_11__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:43:32.265270+00:00,holdout__holdout_10__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:43:41.243160+00:00,holdout__holdout_06__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:43:49.850035+00:00,discovery__discovery_20__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:44:02.047808+00:00,discovery__discovery_10__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T13:44:12.027046+00:00,discovery__discovery_12__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:44:19.816834+00:00,holdout__holdout_17__teb__e0,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:44:30.231835+00:00,discovery__discovery_17__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T13:44:40.482134+00:00,discovery__discovery_15__dwa__e0,1,algorithm,duration
+2026-08-20T13:44:51.675090+00:00,holdout__holdout_15__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:45:01.512510+00:00,discovery__discovery_02__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:45:12.152992+00:00,discovery__discovery_11__teb__tau_y_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:45:21.184880+00:00,discovery__discovery_08__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:45:31.364899+00:00,holdout__holdout_15__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:45:41.141031+00:00,holdout__holdout_07__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:45:52.154336+00:00,discovery__discovery_18__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:46:03.168144+00:00,holdout__holdout_04__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:46:12.572707+00:00,discovery__discovery_01__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:46:21.513977+00:00,holdout__holdout_05__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:46:31.087227+00:00,holdout__holdout_01__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:46:41.822311+00:00,discovery__discovery_11__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:46:52.078831+00:00,holdout__holdout_12__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:47:01.979964+00:00,holdout__holdout_13__teb__tau_y_500,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:47:13.348242+00:00,discovery__discovery_17__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:47:23.779406+00:00,holdout__holdout_13__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:47:31.583653+00:00,discovery__discovery_18__dwa__tau_w_300,1,algorithm,footprint_collision
+2026-08-20T13:47:41.189182+00:00,discovery__discovery_18__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:47:52.689981+00:00,discovery__discovery_11__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:48:01.443099+00:00,holdout__holdout_17__teb__tau_y_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:48:12.444809+00:00,discovery__discovery_04__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:48:22.496605+00:00,holdout__holdout_07__teb__tau_y_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:48:33.264318+00:00,discovery__discovery_16__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:48:44.788377+00:00,discovery__discovery_17__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:48:54.025131+00:00,holdout__holdout_09__teb__tau_y_500,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:49:02.897897+00:00,holdout__holdout_04__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:49:13.208722+00:00,holdout__holdout_18__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:49:24.147150+00:00,discovery__discovery_09__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:49:35.006255+00:00,discovery__discovery_10__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:49:46.077108+00:00,discovery__discovery_11__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:49:55.911329+00:00,discovery__discovery_02__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:50:05.567900+00:00,discovery__discovery_19__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:50:14.799696+00:00,discovery__discovery_01__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T13:50:24.078681+00:00,holdout__holdout_09__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:50:31.162941+00:00,holdout__holdout_18__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:50:38.209692+00:00,discovery__discovery_15__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:50:47.954647+00:00,holdout__holdout_19__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:50:57.270835+00:00,discovery__discovery_06__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:51:06.679757+00:00,discovery__discovery_14__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:51:18.640797+00:00,discovery__discovery_04__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T13:51:28.564198+00:00,discovery__discovery_10__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:51:39.678323+00:00,discovery__discovery_08__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:51:49.979887+00:00,discovery__discovery_10__dwa__e0,1,algorithm,duration
+2026-08-20T13:51:59.349058+00:00,discovery__discovery_17__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:52:08.700119+00:00,discovery__discovery_07__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:52:18.358556+00:00,holdout__holdout_06__dwa__delay_100,1,algorithm,duration
+2026-08-20T13:52:28.552152+00:00,holdout__holdout_18__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:52:38.095378+00:00,holdout__holdout_05__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:52:48.404720+00:00,holdout__holdout_08__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:52:59.214683+00:00,holdout__holdout_19__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:53:07.409216+00:00,holdout__holdout_17__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:53:18.130392+00:00,holdout__holdout_02__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T13:53:27.740068+00:00,holdout__holdout_11__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:53:37.460435+00:00,holdout__holdout_03__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:53:48.269891+00:00,holdout__holdout_20__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T13:53:58.309444+00:00,holdout__holdout_15__dwa__e0,1,algorithm,duration
+2026-08-20T13:54:09.536033+00:00,holdout__holdout_07__teb__tau_y_500,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:54:19.148828+00:00,discovery__discovery_14__dwa__e0,1,algorithm,duration
+2026-08-20T13:54:28.297632+00:00,holdout__holdout_09__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:54:35.452707+00:00,discovery__discovery_14__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:54:45.864431+00:00,holdout__holdout_04__dwa__delay_050,1,algorithm,duration
+2026-08-20T13:54:55.657231+00:00,discovery__discovery_04__dwa__e0,1,algorithm,duration
+2026-08-20T13:55:07.506093+00:00,discovery__discovery_03__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T13:55:19.123694+00:00,holdout__holdout_14__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:55:31.624715+00:00,holdout__holdout_14__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:55:41.604939+00:00,discovery__discovery_03__dwa__e0,1,algorithm,duration
+2026-08-20T13:55:51.659277+00:00,holdout__holdout_09__dwa__e0,1,algorithm,duration
+2026-08-20T13:55:59.228310+00:00,holdout__holdout_16__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:56:10.520170+00:00,discovery__discovery_03__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:56:20.182394+00:00,holdout__holdout_06__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T13:56:31.685512+00:00,discovery__discovery_17__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T13:56:42.349371+00:00,holdout__holdout_12__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:56:52.382536+00:00,discovery__discovery_17__teb__tau_y_500,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:57:03.429869+00:00,discovery__discovery_13__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:57:12.992745+00:00,discovery__discovery_03__dwa__delay_200,1,algorithm,duration
+2026-08-20T13:57:24.439293+00:00,discovery__discovery_04__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:57:35.037770+00:00,discovery__discovery_01__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T13:57:45.486206+00:00,holdout__holdout_04__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:57:56.668569+00:00,holdout__holdout_03__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:58:08.312120+00:00,holdout__holdout_08__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T13:58:20.223219+00:00,discovery__discovery_10__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T13:58:30.132026+00:00,holdout__holdout_01__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:58:39.926516+00:00,discovery__discovery_02__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T13:58:50.531544+00:00,discovery__discovery_14__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:59:01.429944+00:00,holdout__holdout_20__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T13:59:13.187383+00:00,discovery__discovery_19__dwa__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T13:59:23.946255+00:00,discovery__discovery_13__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T13:59:35.988720+00:00,discovery__discovery_05__teb__e0,1,algorithm,external_tolerance
+2026-08-20T13:59:43.759769+00:00,discovery__discovery_07__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T13:59:53.628438+00:00,discovery__discovery_06__dwa__e0,1,algorithm,duration
+2026-08-20T14:00:05.745959+00:00,holdout__holdout_18__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:00:16.180526+00:00,discovery__discovery_04__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:00:28.070278+00:00,discovery__discovery_02__dwa__delay_200,1,algorithm,duration
+2026-08-20T14:00:39.086478+00:00,discovery__discovery_02__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:00:51.111400+00:00,discovery__discovery_13__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:01:03.659751+00:00,discovery__discovery_19__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:01:16.206566+00:00,discovery__discovery_15__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:01:27.553517+00:00,discovery__discovery_04__teb__tau_y_500,1,algorithm,footprint_collision
+2026-08-20T14:01:39.532512+00:00,holdout__holdout_02__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:01:52.826472+00:00,discovery__discovery_12__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:02:00.701332+00:00,holdout__holdout_11__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:02:10.912603+00:00,holdout__holdout_18__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:02:21.710748+00:00,holdout__holdout_15__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:02:35.567884+00:00,holdout__holdout_19__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:02:48.489472+00:00,discovery__discovery_12__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:02:56.537684+00:00,discovery__discovery_13__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:03:06.604076+00:00,discovery__discovery_05__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:03:17.775014+00:00,holdout__holdout_08__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:03:31.075177+00:00,discovery__discovery_06__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:03:45.523836+00:00,holdout__holdout_14__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:03:56.639806+00:00,discovery__discovery_04__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:04:08.908579+00:00,discovery__discovery_10__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T14:04:24.985055+00:00,discovery__discovery_19__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:04:37.025623+00:00,discovery__discovery_10__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:04:47.884856+00:00,holdout__holdout_01__teb__tau_y_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:04:59.063331+00:00,holdout__holdout_10__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:05:12.206893+00:00,discovery__discovery_13__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:05:26.035995+00:00,discovery__discovery_19__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T14:05:36.517983+00:00,discovery__discovery_09__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:05:47.342628+00:00,discovery__discovery_05__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:05:57.522760+00:00,discovery__discovery_09__dwa__delay_050,1,algorithm,duration
+2026-08-20T14:06:09.033301+00:00,holdout__holdout_13__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:06:20.196936+00:00,discovery__discovery_08__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:06:31.010755+00:00,discovery__discovery_09__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:06:42.310202+00:00,holdout__holdout_16__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:06:53.646449+00:00,discovery__discovery_01__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T14:07:06.315651+00:00,discovery__discovery_16__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T14:07:18.098295+00:00,holdout__holdout_20__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:07:29.388921+00:00,holdout__holdout_07__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:07:39.887854+00:00,holdout__holdout_03__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:07:51.718081+00:00,holdout__holdout_03__dwa__delay_050,1,algorithm,duration
+2026-08-20T14:08:03.327829+00:00,holdout__holdout_10__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:08:15.364492+00:00,discovery__discovery_04__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:08:26.402832+00:00,discovery__discovery_13__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:08:34.242066+00:00,discovery__discovery_02__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:08:48.926216+00:00,discovery__discovery_06__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:09:00.701793+00:00,holdout__holdout_05__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:09:11.276158+00:00,holdout__holdout_11__dwa__e0,1,algorithm,duration
+2026-08-20T14:09:21.816271+00:00,discovery__discovery_06__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:09:33.104531+00:00,discovery__discovery_08__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:09:45.536584+00:00,holdout__holdout_02__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:09:57.104872+00:00,holdout__holdout_16__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:10:08.694598+00:00,holdout__holdout_17__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:10:18.809846+00:00,holdout__holdout_18__dwa__tau_y_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:10:32.945324+00:00,holdout__holdout_02__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:10:46.205430+00:00,holdout__holdout_04__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:10:57.661381+00:00,holdout__holdout_06__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:11:09.283744+00:00,discovery__discovery_15__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:11:21.441082+00:00,discovery__discovery_02__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:11:32.338291+00:00,holdout__holdout_12__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:11:44.502134+00:00,holdout__holdout_18__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:11:56.836193+00:00,holdout__holdout_01__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:12:06.393039+00:00,holdout__holdout_17__teb__tau_w_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:12:18.522787+00:00,holdout__holdout_01__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:12:29.172924+00:00,holdout__holdout_05__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:12:42.109632+00:00,holdout__holdout_04__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:12:53.036100+00:00,discovery__discovery_18__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:13:03.814238+00:00,holdout__holdout_08__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:13:15.327909+00:00,holdout__holdout_12__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:13:26.982968+00:00,holdout__holdout_05__dwa__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:13:39.119488+00:00,discovery__discovery_09__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:13:49.916075+00:00,discovery__discovery_01__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:14:00.101089+00:00,discovery__discovery_20__teb__tau_w_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:14:10.581090+00:00,holdout__holdout_10__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:14:21.802435+00:00,discovery__discovery_08__dwa__e0,1,algorithm,duration
+2026-08-20T14:14:32.971860+00:00,holdout__holdout_12__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:14:45.266541+00:00,holdout__holdout_10__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:14:57.078802+00:00,holdout__holdout_09__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:15:08.389260+00:00,discovery__discovery_12__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T14:15:19.615373+00:00,holdout__holdout_02__dwa__delay_200,1,algorithm,duration
+2026-08-20T14:15:31.878492+00:00,discovery__discovery_18__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:15:44.235601+00:00,discovery__discovery_07__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:15:55.891346+00:00,discovery__discovery_10__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:16:07.017046+00:00,discovery__discovery_07__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:16:17.782329+00:00,holdout__holdout_09__dwa__delay_100,1,algorithm,duration
+2026-08-20T14:16:31.128604+00:00,discovery__discovery_11__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T14:16:44.358346+00:00,discovery__discovery_04__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:16:56.396308+00:00,discovery__discovery_17__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:17:07.201664+00:00,holdout__holdout_07__teb__e0,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:17:17.655521+00:00,holdout__holdout_08__dwa__delay_100,1,algorithm,duration
+2026-08-20T14:17:28.746117+00:00,discovery__discovery_03__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:17:39.835087+00:00,discovery__discovery_08__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:17:53.796303+00:00,holdout__holdout_08__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:18:05.879724+00:00,discovery__discovery_14__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:18:18.077143+00:00,holdout__holdout_11__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:18:28.998997+00:00,discovery__discovery_20__teb__tau_y_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:18:42.189104+00:00,discovery__discovery_18__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:18:53.027828+00:00,discovery__discovery_05__dwa__delay_050,1,algorithm,duration
+2026-08-20T14:19:04.073852+00:00,holdout__holdout_07__teb__tau_y_150,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:19:15.304879+00:00,holdout__holdout_20__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:19:28.364588+00:00,discovery__discovery_04__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:19:44.483503+00:00,discovery__discovery_16__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:19:59.185083+00:00,holdout__holdout_14__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:20:12.394500+00:00,discovery__discovery_16__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:20:25.319195+00:00,discovery__discovery_16__dwa__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:20:37.929889+00:00,discovery__discovery_07__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:20:50.686251+00:00,discovery__discovery_01__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:21:01.560324+00:00,holdout__holdout_18__dwa__e0,1,algorithm,duration
+2026-08-20T14:21:12.532963+00:00,holdout__holdout_05__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T14:21:24.212637+00:00,holdout__holdout_02__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:21:36.833850+00:00,holdout__holdout_13__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:21:48.025144+00:00,holdout__holdout_07__teb__tau_x_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:21:58.867322+00:00,discovery__discovery_20__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:22:12.243791+00:00,discovery__discovery_05__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T14:22:23.423308+00:00,discovery__discovery_05__dwa__e0,1,algorithm,duration
+2026-08-20T14:22:38.272943+00:00,discovery__discovery_05__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:22:51.913257+00:00,discovery__discovery_13__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:23:05.182514+00:00,discovery__discovery_12__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T14:23:20.343236+00:00,discovery__discovery_19__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:23:31.910027+00:00,holdout__holdout_15__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:23:44.126511+00:00,discovery__discovery_02__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T14:23:56.446085+00:00,holdout__holdout_01__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:24:07.999351+00:00,holdout__holdout_13__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:24:20.432378+00:00,holdout__holdout_18__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:24:31.179436+00:00,holdout__holdout_04__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:24:43.605322+00:00,holdout__holdout_09__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:24:54.997394+00:00,holdout__holdout_10__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:25:06.697306+00:00,holdout__holdout_17__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:25:17.593580+00:00,holdout__holdout_09__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:25:31.190656+00:00,discovery__discovery_16__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:25:42.587421+00:00,holdout__holdout_12__dwa__delay_200,1,algorithm,duration
+2026-08-20T14:25:55.635998+00:00,holdout__holdout_04__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:26:08.280418+00:00,discovery__discovery_13__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:26:21.514858+00:00,holdout__holdout_16__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:26:33.810362+00:00,discovery__discovery_02__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T14:26:46.052464+00:00,holdout__holdout_05__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:26:57.630366+00:00,discovery__discovery_07__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:27:10.355789+00:00,holdout__holdout_20__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:27:19.539990+00:00,discovery__discovery_04__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:27:30.778889+00:00,discovery__discovery_01__dwa__delay_100,1,algorithm,duration
+2026-08-20T14:27:43.779386+00:00,holdout__holdout_20__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:27:56.471631+00:00,discovery__discovery_19__dwa__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:28:10.653637+00:00,discovery__discovery_06__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:28:25.781628+00:00,discovery__discovery_03__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:28:38.712016+00:00,discovery__discovery_09__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:28:50.621710+00:00,discovery__discovery_01__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:29:02.104624+00:00,discovery__discovery_08__dwa__delay_050,1,algorithm,duration
+2026-08-20T14:29:14.388243+00:00,discovery__discovery_08__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:29:26.319499+00:00,holdout__holdout_07__teb__tau_x_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:29:37.901800+00:00,discovery__discovery_20__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:29:50.719819+00:00,discovery__discovery_02__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:30:02.399792+00:00,discovery__discovery_08__dwa__delay_200,1,algorithm,duration
+2026-08-20T14:30:16.408920+00:00,holdout__holdout_14__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:30:30.197152+00:00,discovery__discovery_04__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T14:30:43.307059+00:00,discovery__discovery_11__dwa__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:30:55.960165+00:00,discovery__discovery_13__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:31:07.670583+00:00,holdout__holdout_03__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:31:20.317201+00:00,holdout__holdout_20__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:31:31.988114+00:00,holdout__holdout_01__dwa__delay_050,1,algorithm,duration
+2026-08-20T14:31:44.765990+00:00,holdout__holdout_16__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:32:01.049934+00:00,discovery__discovery_15__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:32:15.161526+00:00,discovery__discovery_15__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:32:26.775721+00:00,discovery__discovery_06__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:32:39.109623+00:00,discovery__discovery_20__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:32:52.169166+00:00,discovery__discovery_12__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:33:06.156052+00:00,holdout__holdout_04__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T14:33:17.625532+00:00,holdout__holdout_17__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:33:32.479499+00:00,holdout__holdout_03__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:33:45.274240+00:00,holdout__holdout_15__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:33:57.187148+00:00,holdout__holdout_14__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:34:06.773279+00:00,discovery__discovery_13__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:34:20.054215+00:00,holdout__holdout_13__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:34:34.663946+00:00,discovery__discovery_17__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:34:48.989512+00:00,holdout__holdout_20__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:35:03.184675+00:00,holdout__holdout_09__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:35:16.022143+00:00,discovery__discovery_04__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:35:27.966993+00:00,holdout__holdout_10__dwa__delay_200,1,algorithm,duration
+2026-08-20T14:35:39.808825+00:00,discovery__discovery_12__dwa__delay_050,1,algorithm,duration
+2026-08-20T14:35:51.733883+00:00,discovery__discovery_01__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:36:04.069966+00:00,discovery__discovery_20__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:36:18.584320+00:00,discovery__discovery_07__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:36:30.203974+00:00,holdout__holdout_20__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:36:42.017591+00:00,discovery__discovery_01__dwa__e0,1,algorithm,duration
+2026-08-20T14:36:55.550031+00:00,discovery__discovery_07__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:37:04.960923+00:00,discovery__discovery_18__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:37:16.853450+00:00,discovery__discovery_14__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:37:29.779952+00:00,holdout__holdout_01__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:37:43.154855+00:00,holdout__holdout_13__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:37:58.809263+00:00,holdout__holdout_08__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:38:11.000546+00:00,holdout__holdout_08__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:38:23.259575+00:00,discovery__discovery_15__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:38:37.074459+00:00,holdout__holdout_18__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:38:49.343254+00:00,holdout__holdout_15__dwa__delay_100,1,algorithm,duration
+2026-08-20T14:39:01.592680+00:00,discovery__discovery_04__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:39:15.113485+00:00,holdout__holdout_20__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:39:28.381847+00:00,discovery__discovery_07__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:39:40.255276+00:00,discovery__discovery_17__teb__tau_w_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:39:53.030720+00:00,discovery__discovery_16__dwa__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T14:40:05.179765+00:00,discovery__discovery_17__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:40:18.114646+00:00,holdout__holdout_14__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:40:30.110266+00:00,holdout__holdout_09__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:40:42.868640+00:00,discovery__discovery_14__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:40:56.705601+00:00,discovery__discovery_03__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:41:09.866140+00:00,discovery__discovery_02__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:41:24.690518+00:00,discovery__discovery_19__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:41:36.837392+00:00,discovery__discovery_08__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:41:51.196888+00:00,discovery__discovery_19__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:42:05.173245+00:00,discovery__discovery_16__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:42:15.158793+00:00,holdout__holdout_07__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:42:28.255975+00:00,discovery__discovery_12__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:42:40.954849+00:00,discovery__discovery_01__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T14:42:50.768514+00:00,discovery__discovery_10__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:43:03.111903+00:00,holdout__holdout_10__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:43:16.783126+00:00,holdout__holdout_04__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:43:29.955070+00:00,holdout__holdout_03__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:43:43.540178+00:00,discovery__discovery_07__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:43:57.209541+00:00,holdout__holdout_11__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:44:09.017467+00:00,discovery__discovery_20__teb__tau_y_500,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:44:20.954931+00:00,holdout__holdout_05__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:44:34.737347+00:00,holdout__holdout_13__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:44:46.601937+00:00,discovery__discovery_02__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:44:58.578934+00:00,holdout__holdout_02__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:45:12.049567+00:00,holdout__holdout_19__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:45:27.892109+00:00,discovery__discovery_06__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:45:39.818252+00:00,holdout__holdout_07__dwa__e0,1,algorithm,duration
+2026-08-20T14:45:54.223036+00:00,discovery__discovery_03__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:46:12.023257+00:00,holdout__holdout_14__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:46:25.305217+00:00,discovery__discovery_08__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:46:37.755053+00:00,discovery__discovery_06__dwa__delay_100,1,algorithm,duration
+2026-08-20T14:46:50.298702+00:00,discovery__discovery_17__teb__tau_x_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:47:03.337212+00:00,holdout__holdout_09__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:47:18.718754+00:00,holdout__holdout_19__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:47:31.037768+00:00,discovery__discovery_07__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:47:44.027092+00:00,discovery__discovery_01__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:47:57.152974+00:00,holdout__holdout_18__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:48:12.588172+00:00,discovery__discovery_07__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:48:25.000203+00:00,discovery__discovery_07__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:48:37.169820+00:00,holdout__holdout_12__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:48:49.634301+00:00,discovery__discovery_01__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T14:49:03.201319+00:00,discovery__discovery_03__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:49:18.203421+00:00,holdout__holdout_11__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:49:30.941732+00:00,discovery__discovery_04__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:49:44.906121+00:00,holdout__holdout_06__teb__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:49:57.973645+00:00,holdout__holdout_04__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:50:12.330266+00:00,holdout__holdout_12__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:50:26.554090+00:00,discovery__discovery_05__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T14:50:36.923079+00:00,discovery__discovery_10__dwa__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:50:51.485026+00:00,discovery__discovery_18__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T14:51:04.624084+00:00,discovery__discovery_14__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:51:18.430726+00:00,holdout__holdout_11__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:51:30.780153+00:00,discovery__discovery_12__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T14:51:45.365664+00:00,discovery__discovery_09__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T14:51:58.030154+00:00,discovery__discovery_01__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:52:11.575992+00:00,discovery__discovery_09__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:52:25.371952+00:00,discovery__discovery_08__dwa__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:52:37.947848+00:00,holdout__holdout_03__dwa__delay_100,1,algorithm,duration
+2026-08-20T14:52:52.566378+00:00,discovery__discovery_15__teb__e0,1,algorithm,external_tolerance
+2026-08-20T14:53:07.293097+00:00,discovery__discovery_05__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T14:53:19.569116+00:00,discovery__discovery_03__dwa__delay_050,1,algorithm,duration
+2026-08-20T14:53:34.825874+00:00,discovery__discovery_05__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:53:49.063934+00:00,holdout__holdout_18__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:54:03.360417+00:00,discovery__discovery_18__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T14:54:15.784750+00:00,holdout__holdout_02__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:54:28.482712+00:00,holdout__holdout_16__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:54:42.644649+00:00,discovery__discovery_15__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:55:00.027580+00:00,holdout__holdout_04__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:55:12.954819+00:00,holdout__holdout_16__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:55:27.023678+00:00,discovery__discovery_14__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T14:55:44.457992+00:00,discovery__discovery_16__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T14:55:57.436255+00:00,holdout__holdout_07__teb__tau_w_300,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:56:10.488100+00:00,holdout__holdout_08__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:56:23.813622+00:00,discovery__discovery_08__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:56:37.650864+00:00,discovery__discovery_09__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:56:53.139573+00:00,holdout__holdout_01__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T14:57:07.034311+00:00,discovery__discovery_14__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T14:57:20.832901+00:00,holdout__holdout_16__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:57:34.264324+00:00,discovery__discovery_10__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:57:46.551681+00:00,holdout__holdout_17__teb__tau_y_500,1,algorithm,plugin returned no valid velocity command
+2026-08-20T14:57:59.502556+00:00,holdout__holdout_15__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T14:58:12.987316+00:00,holdout__holdout_06__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T14:58:26.435170+00:00,holdout__holdout_01__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T14:58:41.144717+00:00,holdout__holdout_04__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:58:54.207827+00:00,holdout__holdout_18__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:59:09.204984+00:00,holdout__holdout_02__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T14:59:22.250689+00:00,discovery__discovery_12__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T14:59:35.078984+00:00,holdout__holdout_10__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T14:59:48.780031+00:00,holdout__holdout_09__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T15:00:01.503305+00:00,holdout__holdout_12__dwa__delay_100,1,algorithm,duration
+2026-08-20T15:00:16.254762+00:00,holdout__holdout_10__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T15:00:29.858677+00:00,holdout__holdout_16__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:00:44.554212+00:00,discovery__discovery_10__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T15:00:57.390922+00:00,discovery__discovery_12__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T15:01:10.560500+00:00,discovery__discovery_17__dwa__delay_050,1,algorithm,duration
+2026-08-20T15:01:24.690502+00:00,holdout__holdout_13__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T15:01:37.773375+00:00,holdout__holdout_04__dwa__delay_100,1,algorithm,duration
+2026-08-20T15:01:51.293605+00:00,holdout__holdout_08__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T15:02:04.855374+00:00,holdout__holdout_18__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:02:17.290321+00:00,discovery__discovery_04__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:02:32.473179+00:00,discovery__discovery_13__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T15:02:48.325945+00:00,discovery__discovery_06__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:03:01.046478+00:00,holdout__holdout_09__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T15:03:15.051656+00:00,holdout__holdout_10__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T15:03:28.168923+00:00,holdout__holdout_12__dwa__delay_050,1,algorithm,duration
+2026-08-20T15:03:43.469618+00:00,holdout__holdout_06__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T15:03:56.754483+00:00,holdout__holdout_17__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T15:04:09.745106+00:00,holdout__holdout_15__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T15:04:22.838409+00:00,holdout__holdout_15__dwa__delay_200,1,algorithm,duration
+2026-08-20T15:04:36.049745+00:00,holdout__holdout_14__dwa__delay_200,1,algorithm,duration
+2026-08-20T15:04:50.022025+00:00,discovery__discovery_02__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T15:05:03.527476+00:00,holdout__holdout_05__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T15:05:18.366183+00:00,discovery__discovery_12__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T15:05:31.338832+00:00,holdout__holdout_12__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T15:05:44.796446+00:00,holdout__holdout_08__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T15:06:00.136880+00:00,discovery__discovery_01__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T15:06:13.217317+00:00,discovery__discovery_03__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T15:06:27.107567+00:00,discovery__discovery_13__dwa__tau_w_300,1,algorithm,duration
+2026-08-20T15:06:41.270636+00:00,holdout__holdout_03__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:06:56.382225+00:00,discovery__discovery_19__dwa__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T15:07:09.388899+00:00,holdout__holdout_11__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T15:07:21.774107+00:00,discovery__discovery_19__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:07:36.132072+00:00,discovery__discovery_02__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T15:07:49.539054+00:00,holdout__holdout_17__dwa__delay_050,1,algorithm,duration
+2026-08-20T15:08:03.466027+00:00,holdout__holdout_10__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:08:19.195046+00:00,holdout__holdout_05__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T15:08:32.705773+00:00,discovery__discovery_20__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T15:08:46.377289+00:00,holdout__holdout_11__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T15:08:59.495937+00:00,discovery__discovery_09__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T15:09:13.256425+00:00,holdout__holdout_05__dwa__delay_100,1,algorithm,duration
+2026-08-20T15:09:29.007180+00:00,holdout__holdout_18__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T15:09:42.235013+00:00,discovery__discovery_06__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T15:09:58.866135+00:00,holdout__holdout_06__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T15:10:10.035150+00:00,discovery__discovery_15__dwa__delay_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:10:24.619092+00:00,discovery__discovery_10__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:10:38.911422+00:00,discovery__discovery_09__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:10:53.813451+00:00,discovery__discovery_04__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:11:09.521573+00:00,discovery__discovery_03__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T15:11:23.990935+00:00,holdout__holdout_10__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T15:11:37.879657+00:00,discovery__discovery_16__dwa__delay_050,1,algorithm,external_tolerance
+2026-08-20T15:11:51.253941+00:00,discovery__discovery_02__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T15:12:03.768259+00:00,holdout__holdout_17__teb__tau_w_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:12:16.928551+00:00,discovery__discovery_13__dwa__tau_x_100,1,algorithm,duration
+2026-08-20T15:12:31.984180+00:00,discovery__discovery_03__teb__delay_050,1,algorithm,external_tolerance
+2026-08-20T15:12:46.415920+00:00,holdout__holdout_13__teb__tau_x_100,1,algorithm,external_tolerance
+2026-08-20T15:12:59.808151+00:00,discovery__discovery_04__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:13:13.072565+00:00,holdout__holdout_13__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T15:13:27.672038+00:00,holdout__holdout_13__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T15:13:43.847820+00:00,discovery__discovery_05__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T15:14:01.818163+00:00,discovery__discovery_18__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T15:14:16.836525+00:00,holdout__holdout_19__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T15:14:29.279389+00:00,holdout__holdout_17__teb__delay_050,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:14:43.307414+00:00,holdout__holdout_19__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T15:14:56.758182+00:00,holdout__holdout_10__dwa__e0,1,algorithm,duration
+2026-08-20T15:15:12.053513+00:00,holdout__holdout_05__teb__tau_w_300,1,algorithm,external_tolerance
+2026-08-20T15:15:26.455135+00:00,holdout__holdout_02__teb__e0,1,algorithm,external_tolerance
+2026-08-20T15:15:42.123975+00:00,discovery__discovery_07__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T15:15:57.160907+00:00,holdout__holdout_08__teb__e0,1,algorithm,external_tolerance
+2026-08-20T15:16:09.711429+00:00,discovery__discovery_16__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:16:24.810237+00:00,holdout__holdout_16__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T15:16:41.297773+00:00,holdout__holdout_19__teb__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T15:16:55.093731+00:00,holdout__holdout_09__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T15:17:09.769247+00:00,holdout__holdout_03__dwa__e0,1,algorithm,duration
+2026-08-20T15:17:24.216591+00:00,discovery__discovery_06__dwa__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T15:17:37.279800+00:00,discovery__discovery_20__teb__tau_x_100,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:17:50.614017+00:00,discovery__discovery_17__dwa__tau_y_300,1,algorithm,duration
+2026-08-20T15:18:05.325438+00:00,holdout__holdout_03__teb__tau_x_300,1,algorithm,external_tolerance
+2026-08-20T15:18:20.025388+00:00,holdout__holdout_16__teb__tau_y_150,1,algorithm,external_tolerance
+2026-08-20T15:18:35.135281+00:00,discovery__discovery_05__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T15:18:48.889904+00:00,discovery__discovery_09__dwa__tau_x_300,1,algorithm,duration
+2026-08-20T15:19:04.509412+00:00,discovery__discovery_16__dwa__tau_y_500,1,algorithm,external_tolerance
+2026-08-20T15:19:23.019578+00:00,holdout__holdout_14__teb__delay_200,1,algorithm,external_tolerance
+2026-08-20T15:19:37.508123+00:00,discovery__discovery_20__dwa__tau_y_500,1,algorithm,duration
+2026-08-20T15:19:52.976635+00:00,discovery__discovery_13__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T15:20:06.432118+00:00,holdout__holdout_14__dwa__tau_w_100,1,algorithm,duration
+2026-08-20T15:20:21.403693+00:00,discovery__discovery_09__teb__delay_100,1,algorithm,external_tolerance
+2026-08-20T15:20:37.061004+00:00,holdout__holdout_11__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T15:20:51.490647+00:00,discovery__discovery_13__dwa__tau_y_150,1,algorithm,duration
+2026-08-20T15:21:06.826445+00:00,discovery__discovery_14__teb__tau_y_300,1,algorithm,external_tolerance
+2026-08-20T15:21:20.359950+00:00,holdout__holdout_07__dwa__delay_200,1,algorithm,plugin returned no valid velocity command
+2026-08-20T15:21:35.648945+00:00,holdout__holdout_01__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T15:21:51.015380+00:00,discovery__discovery_13__teb__tau_w_100,1,algorithm,external_tolerance
+2026-08-20T15:22:05.294526+00:00,holdout__holdout_02__dwa__delay_050,1,algorithm,duration
+2026-08-20T15:22:21.725897+00:00,discovery__discovery_04__teb__delay_100,1,algorithm,external_tolerance
