@@ -128,6 +128,17 @@ evaluation:
   bootstrap_seed: 20260831
   significance_tests: false
 
+matched_examples:
+  partition: holdout
+  same_planner: true
+  opposite_future_outcome: true
+  maximum_e_v_difference: 0.10
+  maximum_m_p_difference: 0.15
+  minimum_m_pf_difference: 0.50
+  require_lower_m_pf_for_bad_state: true
+  maximum_pairs: 3
+  maximum_pairs_per_planner: 1
+
 decision:
   go_delta_auroc: 0.10
   go_delta_auprc: 0.15
