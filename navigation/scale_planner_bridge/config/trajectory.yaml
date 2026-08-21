@@ -1,0 +1,24 @@
+planner_plugin: base_local_planner/TrajectoryPlannerROS
+global_frame: map
+base_frame: base_link
+odom_topic: /scale_planner_bridge/odom
+planner_period: 0.05
+external_xy_tolerance: 0.08
+external_yaw_tolerance: 0.10
+planner:
+  odom_topic: /scale_planner_bridge/odom
+  holonomic_robot: true
+  dwa: false
+  max_vel_x: 0.45
+  min_vel_x: 0.0
+  max_vel_theta: 0.8
+  min_vel_theta: -0.8
+  min_in_place_vel_theta: 0.1
+  acc_lim_x: 0.8
+  acc_lim_y: 0.8
+  acc_lim_theta: 1.5
+  escape_vel: -0.15
+  y_vels: "-0.35,-0.175,0.0,0.175,0.35"
+  xy_goal_tolerance: 0.08
+  yaw_goal_tolerance: 0.10
+  latch_xy_goal_tolerance: false
