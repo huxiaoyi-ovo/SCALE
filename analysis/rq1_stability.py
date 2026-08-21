@@ -139,7 +139,7 @@ def _preference(delta: float) -> str:
 
 def _write(path: Path, rows: list[dict], fields: tuple[str, ...]) -> None:
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
