@@ -42,4 +42,16 @@ The research core is only `P x lambda` and E0/E1/E2 -> E3 prediction. Phase 0 is
 
 If a feature cannot clearly help answer RQ1 or RQ2, do not implement it by default.
 
-Long-term model routing: a high-capability primary model exclusively owns requirements, architecture, scientific and risk decisions, contracts, and final acceptance. Select the lowest-cost sufficient single submodel only for bounded mechanical work; the primary model performs small, coupled tasks directly. Submodels may not expand scope or nest delegation. The primary model reviews the resulting diff and validation evidence.
+## Model routing and memory isolation
+
+- The high-capability primary model exclusively owns requirements, architecture,
+  scientific and risk decisions, contracts, anomaly decisions, and final acceptance.
+- For bounded mechanical implementation, testing, or batch work, use only the
+  built-in `terra` subagent. For each delegation, Sol selects Terra's reasoning
+  effort according to task difficulty; no external worker is part of SCALE.
+- The primary model performs small or tightly coupled tasks directly. A subagent
+  may not expand scope or delegate again, and its complete diff and evidence must
+  be reviewed by the primary model.
+- Use only SCALE-specific project memory and universally applicable user
+  instructions. Never import guidance, assumptions, or architecture from another
+  project such as `Grasp_hexapod` into SCALE.
