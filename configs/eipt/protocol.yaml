@@ -23,7 +23,9 @@ sampling:
   snapshots_per_planner_partition: 24
   bad_per_planner_partition: 12
   nominal_per_planner_partition: 12
-  max_snapshots_per_episode: 1
+  max_snapshots_per_episode: 2
+  same_episode_minimum_time_separation: 1.0
+  same_episode_minimum_progress_separation: 0.05
   max_snapshots_per_layout: 2
   future_window: 2.0
   event_lead_min: 0.5
