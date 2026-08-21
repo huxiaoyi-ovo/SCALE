@@ -1,0 +1,66 @@
+protocol_version: 1
+study_id: phase2b_baseline_viable_screening
+stage: calibration_only
+provenance: CALIBRATION ONLY - NEVER SCIENTIFIC DATA
+phase2_reference: configs/phase2/protocol.yaml
+
+layout_generation:
+  seed: 20260823
+  count: 10
+  acceptance_rule: first_10_geometry_valid_and_non_overlapping_candidates_only
+
+schedule:
+  seed: 20260824
+  episode_count: 30
+  condition_order: [dwa_current, dwa_forward0, teb_current]
+
+conditions:
+  - id: dwa_current
+    profile_id: e0
+    planner: dwa
+    override: null
+  - id: dwa_forward0
+    profile_id: e0
+    planner: dwa
+    override: configs/phase2b/dwa_forward_point_zero.yaml
+  - id: teb_current
+    profile_id: e0
+    planner: teb
+    override: null
+
+timing:
+  source: configs/phase2/protocol.yaml
+  planner_period: 0.05
+  execution_dt: 0.01
+  logical_duration: 30.0
+  wall_timeout: 45.0
+  external_xy_tolerance: 0.08
+  external_yaw_tolerance: 0.10
+
+robot:
+  source: configs/phase2/protocol.yaml
+  footprint: {type: rectangle, width: 0.40, length: 0.30}
+
+external_termination:
+  source: configs/phase2/protocol.yaml
+  rule: same_external_xy_yaw_tolerance_success_and_duration_cap
+
+collision:
+  truth: independent_footprint_collision
+  source: configs/phase2/protocol.yaml
+
+failure_policy:
+  infrastructure_retries: 2
+  algorithm_outcomes_never_retry: true
+  contract_failures_stop_study: true
+  max_attempts_total: 3
+
+gate:
+  valid_episodes_per_condition: 10
+  pass_success_bounds:
+    dwa_forward0: [2, 8]
+    teb_current: [2, 9]
+  dwa_current: descriptive_only
+
+outputs:
+  root: data/phase2b_baseline_viable_screening/calibration

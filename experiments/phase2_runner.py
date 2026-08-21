@@ -197,7 +197,16 @@ class RosExecutor:
         if profile['backend']=='e1':execution['execution']['profile']={k:profile[k] for k in ('delay','tau_x','tau_y','tau_w')}
         execution_file=tmp/(episode['episode_id']+'.execution.yaml');execution_file.write_text(yaml.safe_dump(execution,sort_keys=False))
         subprocess.run(['rosparam','delete','/scale_planner_bridge'],env=self.env,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
-        self._call(['rosparam','set','/use_sim_time','true'],log); self._call(['rosparam','load',str(ROOT/'navigation/scale_planner_bridge/config/common.yaml'),'/scale_planner_bridge/local_costmap'],log);self._call(['rosparam','load',str(ROOT/'navigation/scale_planner_bridge/config/{}.yaml'.format(episode['planner'])),'/scale_planner_bridge'],log);self._call(['rosparam','load',str(ROOT/'navigation/scale_planner_bridge/config/matrix_common.yaml'),'/scale_planner_bridge'],log);self._call(['rosparam','load',str(execution_file),'/scale_planner_bridge'],log);self._call(['rosparam','set','/scale_planner_bridge/smoke_duration',str(self.protocol['timing']['logical_duration'])],log)
+        self._call(['rosparam','set','/use_sim_time','true'],log); self._call(['rosparam','load',str(ROOT/'navigation/scale_planner_bridge/config/common.yaml'),'/scale_planner_bridge/local_costmap'],log);self._call(['rosparam','load',str(ROOT/'navigation/scale_planner_bridge/config/{}.yaml'.format(episode['planner'])),'/scale_planner_bridge'],log)
+        override = episode.get('_override_yaml')
+        if override:
+            override_path = Path(override)
+            if not override_path.is_absolute():
+                override_path = ROOT / override_path
+            if not override_path.is_file():
+                raise InfrastructureFailure('override yaml missing: {}'.format(override_path))
+            self._call(['rosparam','load',str(override_path),'/scale_planner_bridge'],log)
+        self._call(['rosparam','load',str(ROOT/'navigation/scale_planner_bridge/config/matrix_common.yaml'),'/scale_planner_bridge'],log);self._call(['rosparam','load',str(execution_file),'/scale_planner_bridge'],log);self._call(['rosparam','set','/scale_planner_bridge/smoke_duration',str(self.protocol['timing']['logical_duration'])],log)
         bridge_log=log.open('a');bridge=subprocess.Popen(['rosrun','scale_planner_bridge','planner_bridge_node'],cwd=ROOT,env=self.env,stdout=bridge_log,stderr=subprocess.STDOUT,start_new_session=True)
         try:
             end=time.monotonic()+10

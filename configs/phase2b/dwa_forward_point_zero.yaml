@@ -1,0 +1,3 @@
+# Official ROS Noetic DWA source says zero discards the alignment critic.
+planner:
+  forward_point_distance: 0.0
