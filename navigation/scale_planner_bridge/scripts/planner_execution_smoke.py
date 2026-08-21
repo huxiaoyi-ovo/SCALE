@@ -112,13 +112,22 @@ def assert_close(label, actual, expected):
         raise ContractViolation("{} mismatch: {} != {}".format(label, actual, expected))
 
 
+def assert_yaw_close(label, actual, expected):
+    angular_error = math.atan2(math.sin(actual - expected), math.cos(actual - expected))
+    if abs(angular_error) > TOLERANCE:
+        raise ContractViolation("{} mismatch: {} != {}".format(label, actual, expected))
+
+
 def verify_feedback(reply, state, clock_epoch):
     feedback = feedback_record(reply.feedback)
     expected = state_record(state)
     assert_close("logical_time", reply.logical_time, state.time)
     assert_close("odom_stamp", feedback["stamp"], clock_epoch + state.time)
     for field in ("x", "y", "yaw", "vx", "vy", "wz"):
-        assert_close("feedback_{}".format(field), feedback[field], expected[field])
+        if field == "yaw":
+            assert_yaw_close("feedback_{}".format(field), feedback[field], expected[field])
+        else:
+            assert_close("feedback_{}".format(field), feedback[field], expected[field])
     return feedback
 
 
