@@ -42,7 +42,7 @@ def _schedule(layouts):
 
 
 def _lock(protocol, layouts, schedule):
-    paths = (CONFIG, ROOT / "experiments/phase2_runner.py", SMOKE, Path(__file__))
+    paths = (CONFIG, ROOT / "experiments/phase2_runner.py", SMOKE, Path(__file__).resolve())
     core = {
         "candidate": CANDIDATE,
         "protocol_hash": canonical_hash(protocol),
