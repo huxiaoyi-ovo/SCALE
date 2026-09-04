@@ -9,6 +9,10 @@
 
 Cross-fidelity and execution-conditioned evaluation of local planners for legged UGVs.
 
+## Repository Activity
+
+![Repobeats analytics image](https://repobeats.axiom.co/api/embed/69b08b25d6085d06c0a8a613ed18488df31b8ab5.svg)
+
 ## Contributors
 
 <a href="https://github.com/huxiaoyi-ovo/SCALE/graphs/contributors">
