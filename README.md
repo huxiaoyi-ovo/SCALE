@@ -9,6 +9,9 @@
 
 Cross-fidelity and execution-conditioned evaluation of local planners for legged UGVs.
 
+For obstacle-free pilot layouts, `metrics.json` records unbounded `minimum_clearance` as
+`null`. Per-sample clearance remains `inf` in the raw `trajectory.csv`.
+
 ## Repository Activity
 
 ![Repobeats analytics image](https://repobeats.axiom.co/api/embed/69b08b25d6085d06c0a8a613ed18488df31b8ab5.svg)
