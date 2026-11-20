@@ -38,6 +38,8 @@ class Simulator:
             if not math.isfinite(duration) or duration < 0:
                 raise ValueError("segment duration must be finite and non-negative")
             command, segment_elapsed = _command(segment), 0.0
+            if not all(math.isfinite(value) for value in (command.vx, command.vy, command.wz)):
+                raise ValueError("scripted command velocities must be finite")
             while segment_elapsed < duration - 1e-12 and elapsed < self.duration - 1e-12:
                 step = min(self.dt, duration - segment_elapsed, self.duration - elapsed)
                 rows.append(self._row(self.execution.step(command, step), command))
