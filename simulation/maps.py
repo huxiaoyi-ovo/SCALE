@@ -17,11 +17,15 @@ def _obstacle(spec):
     raise ValueError("unsupported obstacle type: {}".format(spec["type"]))
 
 
-def load_layout(source):
+def load_layout_spec(source):
     if isinstance(source, (str, Path)):
         with Path(source).open() as stream:
             source = yaml.safe_load(stream)
-    layout = source.get("layout", source)
+    return source.get("layout", source)
+
+
+def load_layout(source):
+    layout = load_layout_spec(source)
     return {"layout_id": layout["layout_id"], "arena": dict(layout["arena"]), "start": _pose(layout["start"]),
             "goal": _pose(layout["goal"]), "obstacles": [_obstacle(item) for item in layout.get("obstacles", [])]}
 
