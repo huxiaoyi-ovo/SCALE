@@ -39,13 +39,20 @@ def wait_for_port(port, timeout=10.0):
 
 def wait_for_services(environment, timeout=10.0):
     deadline = time.monotonic() + timeout
-    while time.monotonic() < deadline:
-        result = subprocess.run(["rosservice", "list"], env=environment, text=True,
-                                stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    while True:
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            break
+        try:
+            result = subprocess.run(["rosservice", "list"], env=environment, text=True,
+                                    stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                    timeout=remaining)
+        except subprocess.TimeoutExpired as error:
+            raise RuntimeError("planner bridge services did not start") from error
         services = set(result.stdout.splitlines())
         if {"/initialize", "/step"} <= services:
             return
-        time.sleep(0.05)
+        time.sleep(min(0.05, max(0.0, deadline - time.monotonic())))
     raise RuntimeError("planner bridge services did not start")
 
 
