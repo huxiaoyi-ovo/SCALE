@@ -95,9 +95,22 @@ def run(config):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", default="configs/pilot.yaml")
+    parser.add_argument("--config", type=Path)
     args = parser.parse_args()
-    run(_load(args.config))
+    if args.config is None:
+        config_path = PROJECT_ROOT / "configs/pilot.yaml"
+        reference_roots = (PROJECT_ROOT,)
+    else:
+        config_path = args.config.resolve()
+        reference_roots = (Path.cwd(), config_path.parent, PROJECT_ROOT)
+
+    config = _load(config_path)
+    for key in ("execution_profiles", "layout"):
+        source = config[key]
+        if isinstance(source, str) and not Path(source).is_absolute():
+            candidates = [root / source for root in reference_roots]
+            config[key] = str(next((path for path in candidates if path.is_file()), candidates[0]))
+    run(config)
 
 
 if __name__ == "__main__":
