@@ -40,10 +40,14 @@ def _plot(path, rows, layout):
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    fig, ax = plt.subplots(); preview(ax, layout)
-    ax.plot([row["x"] for row in rows], [row["y"] for row in rows], color="tab:blue")
-    ax.set_xlabel("world x (m)"); ax.set_ylabel("world y (m)")
-    fig.savefig(path, dpi=150, bbox_inches="tight"); plt.close(fig)
+    fig, ax = plt.subplots()
+    try:
+        preview(ax, layout)
+        ax.plot([row["x"] for row in rows], [row["y"] for row in rows], color="tab:blue")
+        ax.set(xlabel="world x (m)", ylabel="world y (m)")
+        fig.savefig(path, dpi=150, bbox_inches="tight")
+    finally:
+        plt.close(fig)
 
 
 def _run_dir(output):
