@@ -76,8 +76,8 @@ def run(config):
         resolved_config.update({"execution_model": model_name,
                                 "execution_profile_name": profile_name,
                                 "execution_profile_parameters": profile})
-        write_run(path, resolved_config, metadata, rows, compute(rows, layout["goal"]))
         _plot(path / "trajectory.png", rows, layout)
+        write_run(path, resolved_config, metadata, rows, compute(rows, layout["goal"]))
         result.append(path)
     return result
 
