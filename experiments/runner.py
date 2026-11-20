@@ -59,7 +59,11 @@ def _run_dir(output):
 
 
 def run(config):
-    profiles = _load(config["execution_profiles"])["profiles"]
+    profiles = config["execution_profiles"]
+    profiles_from_file = isinstance(profiles, (str, Path))
+    selected_profile_name = config["execution_profile"]
+    profile_document = _load(profiles) if profiles_from_file else profiles
+    selected_profile = profile_document["profiles"][selected_profile_name]
     layout_spec = config["layout"]
     if isinstance(layout_spec, (str, Path)):
         layout_file = _load(layout_spec)
@@ -68,8 +72,8 @@ def run(config):
     shape = footprint(config["robot_footprint"])
     commit = _git_commit()
     result = []
-    for model_name, profile_name in (("E0", "ideal"), ("E1", config["execution_profile"])):
-        profile = {} if model_name == "E0" else profiles[profile_name]
+    for model_name, profile_name in (("E0", "ideal"), ("E1", selected_profile_name)):
+        profile = {} if model_name == "E0" else selected_profile
         execution = IdealExecution(layout["start"]) if model_name == "E0" else FirstOrderExecution.from_profile(profile, layout["start"])
         rows = Simulator(layout, execution, shape, config["dt"], config["duration"]).run(config["scripted_commands"])
         path = _run_dir(config["output_directory"])
@@ -78,8 +82,11 @@ def run(config):
                     "timestamp": datetime.now(timezone.utc).isoformat(), "valid": True}
         resolved_config = dict(config)
         resolved_config.update({"layout": layout_spec, "execution_model": model_name,
+                                "execution_profiles": {"profiles": {selected_profile_name: selected_profile}},
                                 "execution_profile_name": profile_name,
                                 "execution_profile_parameters": profile})
+        if profiles_from_file:
+            resolved_config["execution_profiles_source"] = str(profiles)
         _plot(path / "trajectory.png", rows, layout)
         write_run(path, resolved_config, metadata, rows, compute(rows, layout["goal"]))
         result.append(path)
