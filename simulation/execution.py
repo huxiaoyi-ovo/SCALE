@@ -87,7 +87,14 @@ class FirstOrderExecution:
     def _lag_response(value, target, tau, dt):
         if tau == 0:
             return target, target
-        decay = math.exp(-dt / tau)
+        ratio = dt / tau
+        if ratio < 1e-4:
+            # Evaluate the end and mean responses without subtracting nearly equal terms.
+            change = target - value
+            end_weight = -math.expm1(-ratio)
+            average_weight = ratio * (0.5 - ratio * (1 / 6 - ratio / 24))
+            return value + change * end_weight, value + change * average_weight
+        decay = math.exp(-ratio)
         end = target + (value - target) * decay
         average = target + (value - target) * (tau / dt) * (1 - decay)
         return end, average
