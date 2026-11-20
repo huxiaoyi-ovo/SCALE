@@ -60,7 +60,11 @@ def _run_dir(output):
 
 def run(config):
     profiles = _load(config["execution_profiles"])["profiles"]
-    layout = load_layout(config["layout"])
+    layout_spec = config["layout"]
+    if isinstance(layout_spec, (str, Path)):
+        layout_file = _load(layout_spec)
+        layout_spec = layout_file.get("layout", layout_file)
+    layout = load_layout(layout_spec)
     shape = footprint(config["robot_footprint"])
     commit = _git_commit()
     result = []
@@ -73,7 +77,7 @@ def run(config):
                     "layout": layout["layout_id"], "seed": config["seed"], "git_commit": commit,
                     "timestamp": datetime.now(timezone.utc).isoformat(), "valid": True}
         resolved_config = dict(config)
-        resolved_config.update({"execution_model": model_name,
+        resolved_config.update({"layout": layout_spec, "execution_model": model_name,
                                 "execution_profile_name": profile_name,
                                 "execution_profile_parameters": profile})
         _plot(path / "trajectory.png", rows, layout)
