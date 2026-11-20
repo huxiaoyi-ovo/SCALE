@@ -21,7 +21,7 @@ from nav_msgs.msg import OccupancyGrid, MapMetaData, Path as RosPath
 from scale_planner_bridge.srv import Initialize, InitializeRequest, Step, StepRequest
 from simulation.execution import Command, FirstOrderExecution, IdealExecution, Pose2D
 from simulation.geometry import collision, footprint, transform_footprint
-from simulation.maps import load_layout
+from simulation.maps import load_layout, load_layout_spec
 
 
 TOLERANCE = 1e-9
@@ -131,7 +131,7 @@ def verify_command_hold(trace):
 
 
 def run(config, trace_output=None):
-    raw_layout = config["layout"]
+    raw_layout = load_layout_spec(config["layout"])
     layout = load_layout(raw_layout)
     planner_period = float(rospy.get_param("/scale_planner_bridge/planner_period"))
     duration = float(rospy.get_param("/scale_planner_bridge/smoke_duration", config["duration"]))
