@@ -2,6 +2,7 @@
 """Restart a planner x execution bridge and compare complete deterministic traces."""
 import argparse
 import json
+import math
 import os
 from pathlib import Path
 import signal
@@ -71,6 +72,9 @@ def compare(reference, candidate, tolerance, path="trace"):
             raise AssertionError("{} differs: {} != {}".format(path, reference, candidate))
         return 0.0
     if isinstance(reference, (int, float)) and isinstance(candidate, (int, float)):
+        if not math.isfinite(reference) or not math.isfinite(candidate):
+            raise AssertionError("{} contains a non-finite value: {} vs {}".format(
+                path, reference, candidate))
         difference = abs(float(reference) - float(candidate))
         if difference > tolerance:
             raise AssertionError("{} differs by {}".format(path, difference))
@@ -127,8 +131,10 @@ def main():
     parser.add_argument("--runs", type=int, default=10)
     parser.add_argument("--tolerance", type=float, default=1e-9)
     args = parser.parse_args()
-    if args.runs < 2 or args.tolerance < 0:
-        raise ValueError("runs must be at least two and tolerance must be non-negative")
+    if args.runs < 2:
+        raise ValueError("runs must be at least two")
+    if not math.isfinite(args.tolerance) or args.tolerance < 0:
+        raise ValueError("tolerance must be finite and non-negative")
     if not PYTHON.exists():
         raise RuntimeError("project .venv is required")
 
