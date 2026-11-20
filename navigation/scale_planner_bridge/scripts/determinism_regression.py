@@ -64,7 +64,11 @@ def stop(process):
     try:
         process.wait(timeout=5.0)
     except subprocess.TimeoutExpired:
-        process.kill()
+        # The launchers run in dedicated sessions, so also stop their child nodes.
+        try:
+            os.killpg(process.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
         process.wait(timeout=2.0)
 
 
