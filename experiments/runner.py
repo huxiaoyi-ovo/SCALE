@@ -6,7 +6,8 @@ import subprocess
 import sys
 import yaml
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
 from analysis.metrics import compute
 from experiments.logger import write_run
 from simulation.execution import FirstOrderExecution, IdealExecution
@@ -22,9 +23,16 @@ def _load(path):
 
 def _git_commit():
     try:
-        return subprocess.check_output(["git", "rev-parse", "HEAD"], text=True, stderr=subprocess.DEVNULL).strip()
+        git_info = subprocess.check_output(
+            ["git", "rev-parse", "--show-toplevel", "HEAD"],
+            cwd=PROJECT_ROOT, text=True, stderr=subprocess.DEVNULL,
+        ).rstrip("\n")
     except (OSError, subprocess.CalledProcessError):
         return None
+    top_level, separator, commit = git_info.rpartition("\n")
+    if separator and Path(top_level).resolve() == PROJECT_ROOT:
+        return commit
+    return None
 
 
 def _plot(path, rows, layout):
@@ -48,6 +56,7 @@ def run(config):
     profiles = _load(config["execution_profiles"])["profiles"]
     layout = load_layout(config["layout"])
     shape = footprint(config["robot_footprint"])
+    commit = _git_commit()
     result = []
     for model_name, profile_name in (("E0", "ideal"), ("E1", config["execution_profile"])):
         profile = {} if model_name == "E0" else profiles[profile_name]
@@ -55,7 +64,7 @@ def run(config):
         rows = Simulator(layout, execution, shape, config["dt"], config["duration"]).run(config["scripted_commands"])
         path = _run_dir(config["output_directory"])
         metadata = {"run_id": path.name, "execution_model": model_name, "execution_profile": profile_name,
-                    "layout": layout["layout_id"], "seed": config["seed"], "git_commit": _git_commit(),
+                    "layout": layout["layout_id"], "seed": config["seed"], "git_commit": commit,
                     "timestamp": datetime.now(timezone.utc).isoformat(), "valid": True}
         resolved_config = dict(config)
         resolved_config.update({"execution_model": model_name,
