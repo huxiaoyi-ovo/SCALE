@@ -1,12 +1,16 @@
 """Prompt-format layout loading and preview."""
+import math
 from pathlib import Path
 import yaml
 from .execution import Pose2D
 from .geometry import circle, rectangle
 
 
-def _pose(spec):
-    return Pose2D(spec["x"], spec["y"], spec.get("yaw", 0.0))
+def _pose(spec, label):
+    pose = Pose2D(spec["x"], spec["y"], spec.get("yaw", 0.0))
+    if not all(math.isfinite(value) for value in (pose.x, pose.y, pose.yaw)):
+        raise ValueError("layout {} pose coordinates and yaw must be finite".format(label))
+    return pose
 
 
 def _obstacle(spec):
@@ -26,8 +30,12 @@ def load_layout_spec(source):
 
 def load_layout(source):
     layout = load_layout_spec(source)
-    return {"layout_id": layout["layout_id"], "arena": dict(layout["arena"]), "start": _pose(layout["start"]),
-            "goal": _pose(layout["goal"]), "obstacles": [_obstacle(item) for item in layout.get("obstacles", [])]}
+    arena = dict(layout["arena"])
+    if not all(math.isfinite(arena[axis]) and arena[axis] > 0 for axis in ("width", "height")):
+        raise ValueError("layout arena width and height must be finite and positive")
+    return {"layout_id": layout["layout_id"], "arena": arena,
+            "start": _pose(layout["start"], "start"), "goal": _pose(layout["goal"], "goal"),
+            "obstacles": [_obstacle(item) for item in layout.get("obstacles", [])]}
 
 
 def preview(ax, layout):
