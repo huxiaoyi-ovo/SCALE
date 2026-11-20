@@ -8,13 +8,14 @@ from pathlib import Path
 import signal
 import socket
 import subprocess
+import sys
 import tempfile
 import time
 
 
 ROOT = Path(__file__).resolve().parents[3]
 PACKAGE = ROOT / "navigation" / "scale_planner_bridge"
-PYTHON = ROOT / ".venv" / "bin" / "python"
+PYTHON = Path(sys.executable)
 SMOKE = PACKAGE / "scripts" / "planner_execution_smoke.py"
 PLANNERS = ("dwa", "teb")
 EXECUTIONS = ("e0", "e1")
@@ -142,8 +143,8 @@ def main():
         raise ValueError("runs must be at least two")
     if not math.isfinite(args.tolerance) or args.tolerance < 0:
         raise ValueError("tolerance must be finite and non-negative")
-    if not PYTHON.exists():
-        raise RuntimeError("project .venv is required")
+    if not PYTHON.is_file():
+        raise RuntimeError("the current Python executable is unavailable")
 
     port = free_port()
     environment = os.environ.copy()
