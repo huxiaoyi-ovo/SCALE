@@ -1,4 +1,6 @@
 """Deterministic global-dt execution of scripted command segments."""
+import math
+
 from .execution import Command, Pose2D
 from .geometry import collision, minimum_clearance, transform_footprint
 
@@ -14,8 +16,10 @@ def _command(segment):
 
 class Simulator:
     def __init__(self, layout, execution, robot_footprint, dt, duration):
-        if dt <= 0 or duration < 0:
-            raise ValueError("dt must be positive and duration non-negative")
+        if not math.isfinite(dt) or dt <= 0:
+            raise ValueError("dt must be finite and positive")
+        if not math.isfinite(duration) or duration < 0:
+            raise ValueError("duration must be finite and non-negative")
         self.layout, self.execution, self.footprint = layout, execution, robot_footprint
         self.dt, self.duration = dt, duration
 
@@ -30,9 +34,12 @@ class Simulator:
     def run(self, scripted_sequence):
         rows, elapsed, command = [self._row(self.execution.state, Command())], 0.0, Command()
         for segment in scripted_sequence:
+            duration = segment["duration"]
+            if not math.isfinite(duration) or duration < 0:
+                raise ValueError("segment duration must be finite and non-negative")
             command, segment_elapsed = _command(segment), 0.0
-            while segment_elapsed < segment["duration"] - 1e-12 and elapsed < self.duration - 1e-12:
-                step = min(self.dt, segment["duration"] - segment_elapsed, self.duration - elapsed)
+            while segment_elapsed < duration - 1e-12 and elapsed < self.duration - 1e-12:
+                step = min(self.dt, duration - segment_elapsed, self.duration - elapsed)
                 rows.append(self._row(self.execution.step(command, step), command))
                 segment_elapsed += step; elapsed += step
         command = Command()
