@@ -1,6 +1,7 @@
 """Create one E0 and one E1 Phase-0 run from a pilot configuration."""
 import argparse
 from datetime import datetime, timezone
+from itertools import count
 from pathlib import Path
 import subprocess
 import sys
@@ -46,10 +47,15 @@ def _plot(path, rows, layout):
 
 
 def _run_dir(output):
-    output = Path(output); output.mkdir(parents=True, exist_ok=True)
-    number = 1
-    while (output / "run_{:04d}".format(number)).exists(): number += 1
-    return output / "run_{:04d}".format(number)
+    output = Path(output)
+    output.mkdir(parents=True, exist_ok=True)
+    for number in count(1):
+        path = output / "run_{:04d}".format(number)
+        try:
+            path.mkdir()
+        except FileExistsError:
+            continue
+        return path
 
 
 def run(config):
