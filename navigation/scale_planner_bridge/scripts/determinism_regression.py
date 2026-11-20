@@ -116,7 +116,11 @@ def run_once(index, directory, environment, planner, execution):
                                   env=environment, stdout=log, stderr=subprocess.STDOUT,
                                   start_new_session=True)
         try:
-            wait_for_services(environment)
+            try:
+                wait_for_services(environment)
+            except RuntimeError as error:
+                raise RuntimeError("smoke run {} could not start: {}\n{}".format(
+                    index, error, log_tail(launch_log))) from error
             result = subprocess.run([str(PYTHON), str(SMOKE), "--trace-output", str(trace_path)],
                                     cwd=str(ROOT), env=environment, text=True,
                                     stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=30.0)
@@ -161,7 +165,10 @@ def main():
             core = subprocess.Popen(["roscore", "-p", str(port)], env=environment,
                                     stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
             try:
-                wait_for_port(port)
+                try:
+                    wait_for_port(port)
+                except RuntimeError as error:
+                    raise RuntimeError("{}\n{}".format(error, log_tail(core_log))) from error
                 reference, first_summary = run_once(
                     1, directory, environment, args.planner, args.execution)
                 maximum_difference = 0.0
